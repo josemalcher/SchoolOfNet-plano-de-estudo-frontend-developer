@@ -223,12 +223,12 @@ Vejam como foi a evolução dos códigos:
 
 |HTML 4 | HTML 5 |
 |---|---|
-|div class="header"> |	<header> |
-|<div class="nav"> |	<nav> |
-|<div class="section"> | 	<section> |
-|<div class="article"> |	<article> |
-|<div class="aside"> |	<aside> |
-|<div class="footer"> |	<footer> | 
+| ```div class="header">``` |	```<header>``` |
+| ```<div class="nav">``` |	```<nav>``` |
+| ```<div class="section">``` | 	```<section>``` |
+| ```<div class="article">``` |	```<article>``` |
+|```<div class="aside">``` |	```<aside>``` |
+|```<div class="footer">``` |	```<footer>``` | 
 
 
 
