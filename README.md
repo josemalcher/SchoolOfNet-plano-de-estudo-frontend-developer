@@ -1,0 +1,32 @@
+## Repositório de estudo
+
+[https://www.schoolofnet.com/plano-de-estudo-frontend-developer/](https://www.schoolofnet.com/plano-de-estudo-frontend-developer/)
+
+0 - HTML5 |  :eyes:  
+1 - CSS3  
+2 - Javascript Básico  
+3 - Javascript Avançado    
+4 - Bootstrap  
+5 - jQuery - Iniciando  
+6 - jQuery com Ajax  
+7 - jQuery UI  
+8 - Less  
+9 - Sass  
+10 - Compass  
+11 - Grunt  
+12 - Gulp  
+13 - ES6  
+14 - webpack      
+15 - Typescript  
+16 - Desenvolvimento de layouts com bootstrap  
+17 - Git e Github | :octocat: | :ok_hand:   
+18 - Browserify  
+19 - Webpack 2  
+20 - Flexbox  
+21 - Foundation CSS na prática    
+22 - Materialize CSS  
+23 - Iniciando com Mootools  
+24 - Google material lite  
+
+---
+
