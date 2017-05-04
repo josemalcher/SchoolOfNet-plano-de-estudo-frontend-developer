@@ -7,6 +7,7 @@
 - [Introdução](#parte1)
 - [Estrutura básica](#parte2)
 - [Compatibilidade](#parte3)
+- [Metadados]($parte4)
 
 ---
 
@@ -165,3 +166,39 @@ Nossa dica é que copiem este código, em algum local, ou decorem, para utilizar
 [Voltar ao Índice](#indice)
 
 ---
+
+## <a name="parte4">Metadados</a>
+
+Metadados são um conjunto de informações a respeito da página e do conteúdo, nela publicada. Estas informações são utilizadas por motores de buscas ou robôs, que as utilizam para saber o conteúdo principal da página e depois exibe para os usuários que estão pesquisando.
+
+Estes dados são invisíveis para o usuário, porque ficam dentro da tag head, da nossa estrutura.
+
+Criaremos alguns dos principais metadados e depois comentaremos sobre alguns deles:
+
+```
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, SON, School of net, HTML basic">
+    <meta name="description" content="Learning to work with HTML 5">
+    <meta name="author" content="Guilherme Ferreira">
+    <meta name="robots" content="index, follow">
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+```
+
+charset, já informamos que é o tipo de codificação da página.
+
+keywords, são palavras-chave que, antigamente, mecanismos de busca dariam ênfase, durante as buscas dos usuários. Atualmente, elas não tem tanta força como antes. Isso ocorreu pelo fato de muitos usuários adicionarem palavras-chave em excesso. Muitas vezes, até palavras que não tinham relação com o setor de atuação do site. Isso fez com o que os motores de busca evoluíssem e não levassem em consideração as keywords.
+
+Hoje em dia, os motores de busca priorizam a criação de conteúdos novos e palavras que utilizamos nos conteúdos.
+
+description serve, também, para os buscadores poderem apresentar um breve resumo da página que foi pesquisada. Quando compartilhamos uma página, os recursos de compartilhamento buscarão esta informação. Os buscadores juntarão, principalmente, a tag title com o metadado description, para formar um breve resumo.
+
+author, indicam o nome do autor do documento ou página.
+
+robots, indicam se os motores de busca poderão indexar o seu site ou não e, se permitirão buscas dos links, presentes no site. O primeiro parâmetro é sobre indexação e o segundo é a permissão de exposição dos links do site. No exemplo, colocamos as duas opções possíveis e comentamos a menos utilizada.
+
+Fora estes metadados, existem alguns que são específicos para cada rede social ou plataforma. Existem os metadados do Facebook, Twitter e até mesmo o Google. Mas, não é nosso objetivo. Vocês podem ler mais sobre os metadados, caso se interessem.
+
+[Voltar ao Índice](#indice)
+
+---
+
