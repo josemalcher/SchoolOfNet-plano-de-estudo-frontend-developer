@@ -4,7 +4,7 @@
 
 <a name="indice">índice</a>
 
-[Falando sobre sistemas de controle de versão](#parte1)
+[Introdução](#parte1)
 
 ---
 
