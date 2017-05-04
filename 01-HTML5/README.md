@@ -2,9 +2,10 @@
 
 ---
 
-<a name="indice">índice</a>
+## <a name="indice">índice</a>
 
-[Introdução](#parte1)
+- [Introdução](#parte1)
+- [Estrutura básica](#parte2)
 
 ---
 
@@ -41,4 +42,45 @@ A dica que podemos dar é que, pratiquem junto com a gente, criem seus próprios
 
 ---
 
+## <a name="parte2">Estrutura básica</a>
+
+Após a introdução, passada no módulo anterior, gostaríamos de reforçar que, o HTML5 é a mais nova versão do HTML e oferece diversas novas funcionalidades, além de facilitar e potencializar as suas aplicações web, facilitando a interação com o usuário.
+
+Além de ser uma versão mais nova do HTML, ele traz o conceito de melhorar a aplicação. Além de todas as funcionalidades e melhorias, o HTML 5 trouxe um grande recurso de armazenamento de dados, no lado cliente, que possibilita a navegação de um site offline e melhora o desempenho no servidor.
+
+Para resumir, podemos dizer que o HTML5 nos revela um mundo de possibilidades, muito maior do que antigamente, melhorando a vida do desenvolvedor.
+
+Para iniciarmos os estudos, vamos entender a estrutura básica para a criação de uma página em HTML5.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+</head>
+<body>
+    Content of the document...
+</body>
+</html>
+````
+O primeiro passo é informar ao navegador que estamos trabalhando com o HTML5, e esta á a função do <!DOCTYPE html>.
+
+Em seguida, basta abrir a tag html, onde definimos a linguagem. A tag html engloba o restante da estrutura.
+
+Dentro desta estrutura básica, temos o cabeçalho(head), onde definimos a codificação da página, que será UTF-8 e também o título.
+
+Por último, temos o body que é responsável por englobar todo conteúdo que a página possuir.
+
+Esta é uma estrutura bem simples. Falaremos de muitas outras tags e estruras para o desenvolvimento de uma página mais complexa. Passaremos, também, os novos conceitos.
+
+No próximo módulo, começaremos a falar, mais detalhadamente, de cada elemento da nossa estrutura. Falaremos mais sobre os possíveis metadados que podemos utilizar, melhorando o posicionamento da página em relação aos motores de buscas, como o Google.
+
+Trabalharemos bastante com semântica, para que os motores de busca possam indexar, da melhor forma, as nossas aplicações.
+
+Falaremos sobre compatibilidade entre navegadores. Os navegadores mais atuais já reconhecem o HTML5, mas quando estamos desenvolvendo alguns sistemas, temos que levar em consideração as pessoas que ainda utilizam os navegadores antigos e desatualizados. Faremos com que estes navegadores, também, reconheçam o HTML 5, para que nossa aplicação não fique toda quebrada na tela do usuário.
+
+[Voltar ao Índice](#indice)
+
+---
 
