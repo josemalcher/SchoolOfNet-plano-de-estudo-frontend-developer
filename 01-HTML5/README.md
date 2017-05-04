@@ -8,6 +8,7 @@
 - [Estrutura básica](#parte2)
 - [Compatibilidade](#parte3)
 - [Metadados]($parte4)
+- [Semântica e definição do cabeçalho](#parte5)
 
 ---
 
@@ -202,3 +203,56 @@ Fora estes metadados, existem alguns que são específicos para cada rede social
 
 ---
 
+## <a name="parte5">Semântica e definição do cabeçalho</a>
+Semântica é um dos conceitos mais importantes que o HTML 5 trouxe de novidade para o mundo web, que serve para padronizar as estruturas.
+
+Podemos dizer que, semântica é um padrão de marcação que facilita os navegadores reconhecerem qual tipo de conteúdo está sendo exibido. Podemos definir: cabeçalho, rodapé, conteúdo principal, artigos, entre outros. Os elementos de marcação são:
+
+- HEADER
+- SECTION
+- FOOTER
+- NAV
+- ASIDE
+- MAIN
+- ARTICLE
+- FIGURE
+
+Antigamente, as pessoas não deixavam de marcar os blocos dos sites, porém, marcavam com o nome que queriam e isso dificultava para os motores de buscas. Por este motivo o HTML 5 decidiu padronizar estas marcações. Se todos marcarem os blocos com os mesmos nomes, o mecanismo de busca consegue melhorar seu algoritmo e otimizar as buscas.
+
+Vejam como foi a evolução dos códigos:
+
+|HTML 4 | HTML 5 |
+|---|---|
+|div class="header"> |	<header> |
+|<div class="nav"> |	<nav> |
+|<div class="section"> | 	<section> |
+|<div class="article"> |	<article> |
+|<div class="aside"> |	<aside> |
+|<div class="footer"> |	<footer> | 
+
+
+
+Estamos exemplificando, levando em consideração que o desenvolvedor estivesse utilizando o mesmo nome que a tag atual, porém não é bem o que acontecia. Alguns colocavam nomes que não eram intuitivos e que somente ele conhecia.
+
+Criando nosso header
+
+```html
+<header>
+    <h1>Main title</h1>
+    <h2>Secondary title</h2>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+```
+Notem que utilizamos as tag header para englobar todo cabeçalho. Utilizamos h1 para título principal, h2 para título secundário e depois a tag nav, para criação do menu.
+
+Façam, também, no arquivo index.html e depois acessem o navegador para conferirem o resultado.
+
+[Voltar ao Índice](#indice)
+
+---
