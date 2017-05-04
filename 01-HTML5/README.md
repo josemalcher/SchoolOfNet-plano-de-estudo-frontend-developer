@@ -9,6 +9,7 @@
 - [Compatibilidade](#parte3)
 - [Metadados]($parte4)
 - [Semântica e definição do cabeçalho](#parte5)
+- [Organização do CSS e criação de Sections](#parte6)
 
 ---
 
@@ -252,6 +253,77 @@ Criando nosso header
 Notem que utilizamos as tag header para englobar todo cabeçalho. Utilizamos h1 para título principal, h2 para título secundário e depois a tag nav, para criação do menu.
 
 Façam, também, no arquivo index.html e depois acessem o navegador para conferirem o resultado.
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte6">Organização do CSS e criação de Sections</a>
+
+Veremos como criar uma section no HTML 5. Esta tarefa não é complicada.
+
+Primeiro, criem uma pasta, na raiz do projeto, chamada css. Dentro desta pasta, criem um arquivo chamado style.css e dentro deste arquivo, coloquem o conteúdo abaixo. Não esqueçam de remover as tags style, pois arquivos de css não precisam das mesmas.
+
+```
+<style>
+    header, section, footer, nav, main, article, figure {
+        display: block;
+    }
+    myTag{
+        display: block;
+        bachground-color: #ddd;
+        padding: 50px;
+        font-size: 30px;
+    }
+</style>
+```
+
+Após termos adicionado o conteúdo acima, no arquivo style.css, apagaremos o mesmo conteúdo do arquivo index.html e chamaremos este arquivo externo. Para isso, vocês deverão adicionar o seguinte código:
+
+```
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+```
+
+Desta forma, estamos mantendo o mesmo efeito. Estamos, somente, passando a responsabilidade de estilização para um arquivo externo. Assim, o código fica mais limpo e organizado. Outra vantagem é que, quando trabalhamos com a mesma folha de estilo para várias páginas, como centralizamos em apenas um arquivo, basta alterarmos em, apenas, um arquivo. Se fosse de outra forma, teríamos que alterar arquivo por arquivo.
+
+Outro ponto que precisamos elucidar, antes de continuarmos com as sections, é sobre os scripts. Antigamente, precisávamos informar o tipo do script, dentro da abertura da tag. Com o HTML 5 não precisamos mais. Por padrão, o navegador já entenderá que se trata de um Javascript. Vejam o exemplo abaixo:
+
+|HTML 4 |	HTML 5 |
+|---|---|
+|```<script type="text/javascript"></script>``` |	```<script></script>``` |
+
+### Sections
+
+A section é o menos específico, dos novos elementos do HTML 5.
+
+Todos os outros servem para um determinado fim, porém, o section, serve para dividir os demais elementos. Em uma section podemos ter todos os outros elementos sendo utilizados, ou seja, podemos ter um header dentro de uma section, ter, também, um footer dentro de uma section.
+
+Desta forma, podemos subdividir o projeto em sections, sem problema algum. O importante é mantermos o código, sempre, bem dividido e organizado.
+
+A diferença da section e da div é que, a div serve para dividir qualquer elemento e a section foi criada para dividir os próprios elementos do HTML 5. Nada impede de utilizarem divs. Vocês podem utilizar melhor as sections, porque, semanticamente, estarão trabalhando da forma mais correta.
+
+```html
+<section>
+    <article>
+        <header>
+            <h1>Title of a content</h1>
+            <p>Description of contents...</p>
+        </header>
+        ... contents ...
+        <footer>
+            <small>
+                <a href="news.html">View more...</a>
+            </small>
+        </footer>
+    </article>
+</section>
+```
+
+Notem que subdividimos nossa section. Utilizamos um article com header e footer para que comecem a entender que, cada tag tem seu papel específico, dentro do contexto em que se encontra.
+
+Utilizamos a tag header para o cabeçalho do documento principal, mas isso não quer dizer que não possamos utilizar a tag header, novamente, para delimitar o cabeçalho de qualquer outra section.
+
+Poderíamos, também, ter adicionado uma tag aside. Deixaremos para o próximo módulo.
 
 [Voltar ao Índice](#indice)
 
