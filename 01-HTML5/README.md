@@ -10,6 +10,7 @@
 - [Metadados]($parte4)
 - [Semântica e definição do cabeçalho](#parte5)
 - [Organização do CSS e criação de Sections](#parte6)
+- [Trabalhando com conteúdo relacionado - Aside](#parte07)
 
 ---
 
@@ -324,6 +325,67 @@ Notem que subdividimos nossa section. Utilizamos um article com header e footer 
 Utilizamos a tag header para o cabeçalho do documento principal, mas isso não quer dizer que não possamos utilizar a tag header, novamente, para delimitar o cabeçalho de qualquer outra section.
 
 Poderíamos, também, ter adicionado uma tag aside. Deixaremos para o próximo módulo.
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte07">Trabalhando com conteúdo relacionado - Aside</a>
+
+Se acessarem o browser, verão que não temos nada muito bonito sendo apresentado. Não se preocupem, o nosso intuito, quando criamos as marcações com HTML 5 e seus recursos, é somente a semântica e a boa prática de marcação.
+
+Desta maneira, nossas aplicações serão priorizadas, durante as pesquisas, porque os motores de busca indexarão melhor a aplicação.
+
+O estilo, depois podemos criar, da maneira que quisermos. Nosso foco, neste conteúdo, é deixarmos a aplicação com a melhor estrutura possível e dentro dos padrões de desenvolvimento. Isso quer dizer que o navegador estará esperando uma estrutura deste tipo e caso não encontre o seu site, ou aplicação, já estará um ponto atrás das demais.
+
+O elemento aside tem a função de mostrar conteúdos que fazem referência ao conteúdo principal. Podendo ser, desde simples informações até blocos de navegações e publicidades.
+
+Vamos ao exemplo, depois comentamos:
+
+```html
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h1>Title of a content</h1>
+                    <p>Description of contents...</p>
+                </header>
+                ... contents ...
+                <footer>
+                    <small>
+                        <a href="news.html">View more...</a>
+                    </small>
+                </footer>
+            </article>
+        </section>
+        <aside>
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+    </main>
+```
+
+Adicionamos uma tag main, para delimitarmos o conteúdo principal. Lembrando que esta tag não deve se repetir na mesma página porque devemos ter apenas uma setor principal na página.
+
+Depois, mantivemos o section, criado na aula anterior, e em seguida, criamos a tag aside. Desta forma, os motores de busca identificarão que, na tag aside, existe um conteúdo relacionado a section que está acima. Semanticamente, estamos trabalhando da forma correta e, teoricamente, o aside deveria estar ao lado do conteúdo, pois se trata de uma sidebar.
+
+Todos os elementos estão sendo tratados como blocos, pois definimos no css. O navegador colocará cada um em uma linha. Depois de adicionarem o código acima, no arquivo index, acessem o navegador para conferirem.
+
+Como queremos que seja uma sidebar e que o conteúdo do aside fique do lado direito, devemos alterar isso no css. Vejam o código abaixo:
+
+```
+main section, main aside {
+    display: inline-block;
+}
+```
+
+Adicionem este conteúdo no arquivo style.css e já teremos o resultado esperado. Acessem o navegador para conferirem, novamente.
+
+Um exemplo mais real seria imaginarem que o artigo publicado na section, pertencesse a uma categoria Esporte e no aside poderíamos listar mais 3 notícias da mesma categoria, por exemplo. É para isso que serve o aside, para relacionar conteúdos de mesmo tema ou categoria, basta que sejam relacionados de alguma forma.
 
 [Voltar ao Índice](#indice)
 
