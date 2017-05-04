@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 03 - Compatibilidade</title>
+    <script>
+        document.createElement("myTag");
+    </script>
+    <style>
+        header, section, footer, nav, main, article, figure {
+            display: block;
+        }
+        myTag{
+            display: block;
+            background-color: #ddd;
+            padding: 50px;
+            font-size: 30px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    Content of the document...
+
+    <myTag>Minha TAG!!</myTag>
+
+</body>
+</html>
