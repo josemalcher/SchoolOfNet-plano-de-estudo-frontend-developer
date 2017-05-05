@@ -15,7 +15,7 @@
 - [Imagem e Legenda](#parte09)
 - [Tipos de entradas - color, data, datatime e email](#parte10)
 - [Month - Number - Range](#parte11)
-[](#parte12)
+- [Search - Time - Url - Week](#parte12)
 [](#parte13)
 [](#parte14)
 [](#parte15)
@@ -628,7 +628,44 @@ Daremos continuidade aos outros elementos, no próximo módulo.
 
 ---
 
-## <a name="parte12"></a>
+## <a name="parte12">Search - Time - Url - Week</a>
+
+Vejam o código que adicionamos depois do elemento range, do módulo passado.
+
+```html
+<div class="form-group">
+    <label>Search</label>
+    <input type="search">
+</div>
+<div class="form-group">
+    <label>Time</label>
+    <input type="time">
+</div>
+<div class="form-group">
+    <label>Url</label>
+    <input type="url">
+</div>
+<div class="form-group">
+    <label>Week</label>
+    <input type="week">
+</div>
+```
+
+search: O campo search, aparentemente, é igual a um campo de texto, mas ele cria um botão para limpar o campo de busca. O que é muito bom para o usuário.
+
+time: Este campo possibilita ao usuário definir horários.
+
+url Este campo, assim como o campo de email, filtrará e tratará o valor informado. Caso o usuário não informe uma url, o HTML disparará uma mensagem avisando e não aceitará, até que o usuário informe o valor que estamos pedindo.
+
+week: Este recurso possibilita selecionar as semanas do ano inteiro, por numeração. Em alguns casos, pode ser muito útil.
+
+Chegamos ao final deste assunto, tipos de dados de entrada, que o HTML 5 nos proporciona. A atualização trouxe muitas melhorias e novidades.
+
+Tentamos mostrar os principais campos. Existem alguns que não falamos e, outros que o Chrome ainda não suporta. Vocês podem pesquisar mais sobre este assunto, tendo interesse.
+
+Nosso objetivo é mostrar como os campos funcionam. Não implementaremos nada, com eles.
+
+Façam os testes práticos no navegador, para entenderem cada um deles.
 
 
 [Voltar ao Índice](#indice)
