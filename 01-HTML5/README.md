@@ -12,7 +12,7 @@
 - [Organização do CSS e criação de Sections](#parte6)
 - [Trabalhando com conteúdo relacionado - Aside](#parte07)
 - [Rodape - Footer](#parte08)
-[](#parte09)
+- [Imagem e Legenda](#parte09)
 [](#parte10)
 [](#parte11)
 [](#parte12)
@@ -431,7 +431,54 @@ Isso quer dizer que estamos caminhando para um controle muito maior de todas as 
 
 ---
 
-## <a name="parte09"></a>
+## <a name="parte09">Imagem e Legenda</a>
+
+Falaremos, em primeiro lugar, sobre a semântica para definição de imagens no HTML 5.
+
+```html
+<main>
+    <section>
+        <article>
+            <header>
+                <h1>Title of a content</h1>
+                <p>Description of contents...</p>
+            </header>
+           Here's an introduction to the text of the content...
+           <figure>
+               <img src="img/figure.jpg" alt="Description of the Figure">
+               <figcaption>Description of the Figure</figcaption>
+           </figure>
+            <footer>
+                <small>
+                    <a href="news.html">View more...</a>
+                </small>
+            </footer>
+        </article>
+    </section>
+    <aside>
+        <h3>Sidebar</h3>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </aside>
+</main>
+```
+
+Colocamos o código inteiro para que vocês possam ver o contexto em que a imagem foi inserida.
+
+Observem que criamos uma pasta chamada img, na raiz do projeto, e dentro desta pasta colocamos uma imagem. Façam isso e podem escolher a imagem que quiserem.
+
+Agora vamos falar sobre o elemento figure, que faz parte da semântica para imagens no HTML 5.
+
+Adicionamos as tags figure e logo após a tag img, com o caminho da imagem, no atributo src, e uma descrição no atributo alt.
+
+Logo após, adicionamos as tags figcaption, que serve para aplicações de inclusão social, que conseguem transformar este figcaption em áudio. Assim, os deficientes visuais conseguem interagir com o site e saber o que está acontendo nas imagens adicionadas.
+
+O HTML 5 tem esta vantagem de estar se adequando para deficientes e é muito importante estarem desenvolvendo da maneira correta e incluindo todos os recursos, disponíveis, enriquecendo a aplicação.
+
+Além de todas estas vantagens, nunca esqueçam que, os motores de busca estarão indexando o site, melhor do que os outros sites, que não utilizam todos estes elementos, porque o site, semanticamente, estará perfeito.
 
 [Voltar ao Índice](#indice)
 
