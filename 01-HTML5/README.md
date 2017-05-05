@@ -16,7 +16,7 @@
 - [Tipos de entradas - color, data, datatime e email](#parte10)
 - [Month - Number - Range](#parte11)
 - [Search - Time - Url - Week](#parte12)
-[](#parte13)
+- [List e tratamento de erro](#parte13)
 [](#parte14)
 [](#parte15)
 [](#parte16)
@@ -672,7 +672,42 @@ Façam os testes práticos no navegador, para entenderem cada um deles.
 
 ---
 
-## <a name="parte13"></a>
+## <a name="parte13">List e tratamento de erro</a>
+
+Falaremos de um elemento muito interessante e que é novidade no HTML 5.
+
+```html
+<div class="form-group">
+    <label>List</label>
+    <input list="codes" name="code" x-moz-errormessage="Customize error only in Firefox!" title="Customize a part of de error" required>
+    <datalist id="codes">
+        <option value="Javascript"></option>
+        <option value="PHP"></option>
+        <option value="Java"></option>
+        <option value="Ruby"></option>
+        <option value="Python"></option>
+    </datalist>
+</div>
+```
+
+Vejam como ficou simples trabalhar com listagens e autocomplete. Lembrando que, antigamente, isso só seria possível utilizando o javascript, juntamente com o HTML. Agora, temos isso, nativamente. Pode ser que alguns navegadores, ainda, não tenham suporte. Estamos caminhando para que todos tenham.
+
+Vejam os parâmetros utilizados no campo input, da listagem, e as descrições de cada um:
+
+| Atributo | 	Descrição | 
+| --- | --- | 
+| list| 	Este elemento informa que o input refere-se a uma listagem e possui um identificador.| 
+| name	| Este dado é utilizado para identificar o campo e permite resgatar o valor do mesmo, posteriormente.| 
+| x-moz-errormessage	| Customiza o erro no navegador Firefox.| 
+| title | 	Customiza os erros em outros navegadores. Nem todos, reconhecem o title para este objetivo.| 
+| required | 	Informa que é um campo obrigatório.| 
+
+Depois de criarmos o campo input, temos que criar a listagem de dados para este campo. Fazemos isso utilizando a tag datalist e informamos um id com o mesmo valor, que configuramos no atributo list, do campo input. Desta forma, estamos informando que a listagem pertence a determinado campo.
+
+Quando utilizamos os filtros, nativos do HTML, assim como o input de email, url e agora o required, temos o erro nativo, também, do navegador. Alguns navegadores permitem customizar este erro.
+
+Em algumas versões do Chrome, vocês poderiam utilizar o atributo title para customizar parte dos erros, mas nem todos navegadores reconhecem. Já no Firefox, vocês podem utilizar o atributo x-moz-errormessage, que informamos na tabela acima.
+
 
 [Voltar ao Índice](#indice)
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <h1>HTML 5 Input Types</h1>
+</header>
+    <section>
+        <form>
+            <div class="form-group">
+                <label>Color</label>
+                <input type="color">
+            </div>
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>DateTime-local</label>
+                <input type="datetime-local">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email">
+            </div>
+            <div class="form-group">
+                <label>Month</label>
+                <input type="month">
+            </div>
+            <div class="form-group">
+                <label>Number</label>
+                <input type="number" min="0" max="100" step="10">
+            </div>
+            <div class="form-group">
+                <label>Range</label>
+                <input type="text" id="textinput">
+                <input type="range" min="0" max="10" step="2" onchange="updateTextInput(this.value);">
+                <script>
+                    function updateTextInput(num){
+                        document.getElementById("textinput").value = num;
+                    }
+                </script>
+                <div class="form-group">
+                    <label>Search</label>
+                    <input type="search">
+                </div>
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>Url</label>
+                    <input type="url">
+                </div>
+                <div class="form-group">
+                    <label>Week</label>
+                    <input type="week">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>List</label>
+                <input list="codes" name="code" x-moz-errormessage="Customize error only in Firefox!" title="Customize a part of de error" required>
+                <datalist id="codes">
+                    <option value="Javascript"></option>
+                    <option value="PHP"></option>
+                    <option value="Java"></option>
+                    <option value="Ruby"></option>
+                    <option value="Python"></option>
+                </datalist>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>
