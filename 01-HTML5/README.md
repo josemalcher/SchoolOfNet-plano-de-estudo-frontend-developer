@@ -13,7 +13,7 @@
 - [Trabalhando com conteúdo relacionado - Aside](#parte07)
 - [Rodape - Footer](#parte08)
 - [Imagem e Legenda](#parte09)
-[](#parte10)
+- [Tipos de entradas - color, data, datatime e email](#parte10)
 [](#parte11)
 [](#parte12)
 [](#parte13)
@@ -484,7 +484,98 @@ Além de todas estas vantagens, nunca esqueçam que, os motores de busca estarã
 
 ---
 
-## <a name="parte10"></a>
+## <a name="parte10">Tipos de entradas - color, data, datatime e email</a>
+
+Falaremos sobre os tipos de entrada no HTML 5.
+
+Os tipos de entrada que a nova versão trouxe são:
+
+- COLOR
+- DATE
+- DATETIME
+- DATETIME-LOCAL
+- EMAIL
+- NUMBER
+- RANGE
+- SEARCH
+- TEL
+- TIME
+- URL
+- WEEK
+
+Faremos alguns exemplos práticos, para que vocês possam entender, para que servem e como utilizamos, estes novos recursos da linguagem.
+
+Para que o projeto fique dinâmico, criaremos um novo arquivo para identificar os elementos de entrada. Criem um arquivo chamado form.html e adicionaremos um link, para este novo arquivo, no menu do arquivo index.html.
+
+```html
+<header>
+    <h1>Main title</h1>
+    <h2>Secondary title</h2>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Input Types</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+```
+
+Conteúdo do arquivo form.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Input Types</title>
+</head>
+<body>
+    <header>
+        <h1>HTML 5 Input Types</h1>
+    </header>
+    <section>
+        <form>
+            <div class="form-group">
+                <label>Color</label>
+                <input type="color">
+            </div>
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>DateTime-local</label>
+                <input type="datetime-local">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email">
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>
+```
+
+Este é o conteúdo do arquivo form.html. Comentaremos os tipos de entrada.
+
+color - Antigamente precisávamos implementar o color picker utilizando javascript. Agora, podemos ter a entrada de cor, nativamente, nos novos browsers, utilizando somente o HTML 5. Basta adicionarmos a entrada e informar que é do tipo color. Alguns navegadores podem não reconhecer.
+
+date - Da mesma forma que o item anterior, antigamente, precisávamos utilizar javascript para conseguirmos ter suporte a um formato de data, facilitando para o usuário. Agora, temos isso, facilmente, informando o tipo date. A data já vem formatada para o usuário, basta clicar na data que ele gostaria. Anteriormente, o usuário precisaria digitar a data.
+
+datetime-local - Temos a mesma característica do date. Neste recurso temos a possibilidade de adicionarmos as horas, também.
+
+email - O campo de email, aparentemente, não modifica nada, mas se inserirem um email inválido e tentarem submeter o formulário, o HMTL 5 trata isso e dispara uma mensagem de erro. Antigamente, precisávamos fazer este filtro, manualmente.
+
+O modo de usar os tipos de entrada é muito fácil. O importante é notar a facilidade que o HTML 5 nos disponibiliza e o ganho de tempo e produtividade que temos.
+
+Vale lembrar que, caso informem um tipo inválido para o navegador, ele, automaticamente, transformará para tipo texto. Vocês devem testar em mais de um navegador, para saberem se eles reconhecem os recursos que estão utilizando.
+
+Não deixem de acessar o navegador para conferirem o resultado que o código proporcionará.
+
+No próximo módulo falaremos sobre mais alguns tipos de entradas.
 
 [Voltar ao Índice](#indice)
 
