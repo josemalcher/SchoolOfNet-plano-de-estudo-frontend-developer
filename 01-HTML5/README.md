@@ -14,7 +14,7 @@
 - [Rodape - Footer](#parte08)
 - [Imagem e Legenda](#parte09)
 - [Tipos de entradas - color, data, datatime e email](#parte10)
-[](#parte11)
+- [Month - Number - Range](#parte11)
 [](#parte12)
 [](#parte13)
 [](#parte14)
@@ -581,13 +581,55 @@ No próximo módulo falaremos sobre mais alguns tipos de entradas.
 
 ---
 
-## <a name="parte11"></a>
+## <a name="parte11">Month - Number - Range</a>
+
+Falaremos sobre mais alguns tipos de input, neste módulo.
+
+Utilizaremos o mesmo arquivo form.html, do módulo anterior, para adicionarmos os novos tipos de entrada.
+
+```html
+<div class="form-group">
+    <label>Month</label>
+    <input type="month">
+</div>
+<div class="form-group">
+    <label>Number</label>
+    <input type="number" min="0" max="100" step="10">
+</div>
+<div class="form-group">
+    <label>Range</label>
+    <input type="text" id="textinput">
+    <input type="range" min="0" max="10" step="2" onchange="updateTextInput(this.value);">
+    <script>
+        function updateTextInput(num){
+            document.getElementById("textinput").value = num;
+        }
+    </script>
+</div>
+```
+
+Adicionamos, o código acima, bem abaixo do input email e antes do input submit.
+
+Agora, vamos falar sobre eles. Não deixem de acessar o navegador e checar, na prática, o que cada um nos oferece.
+
+month: novo recurso que nos permite informar o mês e o ano que quisermos. Isso pode ser útil para sistemas de arquivos que não precisam do dia para busca. Temos acesso ao mês e ano, diretamente, sem precisarmos tratar os dados.
+
+number: Aparentemente, é uma utilização bem simples. Um campo que só aceitará números. Caso tentem informar um texto, neste campo, o próprio HTML não aceitará. Temos uma validação nativa. Fora estas funcionalidades, temos a possibilidade de configurar o incremento com o atributo step. Podemos adicionar valor máximo e mínimo, para os números adicionados.
+
+range: Este elemento é muito útil quando precisamos limitar valores de uma forma visual. Ele cria uma barra, onde o usuário pode definir valores, arrastando a barra. Neste elemento podemos definir valor mínimo e máximo ou, até mesmo, utilizar o step, que é o incremento.
+
+No input do tipo range, utilizamos o javascript para vocês conseguirem entender o que está acontecendo. Somente o input, não informa os valores, ele mostra somente a barra e vocês não conseguiriam enxergar os exemplos funcionando. Deste modo, criamos um input, do tipo texto, e adicionamos um evento javascript para atualizar o valor deste campo, cada vez que a barra seja modificada de lugar. Assim, ele atualiza os valores e vocês podem enxergar os testes de range, funcionando.
+
+Existe uma forma de não precisar utilizar o javascript para mostrar os dados. Mostraremos nos próximos módulos. Por enquanto, decidimos fazer desta forma, apenas para que possam entender melhor.
+
+Daremos continuidade aos outros elementos, no próximo módulo.
 
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte12"></a>
+
 
 [Voltar ao Índice](#indice)
 
