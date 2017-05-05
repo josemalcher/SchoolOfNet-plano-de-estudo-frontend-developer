@@ -11,6 +11,17 @@
 - [Semântica e definição do cabeçalho](#parte5)
 - [Organização do CSS e criação de Sections](#parte6)
 - [Trabalhando com conteúdo relacionado - Aside](#parte07)
+- [Rodape - Footer](#parte08)
+[](#parte09)
+[](#parte10)
+[](#parte11)
+[](#parte12)
+[](#parte13)
+[](#parte14)
+[](#parte15)
+[](#parte16)
+[](#parte17)
+[](#parte18)
 
 ---
 
@@ -386,6 +397,95 @@ main section, main aside {
 Adicionem este conteúdo no arquivo style.css e já teremos o resultado esperado. Acessem o navegador para conferirem, novamente.
 
 Um exemplo mais real seria imaginarem que o artigo publicado na section, pertencesse a uma categoria Esporte e no aside poderíamos listar mais 3 notícias da mesma categoria, por exemplo. É para isso que serve o aside, para relacionar conteúdos de mesmo tema ou categoria, basta que sejam relacionados de alguma forma.
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte08">Rodape - Footer</a>
+
+Como o próprio título diz, o footer representa o rodapé da página ou de qualquer outro contexto que ele estiver inserido.
+
+Este elemento pode conter informações relacionadas ao autor, direitos reservados ou blocos de navegação.
+
+Criando conteúdo do footer
+
+```html
+<footer>
+    <p>School of Net</p>
+    <small>&copy All rights reserve</small>
+</footer>
+```
+
+Assim, já temos o nosso rodapé funcionando e estruturado. Basta estilizarem, caso queiram. Este elemento é muito simples, como todos os outros.
+
+Voltamos a repetir, muitos acreditam que nada mudou do HTML 4 para o 5, dizem que é exatamente o que faziam antes com as divs. Acreditem, a web está se voltando para um futuro bem mais estruturado.
+
+Por mais que pareça não mudar nada, utilizem as tags do HTML 5 para a criação de todos os projetos, porque fará a diferença em um futuro bem próximo e, também, no que diz respeito a mecanismos de busca. Os sites nos padrões antigos, por mais bonitos que estejam, e bem estruturados, ficarão para trás em relação aos novos, que as vezes, se encontram até mais simples.
+
+Caso as aplicações estejam nos padrões de desenvolvimento, vocês poderão criar recursos externos para lerem estas páginas e criarem estatísticas. Porque a ferramenta conseguirá identificar, facilmente, onde está o cabeçalho da página, o conteúdo principal. Verificará se existem artigos, se os artigos tem cabeçalho e rodapé e muito mais.
+
+Isso quer dizer que estamos caminhando para um controle muito maior de todas as aplicações.
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte09"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte10"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte11"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte12"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte13"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte14"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte15"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte16"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte17"></a>
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte18"></a>
 
 [Voltar ao Índice](#indice)
 
