@@ -17,7 +17,7 @@
 - [Month - Number - Range](#parte11)
 - [Search - Time - Url - Week](#parte12)
 - [List e tratamento de erro](#parte13)
-[](#parte14)
+- [Trabalhando com o Output](#parte14)
 [](#parte15)
 [](#parte16)
 [](#parte17)
@@ -713,7 +713,76 @@ Em algumas versões do Chrome, vocês poderiam utilizar o atributo title para cu
 
 ---
 
-## <a name="parte14"></a>
+## <a name="parte14">Trabalhando com o Output</a>
+
+Agora, falaremos sobre o output e criaremos uma nova section, em nosso arquivo form.html.
+
+Os exemplos anteriores tratavam de campos de entrada de dados e agora falaremos das saídas. Por este motivo, criaremos outra section.
+
+No módulo 11, falamos sobre range e mostramos os dados em um campo, utilizando javascript. Falamos, também, que mostraríamos como fazer aquele mesmo procedimento, utilizando o próprio HTML 5. Chegou a hora, falaremos sobre o output e mostraremos a funcionalidade do mesmo.
+
+Utilizamos o mesmo exemplo do range, para exemplificar.
+
+```html
+<section>
+    <h1>Output</h1>
+    <form>
+        0
+        <input type="range" id="a" name="a" value="50" min="0" max="100">
+        100
+        =
+    </form>
+</section>
+```
+
+Primeiro, criamos um form e adicionamos um input, do tipo range. Notem que colocamos 0, depois o input e, em seguida, 100, para dar uma idéia de valor inicial e valor final, para o usuário. Depois, colocamos um sinal de igual para imprimirmos o valor atual do range. Da forma que está, não teremos resultado algum. Vocês podem acessar o navegador para visualizarem. Não temos nada sendo exibido depois do sinal de igual e, nem poderia existir, porque não adicionamos nada.
+
+Agora vem o recurso output, do HTML5, vejam como faremos o valor aparecer:
+
+```html
+<section>
+    <h1>Output</h1>
+    <form oninput="x.value=parseInt(a.value)">
+        0
+        <input type="range" id="a" name="a" value="50" min="0" max="100">
+        100
+        =
+        <output name="x"></output>
+    </form>
+</section>
+```
+
+Adicionamos um evento, chamado oninput, adicionando uma lógica em que pegamos o valor do input do tipo range e atribuímos ao valor do campo output, que criamos logo depois do símbolo de igualdade.
+
+Assim, o evendo estará, sempre, atualizando o valor e jogando no campo output, mostrando os valores do range, em tempo real.
+
+Suponham que queiramos brincar mais um pouco e colocamos um novo campo para somar com o valor do range e depois imprimir o valor somado e o valor do range original. Vejam o exemplo abaixo:
+
+```html
+<section>
+    <h1>Output</h1>
+    <form oninput="x.value= (parseInt(a.value) + parseInt(b.value)) , y.value = parseInt(a.value)">
+        0
+        <input type="range" id="a" name="a" value="50" min="0" max="100">
+        100
+        +
+        <input type="text" name="b" value="0">
+        =
+        <output name="x"></output>
+        <output name="y"></output>
+    </form>
+</section>
+```
+
+O início é o mesmo, mas adicionamos um sinal de "+" e um input de texto, para o usuário digitar o valor que quiser somar.
+
+Em seguida, na nossa lógica do evendo oninput, somamos o valor digitado ou output x. Desta forma, já temos o valor do range somado com o valor informado pelo usuário, que inicialmente é zero.
+
+Depois, criamos uma outra saída y, que recebe o mesmo valor do input a, que é o range original.
+
+Desta forma, estamos imprimindo o valor do range, somado com o valor digitado, e também, o valor original do range. Tudo de forma dinâmica e instantânea.
+
+Vejam o poder que vocês começam a ter nas mãos e poderão utilizar, deixando a aplicação muito mais interativa.
 
 [Voltar ao Índice](#indice)
 
