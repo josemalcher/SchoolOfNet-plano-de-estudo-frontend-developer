@@ -18,7 +18,7 @@
 - [Search - Time - Url - Week](#parte12)
 - [List e tratamento de erro](#parte13)
 - [Trabalhando com o Output](#parte14)
-[](#parte15)
+- [Placeholder e Autocomplete](#parte15)
 [](#parte16)
 [](#parte17)
 [](#parte18)
@@ -788,7 +788,51 @@ Vejam o poder que vocês começam a ter nas mãos e poderão utilizar, deixando 
 
 ---
 
-## <a name="parte15"></a>
+## <a name="parte15">Placeholder e Autocomplete</a>
+
+Para exemplificar este módulo, criaremos outro formulário, em uma nova section. Utilizaremos o mesmo arquiv form.html, mas cada exemplo, deverá pertencer a uma section diferente.
+
+```html
+<section>
+    <h1>Autocomplete</h1>
+    <form>
+        <div class="form-group">
+            <input type="text" name="fname" placeholder="First name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="lname" placeholder="Last name">
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email" autocomplete="off">
+        </div>
+
+        <button>Submit</button>
+    </form>
+</section>
+```
+
+O placeholder é utilizado para dar um valor padrão ao campo de input, muitas vezes utilizado para auxiliar o preenchimento do mesmo. Ele fica escrito com uma formatação, geralmente, diferente do texto digitado, pelo fato de ficar um pouco mais claro do que o normal.
+
+O placeholder é, automaticamente, apagado assim que o usuário digitar o primeiro caracter e retorna, caso ele apague todos os caracteres. Este recurso é muito simples e muito utilizado em formulários, basta acrescentar o atributo e o valor que desejar.
+
+O autocomplete refere-se a um recurso que memoriza dados digitados no formulário. Quando preenchemos um formulário e o submetemos, o navegador tem a capacidade de guardar estes dados e, em uma próxima oportunidade, se não tivermos limpado os dados do navegador, teremos o recurso do autocomplete, pois o navegador mostrará os valores digitados, anteriormente.
+
+Se quiserem desabilitar esta funcionalidade, basta acrescentarem autocomplete="off". Vocês têm duas possibilidades:
+
+Desabilitar o autocomplete no formulário inteiro, adicionando na tag form, diretamente.
+
+```
+<FORM AUTOCOMPLETE="OFF">
+```
+Desabilitando, apenas, o campo que você quiser.
+
+```
+<INPUT TYPE="EMAIL" NAME="EMAIL" PLACEHOLDER="EMAIL" AUTOCOMPLETE="OFF">
+```
+
+Este recurso é muito utilizado, quando temos campos de cartão de crédito ou senhas. Desta forma, conseguimos manter a segurança dos usuários que digitarão dados pessoais.
+
+Façam o teste de submeter uma vez, alguns dados e depois, tentem preencher os mesmos dados, novamente. Vocês verão o autocomplete funcionando. Se quiserem desabilitar, para testarem, vocês deverão limpar o cache do navegador, antes de testarem.
 
 [Voltar ao Índice](#indice)
 
