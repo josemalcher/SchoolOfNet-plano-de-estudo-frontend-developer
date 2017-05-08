@@ -21,7 +21,7 @@
 - [Placeholder e Autocomplete](#parte15)
 - [Novalidate e Autofocus](#parte16)
 - [Atributo Form](#parte17)
-[](#parte18)
+- [Resumo Final](#parte18)
 
 ---
 
@@ -941,7 +941,31 @@ Façam todos os testes e analisem os resultados. O mais importante é que entend
 
 ---
 
-## <a name="parte18"></a>
+## <a name="parte18">Resumo Final</a>
+
+Chegamos ao final do conteúdo de HTML 5. Trouxemos conhecimentos importantes e muito utilizados. É um conteúdo para iniciantes e bem simples.
+
+O conteúdo principal, e que mais focamos, foi a semântica. Falamos o tempo todo da importância de utilizarmos as marcações/tags do HTML5, para que o site seja muito bem interpretado e indexado pelos motores de busca.
+
+Além da indexação, existe o fato de estarmos trabalhando com inclusão digital, onde os sistemas que convertem páginas em áudio, conseguirão compreender todo o site e estruturação. Desta forma, estarão trabalhando com o que há de melhor e mais moderno no mundo web, no que diz respeito à marcação para navegadores.
+
+Basta que utilizem, corretamente, todas as tags do HTML 5 e terão a aplicação dentro dos melhores padrões de desenvolvimento e maior aceitação, em qualquer sistema de busca.
+
+Um dos assuntos mais novos e que merecem destaque são: list e output.
+
+Eles são muito interessantes e devem ser muito utilizados no futuro da web, pois eles poupam tempo de programação e são muito úteis. Vocês não precisam mais ficar utilizando javascript para tudo, porque o HTML 5 vem, cada vez mais, embutindo o javascript.
+
+Devemos ressaltar que HTML 5 não é apenas semântica e formulários, apesar de termos focados bastante nestes dois assuntos. Temos o CSS3, javascript e outros recursos que abordaremos em outros conteúdos. O que devem saber é que, a junção de todas as tecnologias é que faz a aplicação ser a melhor possível.
+
+O HTML 5, também, facilita o desenvolvimento de aplicativos mobiles porque permitirá o envio de mensagens para quem está acessando a aplicação, via celular, por exemplo. Permite que os dispositivos móveis identifiquem que se trata de uma aplicação mobile, disponibilizando o acesso à câmera e a diversas outras funcionalidades dos dispositivos móveis, como se fosse um aplicativo.
+
+Este conteúdo foi para introduzir a semântica e estruturação com a linguagem, o que é muito importante para que possam acompanhar os demais conteúdos que virão, inclusive, mais avançados.
+
+Espero que tenham gostado do conteúdo.
+
+Pratiquem muito, para fixarem bem o conteúdo e saibam que utilizarão, muito, estes conhecimentos como desenvolvedores.
+
+Até o próximo conteúdo.
 
 [Voltar ao Índice](#indice)
 
