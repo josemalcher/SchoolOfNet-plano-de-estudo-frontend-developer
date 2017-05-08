@@ -20,7 +20,7 @@
 - [Trabalhando com o Output](#parte14)
 - [Placeholder e Autocomplete](#parte15)
 - [Novalidate e Autofocus](#parte16)
-[](#parte17)
+- [Atributo Form](#parte17)
 [](#parte18)
 
 ---
@@ -887,7 +887,55 @@ O autofocus só pode ser utilizado em um elemento, caso utilizem em dois ou mais
 
 ---
 
-## <a name="parte17"></a>
+## <a name="parte17">Atributo Form</a>
+
+Para finalizarmos os novos recursos do HTML 5 para formulários, criaremos outra section.
+
+```html
+<section>
+    <h1>The form Attribute:</h1>
+    <form id="form1" method="get">
+        <div class="form-group">
+            <input type="text" name="fname" placeholder="First name" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="lname" placeholder="Last name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <button>Submit</button>
+        <button formnovalidate >Submit Novalidate</button>
+        <button formnovalidate formmethod="post" >Submit Method</button>
+        <button formnovalidate formaction="post.php" >Submit Action</button>
+    </form>
+    <input type="color" name="color" form="form1">
+</section>
+```
+
+Todos os atributos, presentes neste formulário, vocês já conheceram. Gostaríamos de ressaltar, neste módulo, a possibilidade de criarmos campos input, fora das tags do formulário. Isso, antigamente, era impossível de ser feito. Agora, basta atribuirmos um id para o formulário e depois colocar, em qualquer lugar da página, o input e referencia-lo, utilizando o atributo form, passando o id de referência.
+
+Desta forma, o input está fora das tags, mas pertence ao formulário e será submetido, junto com todos os outros campos que estiverem dentro do mesmo.
+
+No exemplo acima, colocamos o input do tipo color, fora das tags. Ele é submetido, juntamente com o formulário, com id form1, porque no input, o atribuímos ao form1.
+
+```
+<input type="color" name="color" form="form1">
+```
+
+Outro recurso, muito bom, é a possibilidade de termos vários tipos de botões. No exemplo, colocamos 4 tipos.
+
+O primeiro, é um botão de submit normal, sem efeito algum.
+
+O segundo, é um botão que ignora todas as validações, antes de submeter.
+
+O terceiro, além de ignorar as validações, altera o método do formulário, que passa de get para post.
+
+Por último, temos um botão que ignora as validações e modifica a action, direcionando a requisição para um arquivo post.php. Neste caso, o método continua o mesmo e não temos este arquivo criado, mas vocês podem submeter o formulário que vocês verão o direcionamento na URL.
+
+Trouxemos, alguns dos principais e mais utilizados atributos para formulários. Vocês podem pesquisar mais sobre este assunto, que encontrarão mais funcionalidades.
+
+Façam todos os testes e analisem os resultados. O mais importante é que entendam o que cada atributo faz e que fixem bem o conteúdo.
 
 [Voltar ao Índice](#indice)
 
