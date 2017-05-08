@@ -19,7 +19,7 @@
 - [List e tratamento de erro](#parte13)
 - [Trabalhando com o Output](#parte14)
 - [Placeholder e Autocomplete](#parte15)
-[](#parte16)
+- [Novalidate e Autofocus](#parte16)
 [](#parte17)
 [](#parte18)
 
@@ -838,7 +838,50 @@ Façam o teste de submeter uma vez, alguns dados e depois, tentem preencher os m
 
 ---
 
-## <a name="parte16"></a>
+## <a name="parte16">Novalidate e Autofocus</a>
+
+Manteremos o mesmo padrão para nossos exemplos e criaremos outra section.
+```html
+<section>
+    <h1>The novalidate Attribute and autofocus:</h1>
+    <form novalidate>
+        <div class="form-group">
+            <input type="text" name="fname" placeholder="First name" required autofocus>
+        </div>
+        <div class="form-group">
+            <input type="text" name="lname" placeholder="Last name">
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email" autocomplete="off">
+        </div>
+        <button>Submit</button>
+    </form>
+</section>
+```
+
+### Novalidate
+
+O atributo novalidate, nada mais é do que, uma ordem para o HTML 5 ignorar todas as suas validações como: filtrar tipos de email, urls e, até mesmo, o required.
+
+Da mesma forma que o autocomplete, do módulo anterior, podemos utilizar o novalidade, diretamente, na tag form, fazendo com que nenhum campo seja validado no formulário ou, podemos utilizar nos campos, separadamente. Desta última forma, podemos deixar de validar apenas um campo, por exemplo.
+
+Façam o teste das duas maneiras, para verem o novalidate trabalhando.
+
+```
+<form novalidate> ou <input type="email" name="email" placeholder="Email" novalidate>
+```
+
+Lembrando que, se colocarem no form, direto, vocês terão todas as validações ignoradas. Vejam qual forma se enquadra melhor no projeto que estiverem trabalhando, pois é um recurso muito útil e simples.
+
+### Autofocus
+
+Antigamente, quando queríamos colocar um elemento de input em foco, tínhamos que utilizar o javascript. Agora não é mais assim. O recurso autofocus, do HTML 5, permite deixar um campo, já selecionado e pronto para preenchimento, assim que a página é recarregada.
+
+Basta acrescentarmos o atributo autofocus ao campo que desejamos iniciar o preenchimento, automaticamente.
+
+Adicionem o autofocus no elemento que desejarem e atualizem a página. Vocês verão que este elemento já vem com o focus, automaticamente, e pronto para o usuário preencher.
+
+O autofocus só pode ser utilizado em um elemento, caso utilizem em dois ou mais, somente o primeiro, de cima para baixo, terá efeito, o restante será ignorado.
 
 [Voltar ao Índice](#indice)
 
