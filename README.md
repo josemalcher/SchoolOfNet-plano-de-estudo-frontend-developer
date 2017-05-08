@@ -2,8 +2,8 @@
 
 [https://www.schoolofnet.com/plano-de-estudo-frontend-developer/](https://www.schoolofnet.com/plano-de-estudo-frontend-developer/)
 
-[0 - HTML5](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/01-HTML5) | :ok_hand:    
-[1 - CSS3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/01-css3)  | :eyes:
+[0 - HTML5](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/01-HTML5) | :ok_hand:      
+[1 - CSS3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/02-css3)  | :eyes:  
 2 - Javascript Básico  
 3 - Javascript Avançado    
 4 - Bootstrap  
