@@ -8,7 +8,7 @@ https://www.schoolofnet.com/curso-css3/
 
 ## Índice
 
-[](#parte1)
+- [Introdução](#parte1)
 [](#parte2)
 [](#parte3)
 [](#parte4)
@@ -29,9 +29,24 @@ https://www.schoolofnet.com/curso-css3/
 
 ---
 
-## <a name="parte1"> </a>
+## <a name="parte1">Introdução</a>
+
+CSS3 é a segunda mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), onde se define estilos para páginas web com efeitos de transição, imagem, e outros, que dão um estilo novo às páginas Web 2.0 em todos os aspectos de design do layout.
+
+### Novidades do CSS3
+
+O CSS3 é extremamente capaz de construir animações que impressionam o mais avançado desenvolvedor web, tanto em 2 como em 3 dimensões. Os mais comuns são os efeitos de rotação, movimento e transição.
+
+Existem, na web, empresas fazendo propaganda utilizando a criatividade e o poder dessa nova era de estilos.
+
+Boas Referências
+
+- [w3schools](https://www.w3schools.com/css/css3_intro.asp)
+- [css3.info](http://www.css3.info/)
+- [Maujor](http://www.maujor.com/)
 
 [Voltar ao Índice](#indice)
+
 
 ---
 
