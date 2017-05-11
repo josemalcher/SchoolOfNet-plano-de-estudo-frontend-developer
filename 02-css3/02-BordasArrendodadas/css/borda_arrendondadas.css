@@ -1,0 +1,28 @@
+#corners1{
+    border-radius: 50px 25px 25px 50px;
+    background: #0288D1;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+}
+
+#corners2{
+    border-radius: 50px;
+    border:  2px solid #122b40;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+}
+
+#corners3{
+    border-radius: 50px;
+    background: url("../img/agua.jpg");
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+}

@@ -9,7 +9,7 @@ https://www.schoolofnet.com/curso-css3/
 ## Índice
 
 - [Introdução](#parte1)
-[](#parte2)
+- [Bordas Arrendodadas](#parte2)
 [](#parte3)
 [](#parte4)
 [](#parte5)
@@ -50,7 +50,16 @@ Boas Referências
 
 ---
 
-## <a name="parte2"> </a>
+## <a name="parte2">Bordas arredondadas</a>
+
+
+[CSS3 Rounded Corners](https://www.w3schools.com/css/css3_borders.asp)
+
+[Bordas Arredondadas CSS3: Estilizando bordas](http://www.devmedia.com.br/bordas-arredondadas-css3-estilizando-bordas/37210)
+
+[Border-radius: create rounded corners with CSS!](http://www.css3.info/preview/rounded-border/)
+
+
 
 [Voltar ao Índice](#indice)
 
