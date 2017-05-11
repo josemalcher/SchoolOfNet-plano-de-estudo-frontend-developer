@@ -10,7 +10,7 @@ https://www.schoolofnet.com/curso-css3/
 
 - [Introdução](#parte1)
 - [Bordas Arrendodadas](#parte2)
-[](#parte3)
+- [Usando imagens em bordas](#parte3)
 [](#parte4)
 [](#parte5)
 [](#parte6)
@@ -65,7 +65,14 @@ Boas Referências
 
 ---
 
-## <a name="parte3"> </a>
+## <a name="parte3">Usando imagens em bordas</a>
+
+[Personalização de bordas com imagem](http://www.maujor.com/tutorial/css3-bordas-com-imagens.php)
+
+[CSS3 Border Images](https://www.w3schools.com/css/css3_border_images.asp)
+
+[Border-image: using images for your border](http://www.css3.info/preview/border-image/)
+
 
 [Voltar ao Índice](#indice)
 

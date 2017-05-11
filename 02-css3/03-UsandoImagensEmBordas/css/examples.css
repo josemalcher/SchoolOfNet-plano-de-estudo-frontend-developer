@@ -1,0 +1,43 @@
+#borderimg1{
+    width: 300px;
+    height: 40px;
+    border: 15px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../img/img-border1.png) 50 round;/* Safari 3.1-5*/
+    -o-border-image: url(../img/img-border1.png) 50 round;/* Opera 11-12.1*/
+    border-image: url(../img/img-border1.png) 50 round;
+    display: inline-block;
+}
+
+#borderimg2{
+    width: 300px;
+    height: 40px;
+    border: 15px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../img/img-border1.png) 65 stretch;/* Safari 3.1-5*/
+    -o-border-image: url(../img/img-border1.png) 65 stretch;/* Opera 11-12.1*/
+    border-image: url(../img/img-border1.png) 65 stretch;
+    display: inline-block;
+}
+
+#borderimg3{
+    width: 300px;
+    height: 40px;
+    border: 15px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../img/img-border2.png) 20% round;/* Safari 3.1-5*/
+    -o-border-image: url(../img/img-border2.png) 20% round;/* Opera 11-12.1*/
+    border-image: url(../img/img-border2.png) 20% round;
+    display: inline-block;
+}
+
+#borderimg4{
+    width: 300px;
+    height: 40px;
+    border: 15px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../img/img-border2.png) 30% stretch;/* Safari 3.1-5*/
+    -o-border-image: url(../img/img-border2.png) 30% stretch;/* Opera 11-12.1*/
+    border-image: url(../img/img-border2.png) 30% stretch;
+    display: inline-block;
+}
