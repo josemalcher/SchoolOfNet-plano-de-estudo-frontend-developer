@@ -12,7 +12,7 @@ https://www.schoolofnet.com/curso-css3/
 - [Bordas Arrendodadas](#parte2)
 - [Usando imagens em bordas](#parte3)
 - [Personalizando backgound](#parte4)
-[](#parte5)
+- [Cores e gradiente](#parte5)
 [](#parte6)
 [](#parte7)
 [](#parte8)
@@ -90,7 +90,15 @@ Boas Referências
 
 ---
 
-## <a name="parte5"> </a>
+## <a name="parte5">Cores e gradiente</a>
+
+[CSS3 Colors](https://www.w3schools.com/css/css3_colors.asp)
+
+[CSS3 Gradients](https://www.w3schools.com/css/css3_gradients.asp)
+
+[Módulo para cores RGBA, HSL e HSLA](http://www.maujor.com/tutorial/css3-modulo-para-cores.php)
+
+
 
 [Voltar ao Índice](#indice)
 
