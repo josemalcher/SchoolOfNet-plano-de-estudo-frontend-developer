@@ -11,7 +11,7 @@ https://www.schoolofnet.com/curso-css3/
 - [Introdução](#parte1)
 - [Bordas Arrendodadas](#parte2)
 - [Usando imagens em bordas](#parte3)
-[](#parte4)
+- [Personalizando backgound](#parte4)
 [](#parte5)
 [](#parte6)
 [](#parte7)
@@ -78,7 +78,13 @@ Boas Referências
 
 ---
 
-## <a name="parte4"> </a>
+## <a name="parte4">Personalizando backgound</a>
+
+[CSS3 Backgrounds](https://www.w3schools.com/css/css3_backgrounds.asp)
+
+[Multiple Backgrounds with CSS3](http://www.css3.info/preview/multiple-backgrounds/)
+
+
 
 [Voltar ao Índice](#indice)
 
