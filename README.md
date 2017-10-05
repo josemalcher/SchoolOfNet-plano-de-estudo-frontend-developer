@@ -2,13 +2,13 @@
 
 [https://www.schoolofnet.com/plano-de-estudo-frontend-developer/](https://www.schoolofnet.com/plano-de-estudo-frontend-developer/)
 
-[0 - HTML Básico](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/00-htmlBasico)  | :eyes:
-[0 - HTML5](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/01-HTML5) | :ok_hand:
+[0 - HTML Básico](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/00-htmlBasico)  | :eyes:  
+[0 - HTML5](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/01-HTML5) | :ok_hand:  
 [1 - CSS3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/02-css3)  | :eyes:  
-2 - Javascript Básico  
+2 - Javascript Básico    
 3 - Javascript Avançado    
-4 - Bootstrap  
-5 - jQuery - Iniciando  
+4 - Bootstrap    
+5 - jQuery - Iniciando    
 6 - jQuery com Ajax  
 7 - jQuery UI  
 8 - Less  
@@ -19,15 +19,15 @@
 13 - ES6  
 14 - webpack      
 15 - Typescript  
-16 - Desenvolvimento de layouts com bootstrap  
-17 - Git e Github | :octocat: | :ok_hand:   
-18 - Browserify  
+16 - Desenvolvimento de layouts com bootstrap    
+17 - Git e Github | :octocat: | :ok_hand:     
+18 - Browserify   
 19 - Webpack 2  
-20 - Flexbox  
-21 - Foundation CSS na prática    
-22 - Materialize CSS  
-23 - Iniciando com Mootools  
-24 - Google material lite  
+20 - Flexbox   
+21 - Foundation CSS na prática      
+22 - Materialize CSS    
+23 - Iniciando com Mootools    
+24 - Google material lite   
 
 ---
 
