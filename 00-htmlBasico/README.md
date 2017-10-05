@@ -161,7 +161,118 @@ FONTE: http://www.w3c.br/Sobre/MissaoW3C
 ---
 ## <a name="parte5">O que é Tag</a>
 
+Já que o HTML serve para dar significado para a informação, como ele faz isso? Simples: ele marca a informação com as tags.
 
+Por exemplo, para falarmos que um título é um título colocamos um pedaço de texto entre uma tag chamada H1. Veja o código abaixo:
+
+```html
+<h1>Aqui vai o texto que é um título</h1>
+```
+
+E dessa forma vamos fazendo todos os outros elementos. Um parágrafo, por exemplo:
+
+```html
+<p>Aqui vai muito texto, um parágrafo</p>
+```
+
+### O que são Tags?
+
+Tags são o conjunto de caracteres que formam um elemento, ou seja, quando nos referenciamos à Tag "p" estamos falando disso: <p>
+
+Existem dois tipos de Tags, as que necessitam de fechamento e as que não necessitam de fechamento.
+
+Para as que necessitam de fechamento, utilizamos o sinal de menor ( < ), seguido do nome do elemento e o sinal de maior ( > ) para abertura. Para fechamento, utilizamos o sinal de menor ( < ), seguido de barra ( / ), nome do elemento e o sinal de maior ( > ).
+
+```html
+    <!-- Exemplo de elemento que necessita de fechamento -->
+    <p>A tag do elemento de parágrafo necessita de fechamento.</p>
+```
+
+Os elementos que não necessitam de fechamento, também conhecidos como elementos vazios, somente utilizamos o sinal de menor ( < ), seguido do nome do elemento e o sinal de maior ( > ).
+
+```html
+    <!-- Exemplo de elemento vazio -->
+    Texto utilizando<br>
+    quebra de linha
+```
+
+### O que são Elementos?
+
+Elementos são formados a partir de Tags e entre as Tags é que está o conteúdo do Elemento.
+
+Se quisermos exibir um parágrafo em um site utilizamos a Tag <p> que semanticamente quer dizer que o conteúdo que se espera nesse Elemento é um parágrafo.
+
+Alguns exemplos:
+
+```html
+    <!-- A Tag <label> define que o conteúdo do Elemento é uma label (rótulo)  -->
+    <label>Informe o seu nome</label>
+```
+
+```html
+    <!-- A Tag <address> define que o conteúdo do Elemento é um endereço (endereços físicos à virtuais)  -->
+    <address>
+      Este guia é uma iniciativa da comunidade e do Tableless <a href="http://tableless.com.br/contato">www.tableless.com.br</a>
+    </address>
+```
+
+### Não confunda Tags com Elementos
+
+As Tags servem para marcar onde começam e terminam os Elementos. Já os Elementos são uma parte conceitual/semântica que têm um começo e fim determinados.
+
+Parece uma diferença boba, mas mantenha ela sempre em mente e isso vai fazer toda a diferença no seu entendimento de HTML.
+
+### O que são Atributos?
+Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) e específicos (que são direcionados para cada Tag, através de especificação).
+
+Os Atributos possuem nome e um valor, existem Atributos que você vai usar praticamente sempre e existem outros que serão mais raros.
+
+#### Atributos globais
+Seguem alguns atributos globais importantes e suas descrições simplificadas:
+
+* accesskey
+    * Determina uma (ou mais) tecla(s) de atalho para o elemento. Para definir mais de uma tecla, coloque-as separadas por espaço.
+* class
+    * Determina uma (ou mais) classe(s) para o elemento. Para definir mais de uma classe, coloque-as separadas por espaço.
+* draggable
+    * Define se um elemento é arrastável ou não.
+* hidden
+    * Oculta o elemento onde for declarado.
+* id
+    * É o identificador único do elemento. Somente deve ser declarado um id por elemento. E este id não deve ser repetido na mesma página.
+* lang
+    * Determina o idioma em que está escrito o conteúdo do elemento.
+* style
+    * Determina propriedades CSS diretamente no elemento.
+* tabindex
+    * Organiza os elementos por ordem de tabulação. Deve-se usar valor numérico.
+* title
+    * Representa um auxílio ao elemento. Semelhante a dica do elemento.
+
+Existem Atributos em que os valores não precisam ser passados entre aspas, mas manter um padrão ajuda você e ajuda quem quer que seja que no futuro tenha que trabalhar com o seu HTML. Portanto, não é uma regra mas uma boa prática você envolver os valores dos Atributos entre aspas.
+
+```html
+    <!-- Isso funciona, mas não é recomendável -->
+    <a href="http://tableless.com.br" target=_blank>www.tableless.com.br</a>
+ 
+    <!-- Isso funciona e é recomendável -->
+    <a href="http://tableless.com.br" target="_blank">www.tableless.com.br</a>
+```
+
+### Na prática
+
+Agora que você entendeu separadamente o papel das Tags, Elementos e Atributos, vamos ver um exemplo prático:
+
+```html
+    <!-- A Tag <img> define que o conteúdo do Elemento é uma imagem e os atributos que utilizamos são src e alt -->
+    <img src="logo.png" alt="HTML 5 Logo" />
+```
+
+Analisando o exemplo:
+No exemplo acima definimos o caminho onde está a imagem com o Atributo src e utilizamos o Atributo alt para descrever que imagem é essa (a utilização do atributo alt é altamente recomendado, pois, mesmo que a imagem não seja carregada por qualquer motivo, o usuário conseguirá identificar que ali era para ser carregado o logo do HTML5).
+
+
+FONTE: http://tableless.github.io/iniciantes/manual/html/oquetags.html
 
 [Voltar ao Índice](#indice)
 
