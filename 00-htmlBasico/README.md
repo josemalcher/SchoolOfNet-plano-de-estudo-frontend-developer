@@ -279,7 +279,9 @@ FONTE: http://tableless.github.io/iniciantes/manual/html/oquetags.html
 ---
 ## <a name="parte6">Ambiente de desenvolvimento com HTML</a>
 
+ARTIGO: Editor de código gratuito: 8 opções para você escolher o seu - https://www.kinghost.com.br/blog/2017/02/editor-de-codigo-gratuito-8-opcoes-para-voce-escolher-o-seu/
 
+SUBLIME TEXT 3: https://www.sublimetext.com/
 
 [Voltar ao Índice](#indice)
 
