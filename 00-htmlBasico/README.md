@@ -410,7 +410,7 @@ The content of the document......
 </html>
 ```
 
-As HTML <h1>- <h6>elementos representam seis níveis de cabeçalhos de seção. <h1>é o nível de seção mais alto e <h6>é o mais baixo.
+As tags "<h1>" - "<h6>" são elementos representam seis níveis de cabeçalhos de seção. "<h1>" é o nível de seção mais alto e "<h6>" é o mais baixo.
 
 ```html
 <h1>Heading level 1</h1>
