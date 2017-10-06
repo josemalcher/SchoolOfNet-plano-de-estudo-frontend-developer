@@ -393,6 +393,50 @@ The number of lines in a paragraph depends on the size of the browser window. If
 ---
 ## <a name="parte9">Títulos</a>
 
+O elemento HTML <title> (Elemento HTML Título) define o título do documento, mostrado na barra de título de um navegador ou na aba da página. Pode conter somente texto e quisquer marcações contidas no texto não são interpretadas.
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Reference</title>
+</head>
+
+<body>
+The content of the document......
+</body>
+
+</html>
+```
+
+As HTML <h1>- <h6>elementos representam seis níveis de cabeçalhos de seção. <h1>é o nível de seção mais alto e <h6>é o mais baixo.
+
+```html
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<h4>Heading level 4</h4>
+<h5>Heading level 5</h5>
+<h6>Heading level 6</h6>
+```
+
+```html
+<h1>Heading elements</h1>
+<h2>Summary</h2>
+<p>Some text here...</p>
+
+<h2>Examples</h2>
+<h3>Example 1</h3>
+<p>Some text here...</p>
+
+<h3>Example 2</h3>
+<p>Some text here...</p>
+
+<h2>See also</h2>
+<p>Some text here...</p>
+```
+
 
 
 [Voltar ao Índice](#indice)
@@ -400,7 +444,66 @@ The number of lines in a paragraph depends on the size of the browser window. If
 ---
 ## <a name="parte10">Centralização e quebra de linha</a>
 
+The HTML Center Element (<center>) is a block-level element that can contain paragraphs and other block-level and inline elements. The entire content of this element is centered horizontally within its containing element (typically, the <body>).
 
+This tag has been deprecated in HTML 4 (and XHTML 1) in favor of the CSS text-align property, which can be applied to the <div> element or to an individual <p>. For centering blocks, use other CSS properties like margin-left and margin-right and set them to auto (or set margin to 0 auto).
+
+FONTE: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/center
+
+```html
+<center>This text will be centered.
+<p>So will this paragraph.</p></center>
+
+```
+
+Ex:
+```html
+<div style="text-align:center">This text will be centered.
+<p>So will this paragraph.</p></div>
+```
+EX:
+```html
+<p style="text-align:center">This line will be centered.<br>
+And so will this line.</p>
+```
+NOTE: Applying text-align:center to a <div> or <p> element centers the contents of those elements while leaving their overall dimensions unchanged.
+
+Outro Exemplo?
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align:center;}
+p {text-align:center;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+O elemento HTML quebra-de-linha <br> produz uma quebra de linha em um texto (carriage-return).É útil para escrever poemas ou um endereço, onde a divisão de linha é significante.
+
+Não use <br> para aumentar o espaço entre as linhas de texto; para isso use a propiedade CSS margin ou o elemento <p>.
+
+```html
+Mozilla Foundation<br>
+1981 Landings Drive<br>
+Building K<br>
+Mountain View, CA 94043-0801<br>
+USA
+```
+
+#### Differences Between HTML and XHTML
+
+* In HTML, the <br> tag has no end tag.
+
+* In XHTML, the <br> tag must be properly closed, like this: <br />.
 
 [Voltar ao Índice](#indice)
 
