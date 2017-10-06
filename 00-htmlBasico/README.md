@@ -510,6 +510,120 @@ USA
 ---
 ## <a name="parte11">Listas</a>
 
+### ol
+O Elemento HTML <ol> (ou Elemento HTML de lista ordenada) representa uma lista de itens ordenados. De forma característica esses itens ordenados em uma lista são mostrados com uma contagem que os precede, que pode ser de qualquer tipo, como numerais, letras, algarismos romanos, ou simples símbolos. Esse modelo numerado não é definido na descrição html da página, mas na folha de estilos CSS associada, pela propriedade list-style-type. 
+
+```html
+<ol>
+  <li>primeiro item</li>
+  <li>segundo item</li>
+  <li>terceiro item</li>
+</ol>
+```
+1.primeiro item
+2.segundo item
+3.terceiro item
+
+Listas Alinhadas
+```html
+<ol>
+  <li>primeiro item</li>
+  <li>segundo item      <!-- Veja que a tag de fechamento </li> não é colocada aqui! -->
+    <ol>
+      <li>segundo item primeiro subitem</li>
+      <li>segundo item segundo subitem</li>
+      <li>segundo item terceiro subitem</li>
+    </ol>
+  </li>                <!-- Aqui está a tag de fechamento </li> -->
+  <li>terceiro item</li>
+</ol>
+```
+1.primeiro item
+2.segundo item
+ 2.1.segundo item primeiro subitem
+ 2.2.segundo item segundo subitem
+ 2.32.segundo item terceiro subitem
+3.terceiro item
+
+Atributo type | html5
+Indica o tipo de numeração:
+* 'a' indica letras minúsculas,
+* 'A' indica letras maiúsculas,
+* 'i' indica algarismos romanos minúsculos,
+* 'I' indica algarismos romanos maiúsculos,
+* e '1' indica números (padrão).
+
+O elemento HTML <li>  (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (<ol>), uma lista desordenada (<ul>), ou um menu (<menu>) e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
+
+```html
+<ol>
+    <li>primeiro item</li>
+    <li>segundo item</li>
+    <li>terceiro item</li>
+</ol>
+<ul>
+    <li>primeiro item</li>
+    <li>segundo item</li>
+    <li>terceiro item</li>
+</ul>
+```
+Resultado:
+1.primeiro item
+2.segundo item
+3.terceiro item
+
+*primeiro item
+*segundo item
+*terceiro item
+
+O elemento HTML <ul> (ou elemento HTML de Lista desordenada) representa uma lista de itens sem ordem rígida, isto é, uma coleção de itens que não trazem uma ordenação numérica e as suas posições, nessa lista, são irrelevantes. Caracteristicamente, os itens em uma lista desordenada são exibidos com um marcador que pode ter várias formas, como um ponto, um círculo, ou um quadrado. O tipo de marcador não é definido na descrição HTML da página, mas na CSS associada, utilizando a propriedade list-style-type.
+
+```html
+<ul>
+  <li>primeiro item</li>
+  <li>segundo item</li>
+  <li>terceiro item</li>
+</ul>
+```
+
+Lista aninhada
+
+```html
+<ul>
+  <li>primeiro item</li>
+  <li>segundo item      <!-- Observe que a tag de fechamento </li> não é colocada aqui! -->
+    <ul>
+      <li>segundo item primeiro subitem</li>
+      <li>segundo item segundo subitem      <!-- O mesmo para a segunda lista não ordenada aninhada (Same for the second nested unordered list)! -->
+        <ul>
+          <li>segundo item segundo subitem primeiro sub-subitem</li>
+          <li>segundo item segundo subitem segundo sub-subitem</li>
+          <li>segundo item segundo subitem terceiro sub-subitem</li>
+        </ul>
+      </li>           <!-- A tag de fechamento </li>, que contém a terceira lista não ordenada (Closing </li> tag for the li that contains the third unordered list) -->
+      <li>segundo item terceiro subitem</li>
+    </ul>
+  </li>               <!-- Aqui entra a tag de fechamento </li> (Here is the closing </li> tag) -->
+  <li>terceiro item</li>
+</ul>
+```
+
+Mais exemplo de listas com não ordenadas: https://www.w3schools.com/html/html_lists.asp
+
+```html
+<ul style="list-style-type:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+```
+
+list-style-type: Esta prorpiedade é usada para alterar o marcador dos itens da lista. Os valores são diferentes para os tipos de listas. Os valores possíveis para listas ordenadas são:
+
+disc (padrão) - representação visual 
+circle - representação visual 
+square - representação visual 
+
 
 
 [Voltar ao Índice](#indice)
