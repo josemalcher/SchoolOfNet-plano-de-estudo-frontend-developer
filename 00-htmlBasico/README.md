@@ -330,7 +330,63 @@ FONTE: http://tableless.github.io/iniciantes/manual/html/estruturabasica.html
 ---
 ## <a name="parte8">Paragráfos</a>
 
+A linguagem HTML considera os parágrafos como blocos de texto. Os navegadores repartem o melhor possível o seu conteúdo na janela, a menos que um atributo NOWRAP ou NOBR seja especificado explicitamente. Dentro de um parágrafo, os espaços, as tabulações e a quebra de linha contam como um só um espaço. Por quebra de linha entende-se o uso da tag <br> para terminar uma linha sem começar um parágrafo. Esta tag pode forçar a quebra de linha onde for preciso na frase por exemplo no meio dela. 
 
+Assim, configuração da página por blocos de texto é realizada através de balizas <p> e </p> e a quebra de linha sem iniciar um parágrafo é realizada graças à baliza <br>.
+
+FONTE: http://br.ccm.net/contents/246-paragrafos-em-html
+
+definições e instruções tag
+<P> tag define um parágrafo.
+
+<P> elemento criará automaticamente um espaço antes ou depois. O navegador irá adicionar automaticamente esses espaços, você também pode especificar na folha de estilo.
+
+FONTE: http://www.w3big.com/pt/tags/tag-p.html
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser 
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains      a lot of spaces
+in the source     code,
+but the    browser 
+ignores it.
+</p>
+
+<p>
+The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+</p>
+
+</body>
+</html>
+
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.
+<p>This is a paragraph.
+<p>This is a paragraph.
+
+<p>Don't forget to close your HTML tags!</p>
+
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
