@@ -834,7 +834,49 @@ FONTE: https://pt.stackoverflow.com/questions/2315/diferen%C3%A7a-entre-urls-abs
 ---
 ## <a name="parte16">Imagens</a>
 
+Ex:
+```html
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>Spectacular Mountain</h2>
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+<img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+</body>
+</html>
+```
+Ex2:
+```html
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+```
+
+Mapeando img
+```html
+<img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+```
+
+img como background
+```html
+<body style="background-image:url('skies.jpg')">
+
+<h2>Background Image</h2>
+
+<p style="background-image:url('skies.jpg')"> Paragrafo com Background </p>
+
+</body>
+```
+
+FONTE: https://www.w3schools.com/html/html_images.asp
 
 [Voltar ao Índice](#indice)
 
