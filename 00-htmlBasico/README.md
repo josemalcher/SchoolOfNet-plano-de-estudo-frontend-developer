@@ -765,7 +765,35 @@ Texto aleatório
 ---
 ## <a name="parte14">Links</a>
 
+Ex:
+```html
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+        <p><a href="html_images.asp">HTML Images</a> is a link to a page on this website.</p>
+    
+        <p><a href="https://www.w3.org/">W3C</a> is a link to a website on the World Wide Web.</p>
+    
+    </body>
+    </html>
+```
 
+The target attribute can have one of the following values:
+
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+```html
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+<a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a>
+
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+```
 
 [Voltar ao Índice](#indice)
 
