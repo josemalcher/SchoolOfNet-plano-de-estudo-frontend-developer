@@ -519,10 +519,13 @@ O Elemento HTML <ol> (ou Elemento HTML de lista ordenada) representa uma lista d
   <li>segundo item</li>
   <li>terceiro item</li>
 </ol>
+<!-- 
+ 1.primeiro item
+ 2.segundo item
+ 3.terceiro item
+ -->
 ```
-1.primeiro item
-2.segundo item
-3.terceiro item
+
 
 Listas Alinhadas
 ```html
@@ -549,7 +552,7 @@ Indica o tipo de numeração:
 * 'I' indica algarismos romanos maiúsculos,
 * e '1' indica números (padrão).
 
-O elemento HTML "li"  (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada ("ol"), uma lista desordenada ("ul"), ou um menu (<menu>) e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
+O elemento HTML "li"  (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada ("ol"), uma lista desordenada ("ul"), ou um menu ("menu") e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
 
 ```html
 <ol>
@@ -627,7 +630,111 @@ list-style-type: Esta prorpiedade é usada para alterar o marcador dos itens da 
 ---
 ## <a name="parte12">Tabelas</a>
 
+O elemento HTML Table (<table>) representa dados em duas dimensões ou mais.
 
+```html
+<table>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
+```
+Ex2:
+```html
+<p>Simple table with header</p>
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
+
+<p>Table with thead, tfoot, and tbody</p>
+<table>
+  <thead>
+    <tr>
+      <th>Header content 1</th>
+      <th>Header content 2</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Footer content 1</td>
+      <td>Footer content 2</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Body content 1</td>
+      <td>Body content 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Table with colgroup</p>
+<table>
+  <colgroup span="4" class="columns"></colgroup>
+  <tr>
+    <th>Countries</th>
+    <th>Capitals</th>
+    <th>Population</th>
+    <th>Language</th>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Washington D.C.</td>
+    <td>309 million</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>9 million</td>
+    <td>Swedish</td>
+  </tr>
+</table>
+
+<p>Table with colgroup and col</p>
+<table>
+  <colgroup>
+    <col class="column1">
+    <col class="columns2plus3" span="2">
+  </colgroup>
+  <tr>
+    <th>Lime</th>
+    <th>Lemon</th>
+    <th>Orange</th>
+  </tr>
+  <tr>
+    <td>Green</td>
+    <td>Yellow</td>
+    <td>Orange</td>
+  </tr>
+</table>
+
+<p>Simple table with caption</p>
+<table>
+  <caption>Awesome caption</caption>
+  <tr>
+    <td>Awesome data</td>
+  </tr>
+</table>
+```
+
+FONTE: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table
 
 [Voltar ao Índice](#indice)
 
