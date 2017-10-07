@@ -781,11 +781,11 @@ Ex:
 
 The target attribute can have one of the following values:
 
-_blank - Opens the linked document in a new window or tab
-_self - Opens the linked document in the same window/tab as it was clicked (this is default)
-_parent - Opens the linked document in the parent frame
-_top - Opens the linked document in the full body of the window
-framename - Opens the linked document in a named frame
+* _blank - Opens the linked document in a new window or tab    
+* _self - Opens the linked document in the same window/tab as it was clicked (this is default)    
+* _parent - Opens the linked document in the parent frame    
+* _top - Opens the linked document in the full body of the window    
+* framename - Opens the linked document in a named frame    
 ```html
 <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
 <a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a>
@@ -883,6 +883,37 @@ FONTE: https://www.w3schools.com/html/html_images.asp
 ---
 ## <a name="parte17">Formulários</a>
 
+Ex imput:
+```html
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+```
+
+Ex Radio:
+```html
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+```
+
+Ex Submit:
+```html
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+FONTE e Mais exemplos: https://www.w3schools.com/html/html_forms.asp
 
 
 [Voltar ao Índice](#indice)
