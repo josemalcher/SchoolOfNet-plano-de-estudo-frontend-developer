@@ -801,6 +801,33 @@ framename - Opens the linked document in a named frame
 ## <a name="parte15">Navegação</a>
 
 
+Diferença entre URLs absolutos e relativos nos conteúdos da página (StackOverflow)
+
+
+URLs absolutos tendem a ser uma dor de cabeça ao reaproveitar o markup para mudar o site de endereço ou replicar a estrutura em um site novo, e são impraticáveis se você atender mais de um URL com funcionamento diferente pelo mesmo script/página (no caso de a mesma aplicação atender a vários URLs) ou quiser atender tanto http:// quanto https://.
+
+Vale notar que você pode usar um URL absoluto sem definir o protocolo, para resolver o problema mencionado. 
+Ex: 
+```html
+<a href="//example.com/index.html">
+```
+
+URLs relativos ao caminho atual (sem a barra inicial que indica "relativo à raiz") têm sua vantagem em estruturas que podem ser reaproveitadas em níveis diferentes do site, mas são mais complicados de manter quando a estrutura referencia coisas que deveriam estar sempre no mesmo lugar (como ícones de um site).
+Ex: 
+```html
+<a href="index.html">
+``` 
+
+(depende da página onde você está para determinar o resto do caminho. Pode tanto significar meusite.com/index.html, como meusite.com/arquivos/index.html, se o link estiver em arquivos/pagina3.html, por exemplo.)
+URLs relativos à raiz tendem a ser melhores para coisas globais, e evitam muitos erros e perda de tempo nos casos mencionados no parágrafo acima, se referindo a arquivos de mídia e scripts de uso global do site.
+Ex: 
+```html
+<a href="/index.html"> 
+```
+
+(será sempre o mesmo index.html, dentro do site que apresentou o link, não importa em qual de suas páginas ou pastas o link foi mostrado)
+
+FONTE: https://pt.stackoverflow.com/questions/2315/diferen%C3%A7a-entre-urls-absolutos-e-relativos-nos-conte%C3%BAdos-da-p%C3%A1gina
 
 [Voltar ao Índice](#indice)
 
