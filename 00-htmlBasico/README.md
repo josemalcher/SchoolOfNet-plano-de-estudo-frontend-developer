@@ -200,7 +200,7 @@ Os elementos que não necessitam de fechamento, também conhecidos como elemento
 
 Elementos são formados a partir de Tags e entre as Tags é que está o conteúdo do Elemento.
 
-Se quisermos exibir um parágrafo em um site utilizamos a Tag <p> que semanticamente quer dizer que o conteúdo que se espera nesse Elemento é um parágrafo.
+Se quisermos exibir um parágrafo em um site utilizamos a Tag "p" que semanticamente quer dizer que o conteúdo que se espera nesse Elemento é um parágrafo.
 
 Alguns exemplos:
 
@@ -393,7 +393,7 @@ The number of lines in a paragraph depends on the size of the browser window. If
 ---
 ## <a name="parte9">Títulos</a>
 
-O elemento HTML <title> (Elemento HTML Título) define o título do documento, mostrado na barra de título de um navegador ou na aba da página. Pode conter somente texto e quisquer marcações contidas no texto não são interpretadas.
+O elemento HTML "title" (Elemento HTML Título) define o título do documento, mostrado na barra de título de um navegador ou na aba da página. Pode conter somente texto e quisquer marcações contidas no texto não são interpretadas.
 
 ```html
 <!DOCTYPE html>
@@ -444,7 +444,7 @@ As tags "h1" até "h6" são elementos representam seis níveis de cabeçalhos de
 ---
 ## <a name="parte10">Centralização e quebra de linha</a>
 
-The HTML Center Element (<center>) is a block-level element that can contain paragraphs and other block-level and inline elements. The entire content of this element is centered horizontally within its containing element (typically, the <body>).
+The HTML Center Element (center) is a block-level element that can contain paragraphs and other block-level and inline elements. The entire content of this element is centered horizontally within its containing element (typically, the <body>).
 
 This tag has been deprecated in HTML 4 (and XHTML 1) in favor of the CSS text-align property, which can be applied to the <div> element or to an individual <p>. For centering blocks, use other CSS properties like margin-left and margin-right and set them to auto (or set margin to 0 auto).
 
