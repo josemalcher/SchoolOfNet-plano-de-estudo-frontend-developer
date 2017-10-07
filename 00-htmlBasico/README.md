@@ -921,7 +921,16 @@ FONTE e Mais exemplos: https://www.w3schools.com/html/html_forms.asp
 ---
 ## <a name="parte18">Formulário de pesquisa no Google</a>
 
+Cod. Aula:
+```html
+    <form action="https://www.google.com.br/search">
+		<label>Pesquisa</label>
+		<input type="text" name="q"/>
+		<input type="submit" value="Submeter">
+	</form>
+```
 
+Mais detalhes: https://www.w3schools.com/html/html_form_input_types.asp
 
 [Voltar ao Índice](#indice)
 
