@@ -1,0 +1,30 @@
+#textshadow1{
+    text-shadow: 1px 1px;
+}
+
+#textshadow2{
+    color: white;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+#textshadow3{
+    text-shadow: 1px -13px 6px #000000, 3px 10px 5px #960A0A;
+}
+#textshadow4{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #14D61A, 0 0 5px darkblue;
+}
+
+div.card{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+div.header1{
+    background-color: #00FF7E;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+div.container{
+    padding: 5px;
+}
