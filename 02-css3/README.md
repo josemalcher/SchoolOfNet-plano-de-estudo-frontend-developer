@@ -313,6 +313,69 @@ CSS3 Text: https://www.w3schools.com/css/css3_text_effects.asp
 
 ## <a name="parte8">Fontes</a>
 
+CSS3 fonts: https://www.w3schools.com/css/css3_fonts.asp
+
+```css
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+
+@font-face {
+    font-family: "MyFont";
+    src: url(../font/ARDESTINE.ttf);
+}
+
+.font1{
+    font-family: 'Lobster', cursive;
+}
+
+.font2{
+    font-family: 'Bad Script', cursive;
+}
+.font3{
+    font-family: 'MyFont';
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Color and Gradient</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+            <p>Font 1 - Google Fonts</p>
+            <p class="font1">This is a text test for the course of the School of Net</p>
+        </div>
+        <div class="col-3">
+            <p>Font 2 - Google Fonts</p>
+            <p class="font2">This is a text test for the course of the School of Net</p>
+        </div>
+        <div class="col-3">
+            <p>Font 3 - My Font</p>
+            <p class="font3">This is a text test for the course of the School of Net</p>
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
