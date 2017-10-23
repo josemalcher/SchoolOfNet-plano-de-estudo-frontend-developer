@@ -1402,9 +1402,9 @@ CSS3 Media Queries: https://www.w3schools.com/css/css3_mediaqueries.asp
 
 ---
 
-## <a name="parte18">onsiderações finais</a>
+## <a name="parte18">Considerações finais</a>
 
-
+Boa Referência com exemplos: https://www.w3schools.com/css/default.asp
 
 [Voltar ao Índice](#indice)
 
