@@ -1195,6 +1195,88 @@ CSS Buttons: https://www.w3schools.com/css/css3_buttons.asp
 
 ## <a name="parte15">Múltiplas colunas</a>
 
+CSS3 Multiple Columns: https://www.w3schools.com/css/css3_multiple_columns.asp
+
+```css
+.column1{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    coloumn-count: 4;
+    padding: 20px;
+}
+
+.column2{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    coloumn-count: 4;
+    padding: 20px;
+    -webkit-column-gap:10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+}
+.column3{
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    coloumn-count: 4;
+    padding: 20px;
+    -webkit-column-gap:20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    column-rule-style: solid;
+
+    -webkit-column-rule-width: 1px;
+    -moz-column-rule-width: 1px;
+    column-rule-width: 1px;
+
+    -webkit-column-rule-color: red;
+    -moz-column-rule-color: red;
+    column-rule-color: red;
+
+}
+
+.column-title{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Múltiplas colunas </h1>
+</section>
+<section>
+    <div class="column3">
+        <h2 class="column-title">Lorem ipsum dolor sit amet</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus mollis libero, viverra dapibus justo
+        eleifend vitae. Fusce sit amet varius nunc. Fusce tincidunt sollicitudin nibh, vel ornare turpis. Sed ac varius
+        diam, id maximus nisi. Fusce quis turpis eget nunc imperdiet scelerisque. Nullam sem purus, condimentum eget
+        diam sed, luctus imperdiet purus. Proin efficitur nulla vel lacus faucibus aliquet. Fusce at ante tellus. Duis
+        sodales purus ut sapien sollicitudin rhoncus. Donec felis nulla, vehicula vestibulum lobortis non, lacinia id
+        sapien. Nullam massa lacus, rhoncus nec ornare id, rutrum vel purus. Duis ante urna, viverra vel euismod et,
+        consequat nec libero.
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
