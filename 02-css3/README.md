@@ -1283,6 +1283,61 @@ CSS3 Multiple Columns: https://www.w3schools.com/css/css3_multiple_columns.asp
 
 ## <a name="parte16">Rendimensionar elementos</a>
 
+CSS3 resize Property: https://www.w3schools.com/cssref/css3_pr_resize.asp
+
+```css
+.resize1{
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.resize2{
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.resize3{
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Redimensionar elementos</h1>
+</section>
+<section>
+    <div class="resize3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus mollis libero, viverra dapibus justo eleifend vitae. Fusce sit amet varius nunc.
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
