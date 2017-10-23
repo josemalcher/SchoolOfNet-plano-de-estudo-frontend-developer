@@ -30,6 +30,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ## <a name="parte1">Boa vindas</a>
 
+Editor recomendável: https://code.visualstudio.com/
 
 
 [Voltar ao Índice](#indice)
@@ -38,21 +39,14 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ## <a name="parte2">História do Javascript</a>
 
+Artigo: JavaScript – 20 anos de história e construção da web -> https://imasters.com.br/front-end/javascript/javascript-20-anos-de-historia-e-construcao-da-web/
 
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte2"></a>
-
-
-
-[Voltar ao Índice](#indice)
-
----
-
-## <a name="parte2"></a>
+## <a name="parte3"></a>
 
 
 
@@ -60,7 +54,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte4"></a>
 
 
 
@@ -68,7 +62,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte5"></a>
 
 
 
@@ -76,7 +70,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte6"></a>
 
 
 
@@ -84,7 +78,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte7"></a>
 
 
 
@@ -92,7 +86,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte8"></a>
 
 
 
@@ -100,7 +94,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte9"></a>
 
 
 
@@ -108,7 +102,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte10"></a>
 
 
 
@@ -116,7 +110,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte11"></a>
 
 
 
@@ -124,7 +118,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte12"></a>
 
 
 
@@ -132,7 +126,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte13"></a>
 
 
 
@@ -140,7 +134,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte14"></a>
 
 
 
@@ -148,7 +142,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte15"></a>
 
 
 
@@ -156,7 +150,15 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte16"></a>
+
+
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte17"></a>
 
 
 
