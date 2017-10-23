@@ -1344,11 +1344,67 @@ CSS3 resize Property: https://www.w3schools.com/cssref/css3_pr_resize.asp
 
 ## <a name="parte17">Consulta de mídias</a>
 
+CSS3 Media Queries: https://www.w3schools.com/css/css3_mediaqueries.asp
+
+```css
+.print {
+    display: none;
+}
+
+.screen {
+    display: none
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: red;
+    }
+
+    .screen {
+        display: block
+    }
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Redimensionar elementos</h1>
+</section>
+<section>
+    <div class="title">Media Query</div>
+</section>
+<section>
+    <div class="row">
+        <p class="print">Irá aparece somente na impressção</p>
+        <p class="screen">Irá aparece somente na impressção</p>
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte18">onsiderações finais</a>
+
+
 
 [Voltar ao Índice](#indice)
 
