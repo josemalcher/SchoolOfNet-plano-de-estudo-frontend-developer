@@ -1,0 +1,66 @@
+.element1{
+    width: 200px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #3D647F;
+    color: white;
+    -webkit-transition: background-color 2s, width 3s;
+    transition: background-color 2s, width 3s;
+}
+
+.transitions1{
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+.transitions2{
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+.transitions3{
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+.transitions4{
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.transitions5{
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.transitions6{
+    -webkit-transition-timing-function: cubic-bezier(0.4,2,0.2,1);
+    transition-timing-function: cubic-bezier(0.4,2,0.2,1);
+}
+.transitions7{
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+}
+
+
+
+.element1:hover{
+    width: 500px;
+    background-color: #0793F3;
+}
+
+.element2{
+    width: 200px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #3D647F;
+    color: white;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.element2:hover{
+    width: 300px;
+    height: 300px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}

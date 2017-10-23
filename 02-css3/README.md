@@ -611,6 +611,121 @@ CSS3 3D Transforms: https://www.w3schools.com/css/css3_3dtransforms.asp
 
 ## <a name="parte11">Transição</a>
 
+CSS3 Transitions: https://www.w3schools.com/css/css3_transitions.asp
+
+```css
+.element1{
+    width: 200px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #3D647F;
+    color: white;
+    -webkit-transition: background-color 2s, width 3s;
+    transition: background-color 2s, width 3s;
+}
+
+.transitions1{
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+.transitions2{
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+.transitions3{
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+.transitions4{
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.transitions5{
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.transitions6{
+    -webkit-transition-timing-function: cubic-bezier(0.4,2,0.2,1);
+    transition-timing-function: cubic-bezier(0.4,2,0.2,1);
+}
+.transitions7{
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+}
+
+
+
+.element1:hover{
+    width: 500px;
+    background-color: #0793F3;
+}
+
+.element2{
+    width: 200px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #3D647F;
+    color: white;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.element2:hover{
+    width: 300px;
+    height: 300px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Transição</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+            <p class="element1">School of Net</p>
+            <p class="element1 transitions1">Ease</p>
+            <p class="element1 transitions2">Linear</p>
+            <p class="element1 transitions3">Ease In</p>
+            <p class="element1 transitions4">Ease Out</p>
+            <p class="element1 transitions5">Ease In Out</p>
+            <p class="element1 transitions6">Cubic Bezier</p>
+            <p class="element1 transitions7">Delay</p>
+
+        </div>
+        <div class="col-3">
+            <p class="element2">School of Net</p>
+        </div>
+
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+    </div>
+
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
