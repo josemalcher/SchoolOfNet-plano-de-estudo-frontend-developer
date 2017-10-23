@@ -732,6 +732,145 @@ CSS3 Transitions: https://www.w3schools.com/css/css3_transitions.asp
 
 ## <a name="parte12">Animação</a>
 
+CSS3 Animations: https://www.w3schools.com/css/css3_animations.asp
+
+```css
+.player{
+    position: relative;
+    -webkit-animation-name: animation2; /* Chrome, Safari, Opera */
+    animation-name: animation2;
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-duration: 4s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+}
+
+.player-body{
+    width: 0;
+    height: 0;
+    border-right: 61px solid transparent;
+    border-top: 92px solid #39A045;
+    border-left: 61px solid #39A045;
+    border-bottom: 27px solid #39A045;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 139px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.player-eye{
+    position: absolute;
+    left:72px;
+    top:27px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-color: white;
+    width: 35px;
+    height:23px;
+    animation: blink 5s linear 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animation1 {
+    from {
+        -ms-transform: translate(0,0); /* IE 9 */
+        -webkit-transform: translate(0,0); /* Safari */
+        transform: translate(0,0);
+    }
+    to {
+        -ms-transform: translate(500px,0); /* IE 9 */
+        -webkit-transform: translate(500px,0); /* Safari */
+        transform: translate(500px,0);
+    }
+}
+
+@keyframes animation1 {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(500px,0);
+    }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animation2 {
+    0%{
+        -ms-transform: translate(0,0); /* IE 9 */
+        -webkit-transform: translate(0,0); /* Safari */
+        transform: translate(0,0);
+    }
+    25%{
+        -ms-transform: translate(100px,50px); /* IE 9 */
+        -webkit-transform: translate(100px,50px); /* Safari */
+        transform: translate(100px,50px);
+    }
+    50%{
+        -ms-transform: translate(200px,0); /* IE 9 */
+        -webkit-transform: translate(200px,0); /* Safari */
+        transform: translate(200px,0);
+    }
+    100%{
+        -ms-transform: translate(500px,-50px); /* IE 9 */
+        -webkit-transform: translate(500px,-50px); /* Safari */
+        transform: translate(500px,-50px);
+    }
+}
+
+
+@keyframes animation2 {
+    0%{transform: translate(0,0);}
+    25%{transform: translate(100px,50px);}
+    50%{transform: translate(200px,0);}
+    100%{transform: translate(500px,-50px);}
+}
+
+@keyframes blink {
+    0%{background-color: white}
+    98%{background-color: white}
+    100%{background-color: #39A045}
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Animação</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+            <div class="player">
+                <div class="player-body"></div>
+                <div class="player-eye"></div>
+            </div>
+        </div>
+        <div class="col-3"> </div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+    </div>
+
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
