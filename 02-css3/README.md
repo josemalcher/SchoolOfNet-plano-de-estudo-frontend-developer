@@ -25,7 +25,7 @@ https://www.schoolofnet.com/curso-css3/
 - [Múltiplas colunas](#parte15)
 - [Rendimensionar elementos](#parte16)
 - [Consulta de mídias](#parte17)
-- [COnsiderações finais](#parte18)
+- [Considerações finais](#parte18)
 
 ---
 
@@ -209,73 +209,169 @@ div.container{
 
 ---
 
-## <a name="parte7"> </a>
+## <a name="parte7">Textos</a>
+
+CSS3 Text: https://www.w3schools.com/css/css3_text_effects.asp
+
+```css
+.text1{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.text1:hover{
+    text-overflow: inherit;
+    overflow: visible;
+}
+
+.text2{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text2:hover{
+    text-overflow: inherit;
+    overflow: visible;
+}
+
+.text3{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+.text3:hover{
+    text-overflow: inherit;
+    overflow: visible;
+}
+.text4{
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+.text5{
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+
+.text6{
+    width: 140px;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Color and Gradient</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+            <p class="text1">This is a text test for the course of the School of Net</p>
+            <p class="text2">This is a text test for the course of the School of Net</p>
+            <p class="text3">This is a text test for the course of the School of Net</p>
+        </div>
+        <div class="col-3">
+            <p class="text4">This is a text test forforfofotforforforfoorrforfor the course of the School of Net</p>
+            <p class="text5">This is a text test forforfofotforfordfdfdfdforfoorrforfor the course of the School of Net</p>
+        </div>
+        <div class="col-3">
+            <p class="text6">This is a text test forforfofotforfordfdfdfdforfoorrforfor the course of the School of Net</p>
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte8"> </a>
+## <a name="parte8">Fontes</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte9"> </a>
+## <a name="parte9">2D</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte10"> </a>
+## <a name="parte10">3D</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte11"> </a>
+## <a name="parte11">Transição</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte12"> </a>
+## <a name="parte12">Animação</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte13"> </a>
+## <a name="parte13">Trabalhando com Imagens</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte14"> </a>
+## <a name="parte14">Criando Botões personalizados</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte15"> </a>
+## <a name="parte15">Múltiplas colunas</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte16"> </a>
+## <a name="parte16">Rendimensionar elementos</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte17"> </a>
+## <a name="parte17">Consulta de mídias</a>
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte18"> </a>
+## <a name="parte18">onsiderações finais</a>
 
 [Voltar ao Índice](#indice)
 
