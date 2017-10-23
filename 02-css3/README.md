@@ -1001,6 +1001,194 @@ CSS Images: https://www.w3schools.com/css/css3_images.asp
 
 ## <a name="parte14">Criando Botões personalizados</a>
 
+CSS Buttons: https://www.w3schools.com/css/css3_buttons.asp
+
+```css
+.btn{
+    border:none;
+    padding: 9px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btn-green{
+    background-color: #4CAF50;
+    color: white;
+}
+.btn-lg{
+    padding: 12px 18px;
+    font-size: 20px;
+}
+.btn-sm{
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.btn-round{
+    border-radius: 8px;
+}
+.btn-border-color{
+    background-color: white;
+    color: #4CAF50;
+    border:2px solid #4CAF50;
+}
+.btn-effect{
+    -webkit-transition-duration: 4s;
+    transition-duration: 0.4s;
+}
+.btn-blue{
+    background-color: #2e6da4;
+    color: white;
+    border: 2px solid #2e6da4;
+}
+.btn-blue:hover{
+    color:#2e6da4;
+    background-color: white;
+}
+.btn-shadow{
+    box-shadow: 0 9px 15px 0 rgba(0,0,0,0.2), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.disabled{
+    opacity:0.6;
+    cursor: not-allowed;
+}
+.btn-width{
+    width: 100%;
+}
+
+.btn-group{
+    float: left;
+}
+
+.btn-animate {
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-animate span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-animate span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-animate:hover span {
+    padding-right: 25px;
+}
+
+.btn-animate:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn-animate-click {
+    position: relative;
+    font-size: 28px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-animate-click:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn-animate-click:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Image</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+            <button class="btn">Default</button>
+            <button class="btn btn-green">Green</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-green btn-sm">Small</button>
+            <button class="btn btn-green btn-lg">Large</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-green btn-lg btn-round">Round</button>
+            <button class="btn btn-border-color btn-lg btn-round">Border</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-blue btn-effect btn-round">Hover</button>
+            <button class="btn btn-blue btn-effect btn-round btn-shadow">Shadow</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <button class="btn btn-blue btn-effect btn-round btn-shadow disabled">Disabled</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-blue btn-effect btn-round btn-shadow btn-width">Width</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-blue btn-effect  btn-shadow  btn-group">Group</button>
+            <button class="btn btn-blue btn-effect  btn-shadow  btn-group">Group</button>
+            <button class="btn btn-blue btn-effect  btn-shadow  btn-group">Group</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-green btn-animate "><span>Animation </span></button>
+            <button class="btn btn-green btn-animate-click "><span>Animation Click </span></button>
+        </div>
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
