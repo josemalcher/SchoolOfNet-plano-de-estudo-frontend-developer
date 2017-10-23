@@ -382,6 +382,102 @@ CSS3 fonts: https://www.w3schools.com/css/css3_fonts.asp
 
 ## <a name="parte9">2D</a>
 
+CSS3 2D Transforms: https://www.w3schools.com/css/css3_2dtransforms.asp
+
+```css
+#element{
+    width: 200px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #1b6d85;
+    color: white;
+}
+
+.translate {
+    -ms-transform: translate(50px,100px); /* IE 9 */
+    -webkit-transform: translate(50px,100px); /* Safari */
+    transform: translate(50px,100px);
+}
+
+.rotate {
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
+
+.scale {
+    -ms-transform: scale(2,3); /* IE 9 */
+    -webkit-transform: scale(2,3); /* Safari */
+    transform: scale(2,3);
+}
+
+.skewX {
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+}
+
+.skewY {
+    -ms-transform: skewY(20deg); /* IE 9 */
+    -webkit-transform: skewY(20deg); /* Safari */
+    transform: skewY(20deg);
+}
+
+.skew {
+    -ms-transform: skew(20deg, 10deg); /* IE 9 */
+    -webkit-transform: skew(20deg, 10deg); /* Safari */
+    transform: skew(20deg, 10deg);
+}
+
+/* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()): */
+
+.matrix {
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Color and Gradient</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+
+        </div>
+        <div class="col-3">
+            <p class="matrix" id="element">School of Net</p>
+        </div>
+        <div class="col-3">
+
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
