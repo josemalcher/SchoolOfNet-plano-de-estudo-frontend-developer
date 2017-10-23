@@ -484,6 +484,127 @@ CSS3 2D Transforms: https://www.w3schools.com/css/css3_2dtransforms.asp
 
 ## <a name="parte10">3D</a>
 
+CSS3 3D Transforms: https://www.w3schools.com/css/css3_3dtransforms.asp
+
+```css
+#element {
+    width: 200px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #1b6d85;
+    color: white;
+}
+
+.rotateX {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(10deg);
+}
+
+.rotateY {
+    -webkit-transform: rotateY(130deg); /* Safari */
+    transform: rotateY(130deg);
+}
+
+.rotateZ {
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg);
+}
+
+/* perspective */
+
+.p1 {
+    position: relative;
+    height: 150px;
+    width: 242px;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+    perspective: 150px;
+}
+
+.p2 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    -webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera  */
+    transform: rotateX(45deg);
+}
+
+/* transform-style: preserve-3d */
+
+#div1 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    -webkit-transform: rotateY(60deg); /* Chrome, Safari, Opera */
+    -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+    transform: rotateY(60deg);
+    transform-style: preserve-3d;
+}
+
+#div3 {
+    padding: 40px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: yellow;
+    -webkit-transform: rotateY(-60deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-60deg);
+
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">3D</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-3">
+            <div id="div1">
+                <div id="div2">Shool
+                    <div id="div3"> of Net</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+        </div>
+    </div>
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
