@@ -877,6 +877,124 @@ CSS3 Animations: https://www.w3schools.com/css/css3_animations.asp
 
 ## <a name="parte13">Trabalhando com Imagens</a>
 
+CSS Images: https://www.w3schools.com/css/css3_images.asp
+
+```css
+.image1{
+    background-color: #122b40;
+    border-radius: 8px;
+}
+.image2{
+    background-color: #122b40;
+    border-radius: 50%;
+}
+.image3{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+.link{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    trasition: 0.3s
+}
+.link:hover{
+    box-shadow: 0 0 2px 1px rgba(206,228,18,0.72);
+}
+.img-responsive{
+    max-width:100%;
+    height: auto;
+}
+
+.card{
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.card img{
+    width: 100%;
+}
+
+.card .container{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.filter{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - School of Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+<body>
+<header>
+    <h1 onmouseover="stopRotate()" id="test" style="transform: rotateY(0deg);">School of Net</h1>
+</header>
+<section>
+    <h1 class="title">Image</h1>
+</section>
+<section>
+    <div class="row">
+        <div class="col-3">
+            <img src="img/back2.png" class="image1" width="100" alt="Homer">
+        </div>
+        <div class="col-3">
+            <img src="img/back2.png" class="image2" width="100" alt="Homer">
+        </div>
+        <div class="col-3">
+            <img src="img/back2.png" class="image3" width="100" alt="Homer">
+        </div>
+        <div class="col-3">
+            <a href="#" class="link">
+                <img src="img/back2.png" width="100" alt="Homer">
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <figure>
+                <img src="img/responsive.jpg" class="img-responsive" alt="responsive">
+                <figcaption>Image responsive</figcaption>
+            </figure>
+
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="img/responsive.jpg" alt="Card">
+                <div class="container">
+                    <p>Image card...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="img/responsive.jpg" class="filter" alt="Card">
+                <div class="container">
+                    <p>Image card...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+</section>
+
+<script src="js/anim.js"></script>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
