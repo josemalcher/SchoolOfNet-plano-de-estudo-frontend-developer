@@ -151,7 +151,37 @@ FONTE: https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_th
 
 ---
 
-## <a name="parte7"></a>
+## <a name="parte7">Variáveis numéricas e biblioteca Math</a>
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variáveis numéricas e biblioteca Math</title>
+</head>
+<body>
+<script>
+    var number = 10.20  // "10.00" / '10.00' ponto fluante
+    number.toString()
+    number = parseInt(number)
+    alert(number)
+
+
+    var number2 = 5 // inteiro
+    number2 = parseFloat(number2).toPrecision(3)
+    alert(number2)
+
+    var pi = Math.PI
+    var random = Math.random()
+    alert(pi)
+    alert(random)
+</script>
+</body>
+</html>
+```
 
 
 
