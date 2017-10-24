@@ -6,7 +6,7 @@ https://www.schoolofnet.com/curso-iniciando-com-javascript-rev3/
 
 ---
 
-## Índice
+## <a name="indice >Índice</a>
 
 - [Boa vindas](#parte1)
 - [História do Javascript](#parte2)
@@ -87,8 +87,32 @@ FONTE: https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_th
 
 ---
 
-## <a name="parte5"></a>
+## <a name="parte5">Introdução a variáveis</a>
 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variáveis</title>
+</head>
+<body>
+<script>
+    var name = 'José Malcher jR.'
+    var age = 21
+    var height = 1.78
+    var hasDog = true
+    alert(name)
+
+    name = 'Leonan'
+    alert(name)
+</script>
+</body>
+</html>
+```
 
 
 [Voltar ao Índice](#indice)
