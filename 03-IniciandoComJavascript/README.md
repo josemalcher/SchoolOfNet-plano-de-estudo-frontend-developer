@@ -46,9 +46,19 @@ Artigo: JavaScript – 20 anos de história e construção da web -> https://ima
 
 ---
 
-## <a name="parte3"></a>
+## <a name="parte3">Estrutura da linguagem e seu funcionamento</a>
 
+JavaScript é uma linguagem de programação que pode ser aplicada em um documento HTML e usada para criar interações dinâmicas em sites. Ela foi inventada por Brendan Eich, co-fundador do projeto Mozilla, da Fundação Mozilla e da Corporação Mozilla.
 
+Você pode fazer muita coisa com JavaScript. Você vai começar com coisas simples como ajustar layouts, fazer coisas acontecerem quando botões são clicados, slides e galerias de imagem — mas a medida que você for ganhando experiência com a linguagem, você poderá criar jogos, animações gráficas em 2D e 3D, aplicativos com base de dados e muito mais.
+
+JavaScript é por si só uma linguagem compacta, mas muito flexível, e desenvolvedores tem escrito diversas ferramentas para que você possa ter acesso à várias funcionalidades extras com pequeno esforço. Essas incluem:
+
+Application Programming Interfaces (APIs) disponibilizada em navegadores web, possuem várias funções como criar HTML e atribuir estilos de CSS, para pegar e manipular um stream de vídeo da webcam de um usuário, ou gerar gráficos 3D e amostras de áudio.
+APIs de terceiros, que permitem aos desenvolvedores incorporarem funcionalidades em seus sites de outras propriedades, como Twitter ou Facebook.
+Frameworks e bibliotecas, que você pode aplicar em seu HTML para permitir que você construa rapidamente sites e aplicações.
+
+FONTE: https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/JavaScript_basico
 
 [Voltar ao Índice](#indice)
 
