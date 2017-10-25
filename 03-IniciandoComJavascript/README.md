@@ -511,13 +511,38 @@ https://www.w3schools.com/js/js_functions.asp
     var c = square()
     console.log(b, c)
 
-    //var num = 5
-    var num = 10
-    function square(num) {
-        var num = 4
-        return num * num
+</script>
+</body>
+</html>
+```
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte16">Tipos de funções e introdução a escopo</a>
+
+JavaScript Scope: https://www.w3schools.com/js/js_scope.asp
+
+```html
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escopo da função</title>
+</head>
+<body>
+<script>
+
+    var numero = 10 //global
+
+    function quadrado(numero) {
+        // var numero = 4
+        return numero * numero
     }
-    var d = square(num)
+    var d = quadrado(5)
     console.log(d)
 
 </script>
@@ -529,16 +554,8 @@ https://www.w3schools.com/js/js_functions.asp
 
 ---
 
-## <a name="parte16"></a>
+## <a name="parte17">Finalizando</a>
 
-
-
-[Voltar ao Índice](#indice)
-
----
-
-## <a name="parte17"></a>
-
-
+Boa referência com exemplos: https://www.w3schools.com/js/default.asp
 
 [Voltar ao Índice](#indice)
