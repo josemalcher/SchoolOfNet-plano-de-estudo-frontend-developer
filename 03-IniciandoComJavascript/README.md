@@ -392,9 +392,48 @@ https://www.w3schools.com/js/js_switch.asp
 
 ---
 
-## <a name="parte13"></a>
+## <a name="parte13">Estrutura de repetições while e do while</a>
 
+https://www.w3schools.com/js/js_loop_while.asp
 
+```html
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>While e do While</title>
+</head>
+<body>
+<script>
+
+    var i = 20
+    var str = ''
+/*    while( i <= 30){
+        if(i<25){
+            console.log("É menor bem menor que 25")
+        }else{
+            str += i
+        }
+        console.log(str)
+        i++
+    }*/
+
+    do {
+        if (i <= 25) {
+            console.log('É menor bem menor que 25')
+        } else {
+            str += i
+        }
+        console.log(str)
+        i++
+    } while (i <= 30)
+
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
