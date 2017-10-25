@@ -215,9 +215,34 @@ FONTE: https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_th
 
 ---
 
-## <a name="parte9"></a>
+## <a name="parte9">Input e ouput</a>
 
+```html
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input e ouput</title>
+</head>
+<body>
+<script>
+    console.time()
+    // alert() //output
 
+    var name = prompt('What is your name?')
+    alert('My name is: ' + name)
+
+    confirm('My name is: ' + name) // "OK" e "CANCEL"
+
+    console.log('My name is :' + name)
+    console.warn('My name is :' + name)
+    console.timeEnd()
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
