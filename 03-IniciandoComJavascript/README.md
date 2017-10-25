@@ -295,7 +295,46 @@ REF: https://www.w3schools.com/js/js_operators.asp
 
 ---
 
-## <a name="parte11"></a>
+## <a name="parte11">Trabalhando com condicionais if e else</a>
+
+Boa Ref: https://www.w3schools.com/js/js_if_else.asp
+
+```html
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicional</title>
+</head>
+<body>
+<script>
+
+    var num1 = prompt('Número 1 :')
+    var num2 = prompt('Número 2:')
+    var op = prompt('Operador: ')
+    num1 = parseFloat(num1)
+    num2 = parseFloat(num2)
+    if (op == '+') {
+        console.log(num1 + num2)
+    } else if (op == '*') {
+        console.log(num1 * num2)
+    } else if (op == '-') {
+        console.log(num1 - num2)
+    } else if (op == '/') {
+        console.log(num1 / num2)
+    } else {
+        console.error('Operador Não Encontrado')
+    }
+    // if ((5 > 1) || (600 < 10)) {
+    // 	console.log('Is true')
+    // }
+
+</script>
+</body>
+</html>
+```
 
 
 
