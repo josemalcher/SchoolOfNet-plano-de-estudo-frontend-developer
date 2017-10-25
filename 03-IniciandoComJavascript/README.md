@@ -479,9 +479,51 @@ https://www.w3schools.com/js/js_loop_for.asp
 
 ---
 
-## <a name="parte15"></a>
+## <a name="parte15">Introdução a funções</a>
 
+https://www.w3schools.com/js/js_functions.asp
 
+```html
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introdução a FUnções</title>
+</head>
+<body>
+<script>
+
+    //procedimento
+    function sayHello() {
+        console.log('Hello from Function - School of net')
+    }
+    var a = sayHello()
+    console.log(a)
+
+    //funcao
+    var number = 4
+    function square() {
+    	return number * number
+    }
+    var b = square()
+    var c = square()
+    console.log(b, c)
+
+    //var num = 5
+    var num = 10
+    function square(num) {
+        var num = 4
+        return num * num
+    }
+    var d = square(num)
+    console.log(d)
+
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
