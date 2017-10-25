@@ -248,9 +248,48 @@ FONTE: https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_th
 
 ---
 
-## <a name="parte10"></a>
+## <a name="parte10">Operadores</a>
 
+REF: https://www.w3schools.com/js/js_operators.asp
 
+```html
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operadores</title>
+</head>
+<body>
+<script>
+
+    var name = 'Jose Malcher'
+
+    //arithmetics
+    var totalSum = 5 + 5
+    var totalSub = 8 - 5
+    var totalMult = 2 * 2
+    var totalDiv = 4 / 2
+    console.log(totalSum, totalSub, totalMult, totalDiv)
+
+    //comparison
+    var a = 50
+    var b = 600
+    var c = a >= b
+    console.log(c)
+
+    //logical
+    // && and
+    // || or
+    // ! not
+    var l = !(50 > 10) || (600 < 10)
+    console.log((50 > 10), !(50 > 10), (600 < 10), l)
+
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
