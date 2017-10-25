@@ -439,9 +439,41 @@ https://www.w3schools.com/js/js_loop_while.asp
 
 ---
 
-## <a name="parte14"></a>
+## <a name="parte14">Estrutura de repetições for</a>
+
+https://www.w3schools.com/js/js_loop_for.asp
+
+```html
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estrutura de repetições for</title>
+</head>
+<body>
+<script>
+    for (var i = 10; i > 5; i--) {
+        console.log(i)
+    }
+
+     var str = ''
+     for (var i = 0; i <= 5; i++) {
+     	if (i <= 3) {
+     		console.log('Is less than 5')
+     	} else {
+     		str += i
+     	}
+     }
+     console.log(str)
+     console.log('Script running')
 
 
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
