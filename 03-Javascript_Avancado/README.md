@@ -27,7 +27,12 @@ https://www.schoolofnet.com/curso-javascript-avancado/
 
 ## <a name="parte1">Configurando a aplicação</a>
 
+Repo: https://github.com/schoolofnetcom/javascript-avancando
 
+https://getbootstrap.com/docs/3.3/customize/?id=33f9361d492a75a116485f9e6020dc3a
+
+
+ 
 [Voltar ao Índice](#indice)
 
 ---
