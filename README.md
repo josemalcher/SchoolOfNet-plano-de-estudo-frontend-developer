@@ -6,13 +6,13 @@
 [0 - HTML5](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/01-HTML5) | :ok_hand:  
 [1 - CSS3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/02-css3) | :ok_hand:    
 [2 - Iniciando com Javascript - REV-3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/03-IniciandoComJavascript) | :ok_hand:    
-[3 - Javascript Avançado](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/03-Javascript_Avancado)       | :eyes:         
-4 - Bootstrap    
-5 - jQuery - Iniciando    
-6 - jQuery com Ajax  
-7 - jQuery UI  
-8 - Less  
-9 - Sass  
+[3 - Javascript Avançado](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/03-Javascript_Avancado)  | :ok_hand:             
+4 -  jQuery - Iniciando        | :eyes:     
+5 -  jQuery com Ajax         
+6 -  jQuery UI     
+7 -  Bootstrap  
+8 -  Less   
+9 -  Sass   
 10 - Compass  
 11 - Grunt  
 12 - Gulp  
