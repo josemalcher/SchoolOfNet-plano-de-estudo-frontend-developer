@@ -203,6 +203,75 @@ $(document).ready(function () {
 
 ## <a name="parte5">Events</a>
 
+```javascript
+$(document).ready(function () {
+    $('#title').html('Aulas de jQuery');
+    $('#desc').html('Começando com jQuery...');
+
+    $('#click').click(function () {
+        $(this).html('OK');
+    });
+    $('#dblclick').dblclick(function () {
+        $(this).html('OK');
+    });
+    $('#mouseenter').mouseenter(function () {
+        $(this).html('OK');
+    });
+    $('#mouseleave').mouseleave(function () {
+        $(this).html('OK');
+    });
+
+    $('#keypress').keypress(function () {
+        $('#eventKey').html('keypress - ' + $(this).val());
+    });
+
+    $('#keydown').keydown(function () {
+        $('#eventKey').html('keydown - ' + $(this).val());
+    });
+
+    $('#keyup').keyup(function () {
+        $('#eventKey').html('keyup - ' + $(this).val());
+    });
+
+});
+```
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+</header>
+
+<main>
+    <section>
+        <h1>Mouse Events</h1>
+        <button id="click">click()</button>
+        <button id="dblclick">dblclick()</button>
+        <button id="mouseenter">mouseenter()</button>
+        <button id="mouseleave">mouseleave()</button>
+
+        <br>
+
+        <h1>Keyboard Events</h1>
+        <input type="text" id="keypress" placeholder="keypress">
+        <input type="text" id="keydown" placeholder="keydown">
+        <input type="text" id="keyup" placeholder="keyup">
+        <p id="eventKey"></p>
+    </section>
+</main>
+
+<script src="js/tests_jQuery.js"></script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
