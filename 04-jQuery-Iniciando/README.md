@@ -58,6 +58,34 @@ $(document).ready(function () {
 
 ## <a name="parte2">Trabalhando com CDN</a>
 
+Documentação:
+
+https://developers.google.com/speed/libraries/#jquery
+
+https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview#Using_jQuery_from_the_CDN_21
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <!-- Google CDN -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- Microsoft CDN -->
+    <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+</header>
+
+<script src="js/tests_jQuery.js"></script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
