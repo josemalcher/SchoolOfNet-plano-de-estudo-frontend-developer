@@ -93,6 +93,55 @@ https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview#Using_jQuery_from_the_
 
 ## <a name="parte3">Sintaxe</a>
 
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+    <h1>H1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <p>Paragrafo sem ID</p>
+</header>
+<main>
+    <section>
+        <button>this HIDE()</button>
+        <button>this HIDE() 2</button>
+    </section>
+</main>
+
+<script src="js/tests_jQuery.js"></script>
+</body>
+</html>
+```
+```javascript
+$(document).ready(function () {
+    $('#title').html('Aulas de jQuery');
+    $('#desc').html('Começando com jQuery...');
+
+    //$('header').hide();
+    //$('header').html('<h1>Colocando outro Texto</h1>');
+
+    $('h1').css('color','red');
+    $('h2').css('color','green');
+    $('h3').css('color','gray');
+    $('h4').css('color','blue');
+
+    $('button').click(function () {
+        $(this).css('color','red');
+    });
+
+});
+```
 
 [Voltar ao Índice](#indice)
 
