@@ -149,6 +149,53 @@ $(document).ready(function () {
 
 ## <a name="parte4">Seletores</a>
 
+https://www.w3schools.com/jquery/jquery_ref_selectors.asp
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+
+    <h1 id="title"></h1>
+
+</header>
+<main>
+    <section>
+        <div id="bird" class="classBird">Bird</div>
+        <div class="classBird">Bird</div>
+        <div class="classBird">Bird</div>
+        <div class="classBird">Bird</div>
+        <div class="classBird">Bird</div>
+    </section>
+</main>
+
+<script src="js/tests_jQuery.js"></script>
+</body>
+</html>
+```
+
+```javascript
+$(document).ready(function () {
+    $('#title').html('Aulas de jQuery');
+    $('#desc').html('Começando com jQuery...');
+
+    var bird = $('#bird').html();
+    $('#bird').html(bird + " in the sky (add via jQuery)");
+    $('.classBird').css('color','orange');
+    $('.classBird:first').css('color','red');
+    $('.classBird:last').css('color','blue');
+
+    $('div').html("Mudando todos os textos das DIV");
+
+});
+```
+
 
 [Voltar ao Índice](#indice)
 
