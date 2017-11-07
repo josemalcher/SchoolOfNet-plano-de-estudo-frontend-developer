@@ -279,6 +279,69 @@ $(document).ready(function () {
 
 ## <a name="parte6">Manipulando CSS e adicionando Class</a>
 
+https://www.w3schools.com/jquery/jquery_css_classes.asp
+
+```css
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(107, 167, 163);
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+```
+
+```javascript
+$(document).ready(function () {
+    $('#title').html('Aulas de jQuery');
+    $('#desc').html('Começando com jQuery...');
+
+    $('#header').addClass('header btn btn-info');
+    $('#header').removeClass('btn btn-info');
+    $('#header').css('height','60px');
+    $('#header').css('padding','10px');
+    $('#title').css('margin-top','0');
+    $('#title').css('margin-bottom','0');
+    $('#desc').css('margin-top','0');
+    $('main').css('padding','20px');
+
+});
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+</header>
+
+<main>
+    <section>
+        <h1>addClass and css with jQuery</h1>
+        <br><br><br>
+    </section>
+</main>
+
+<script src="js/tests_jQuery.js"></script>
+</body>
+</html>
+```
+
 
 [Voltar ao Índice](#indice)
 
