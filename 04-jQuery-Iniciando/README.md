@@ -592,6 +592,12 @@ $(document).ready(function () {
 
 ## <a name="parte11">Resumo final</a>
 
+http://api.jquery.com/
+
+https://nandovieira.com.br/usando-jquery-na-pratica
+
+https://www.w3schools.com/jquery/
+
 
 [Voltar ao Índice](#indice)
 
