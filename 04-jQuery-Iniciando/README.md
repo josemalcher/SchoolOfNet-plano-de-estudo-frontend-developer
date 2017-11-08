@@ -415,6 +415,66 @@ $(document).ready(function () {
 
 ## <a name="parte8">Animação</a>
 
+https://www.w3schools.com/jquery/jquery_animate.asp
+
+```javascript
+$(document).ready(function () {
+
+    $('#title').html('Curso de jQuery');
+    $('#desc').html('Iniciando com jQuery');
+
+    $('#header').addClass('header btn btn-info');
+    $('#header').removeClass('btn btn-info');
+    $('#header').css('height', '60px');
+    $('#header').css('padding', '10px');
+    $('#title').css('margin-top', '0');
+    $('#title').css('margin-bottom', '0');
+    $('#desc').css('margin-top', '0');
+    $('main').css('padding', '20px');
+
+    $('main').append('<p id="test">Teste de animação</p>');
+    $('main').append('<button id="animatebtn">Animação</button>');
+
+    $('#test').css('border', '1px solid green');
+    $('#test').css('width', '100px');
+    $('#test').css('text-align', 'center');
+
+    $('#animatebtn').click(function () {
+        $('#test').animate({
+            fontSize: '4em',
+            borderWidth: '10px',
+            width: '70%'
+        }, 2000, function () {
+            $(this).css('border-color', 'red'); // <<--- função exe qnd terminar
+        });
+    });
+
+});
+```
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+</header>
+
+<main>
+
+</main>
+
+<script src="js/tests_jQuery.js"></script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
