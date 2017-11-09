@@ -81,12 +81,64 @@ $(function(){
 
 ## <a name="parte2">Preparando o Ajax</a>
 
+```javascript
+$(function(){
+    $('#AjaxRequest').submit(function(){
+
+        var request = $.ajax({
+            method:"GET",
+            uri:"post.php",
+            data:{
+                name: $(':input[name=name]'.val()),
+                email: $(':input[name=email]'.val()),
+                tel: $(':input[name=tel]'.val())
+            }
+        });
+
+        return false;
+    });
+});
+```
 
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte3">Recebendo os dados com PHP</a>
 
+```javascript
+$(function () {
+    $('#AjaxRequest').submit(function () {
+        var request = $.ajax({
+            method: "GET",
+            url: "post.php",
+            data: {
+                name: $(':input[name=name]').val(),
+                email: $(':input[name=email]').val(),
+                tel: $(':input[name=tel]').val()
+            }
+        });
+
+        request.always(function (e) {
+            console.log(e);
+        });
+
+        return false;
+    });
+});
+```
+
+```
+<?php
+
+    if($_GET){
+        var_dump($_GET); exit;
+    }
+    if($_POST){
+            var_dump($_POST); exit;
+    }
+
+
+```
 
 [Voltar ao Índice](#indice)
 
