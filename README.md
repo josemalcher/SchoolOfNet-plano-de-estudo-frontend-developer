@@ -8,8 +8,8 @@
 [2 - Iniciando com Javascript - REV-3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/03-IniciandoComJavascript) | :ok_hand:    
 [3 - Javascript Avançado](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/03-Javascript_Avancado)  | :ok_hand:             
 [4 -  jQuery - Iniciando](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/04-jQuery-Iniciando)     | :ok_hand:                  
-[5 -  jQuery com Ajax](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/05-jQueryComAjax)                  | :eyes:     
-6 -  jQuery UI     
+[5 -  jQuery com Ajax](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/05-jQueryComAjax)    | :ok_hand:                                    
+[6 -  jQuery UI](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/06-jQueryUI)     | :eyes:     
 7 -  Bootstrap  
 8 -  Less   
 9 -  Sass   
