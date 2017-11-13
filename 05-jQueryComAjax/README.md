@@ -563,6 +563,185 @@ CREATE TABLE contacts
 ---
 ## <a name="parte11">Listando registros parte 1</a>
 
+```javascript
+
+<?php
+/*
+    if($_REQUEST){
+        echo json_encode(["msg"=>"Request"]);exit;
+    }*/
+
+    if($_GET){
+        $data = listAll();
+        echo json_encode($data);exit;
+    }
+    if($_POST){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $tel = $_POST['tel'];
+
+        if($name == ""){
+            echo json_encode(["status"=>false,"msg"=>"Fill in a name"]);exit;
+        }
+
+        if($email == ""){
+            echo json_encode(["status"=>false,"msg"=>"Fill in a email"]);exit;
+        }
+
+        if($tel == ""){
+            echo json_encode(["status"=>false,"msg"=>"Fill in a telephone"]);exit;
+        }
+
+        $id = save($_POST);
+           if($id){
+               echo json_encode(["status"=>true,"msg"=>"Success! Id: {$id}"]);exit;
+           }else{
+               echo json_encode(["status"=>false,"msg"=>"Error Db!"]);exit;
+        }
+    }
+    function conn(){
+        $conn = new \PDO("mysql:host=localhost;dbname=ajax_jquery","root","");
+        return $conn;
+    }
+    function save($data){
+        $db = conn();
+        $query ="Insert into `contacts` (`name`,`email`,`tel`) VALUES (:name,:email,:tel)";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(':name',$data['name']);
+        $stmt->bindValue(':email',$data['email']);
+        $stmt->bindValue(':tel',$data['tel']);
+        $stmt->execute();
+        return $db->lastInsertId();
+    }
+
+    function listAll(){
+        $db = conn();
+        $query ="Select * from `contacts`";
+        $stmt = $db->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
+```
+
+```javascript
+$(function () {
+
+    var requestList = $.ajax({
+        method:"GET",
+        url:"post.php",
+        data:{listAll:"list"},
+        dataType:"json"
+    });
+
+    requestList.done(function(e){
+        console.log(e);
+    });
+
+
+    $('#AjaxRequest').submit(function () {
+        var form = $(this).serialize();
+        //var formArray = $(this).serializeArray();
+
+        //console.log(form);
+        //console.log(formArray);
+
+        var request = $.ajax({
+            method: "POST",
+            url: "post.php",
+            data: form,
+            dataType:"json",
+        });
+
+        request.done(function (e) {
+            //console.log(e);
+            $('#msg').html(e.msg);
+
+            if(e.status){ // Caso haja erro, vai manter os dados, se OK vai limpar os campos
+                $('#AjaxRequest').each(function () {
+                    this.reset();
+                });
+            }
+
+        });
+
+        request.fail(function (e) {
+            console.log("FAIL!!");
+            console.log(e);
+        });
+
+        request.always(function (e) {
+            console.log("ALWAYS");
+            console.log(e);
+        });
+
+        return false;
+    });
+});
+```
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax request with jQuery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<main>
+    <section class="container">
+        <h1>Ajax request with jQuery</h1>
+        <span id="msg"></span>
+        <form id="AjaxRequest">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label>Telephone</label>
+                <input type="text" class="form-control" name="tel" placeholder="Telephone">
+            </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+        <div class="row">
+            <table id="contacts" class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
