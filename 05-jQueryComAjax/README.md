@@ -341,11 +341,72 @@ $(function () {
 ---
 ## <a name="parte8">Manipulando dados</a>
 
+```
+<?php
+/*
+    if($_REQUEST){
+        echo json_encode(["msg"=>"Request"]);exit;
+    }*/
+
+    if($_GET){
+        //var_dump($_GET); exit;
+        //header("HTTP/1.0 404 Not Found");exit;
+        //echo "<name>{$_GET['name']}</name>";
+        echo json_encode($_GET);exit;
+    }
+    if($_POST){
+        $_POST['name'] = $_POST['name']. " DB";
+        $_POST['email'] = $_POST['email']. " DB";
+        $_POST['tel'] = $_POST['tel']. " DB";
+        echo json_encode($_POST);exit;
+    }
+
+
+```
+
+```javascript
+$(function () {
+    $('#AjaxRequest').submit(function () {
+        var form = $(this).serialize();
+        //var formArray = $(this).serializeArray();
+
+        //console.log(form);
+        //console.log(formArray);
+
+        var request = $.ajax({
+            method: "POST",
+            url: "post.php",
+            data: form,
+            dataType:"json",
+        });
+
+        request.done(function (e) {
+            console.log(e);
+            for(var k in e){
+                $(':input[name='+ k +']').val(e[k]);
+            }
+        });
+
+        request.fail(function (e) {
+            console.log("FAIL!!");
+            console.log(e);
+        });
+
+        request.always(function (e) {
+            console.log("ALWAYS");
+            console.log(e);
+        });
+
+        return false;
+    });
+});
+```
 
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte9">Validando os dados</a>
+
 
 
 [Voltar ao Índice](#indice)
