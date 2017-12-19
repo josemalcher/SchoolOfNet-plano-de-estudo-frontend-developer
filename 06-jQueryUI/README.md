@@ -127,7 +127,87 @@ http://jqueryui.com/draggable/
 
 ## <a name="parte3">Droppable</a>
 
+http://jqueryui.com/droppable/
 
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+        #block {
+            width: 100px;
+            height: 150px;
+            border: 2px solid #235ded;
+            background-color: #235ded;
+            color: white;
+            text-align: center;
+        }
+        #droppable {
+            width: 150px;
+            height: 180px;
+            border: 2px solid #eddc94;
+            background-color: #eddc94;
+            color: #12b367;
+            text-align: center;
+        }
+        #container {
+            width: 600px;
+            height: 400px;
+            border: 2px solid #235ded;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="block">
+        <p>draggable</p>
+        <p>start: <span id="start"></span></p>
+        <p>drag: <span id="drag"></span></p>
+        <p>stop: <span id="stop"></span></p>
+    </div>
+    <div id="droppable">
+        <p>droppable</p>
+    </div>
+</div>
+<script>
+    $(function () {
+        var start = 0;
+        var drag = 0;
+        var stop = 0;
+        $('#block').draggable({
+            containment: "#container",
+            start: function () {
+                $('#start').html(start++);
+            },
+            drag: function () {
+                $('#drag').html(drag++);
+            },
+            stop: function () {
+                $('#stop').html(stop++);
+            }
+        });
+        $('#droppable').droppable({
+            accept: "#block", //limitar por elemento - id
+            hoverClass: function () { // hoverClasse -> mudar cor ao passar por cima
+                $(this).css("background-color", "#EDB059");
+            },
+            //activeClass: // muda quando estiver ativo
+            drop: function (event, ui) {
+                $(this).css("background-color", "#ED7C12");
+                $(this).html("OK");
+            }
+        });
+    });
+</script>
+</body>
+</html>
+```
 [Voltar ao Índice](#indice)
 
 ---
