@@ -25,12 +25,39 @@ https://www.schoolofnet.com/curso-jquery-ui/
 
 ## <a name="parte1">Configurando e testando</a>
 
+http://jqueryui.com/download/
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+<p>Date: <input type="text" id="datepicker"></p>
+
+<script>
+    $(function(){
+        $('#datepicker').datepicker();
+    });
+
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte2">Draggable</a>
+
+
 
 
 [Voltar ao Índice](#indice)
