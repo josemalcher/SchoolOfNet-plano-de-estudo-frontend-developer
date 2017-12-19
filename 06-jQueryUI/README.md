@@ -57,7 +57,68 @@ http://jqueryui.com/download/
 
 ## <a name="parte2">Draggable</a>
 
+http://jqueryui.com/draggable/
 
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+        #block {
+            width: 100px;
+            height: 150px;
+            border: 2px solid #235ded;
+            background-color: #235ded;
+            color: white;
+            text-align: center;
+        }
+        #container {
+            width: 800px;
+            height: 800px;
+            border: 2px solid #235ded;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="block">
+        <p>draggable</p>
+        <p>start: <span id="start"></span></p>
+        <p>drag: <span id="drag"></span></p>
+        <p>stop: <span id="stop"></span></p>
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        var start = 0;
+        var drag = 0;
+        var stop = 0;
+        $('#block').draggable({
+            containment: "#container",
+            start: function () {
+                $('#start').html(start++);
+            },
+            drag: function () {
+                $('#drag').html(drag++);
+            },
+            stop: function () {
+                $('#stop').html(stop++);
+            }
+        });
+    });
+</script>
+</body>
+</html>
+```
 
 
 [Voltar ao Índice](#indice)
