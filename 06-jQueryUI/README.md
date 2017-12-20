@@ -199,6 +199,8 @@ http://jqueryui.com/droppable/
             },
             //activeClass: // muda quando estiver ativo
             drop: function (event, ui) {
+                //console.log(ui.droppable[0].id); pegar elemento
+                //console.log(ui.droppable[0].className);
                 $(this).css("background-color", "#ED7C12");
                 $(this).html("OK");
             }

@@ -66,7 +66,9 @@
                 $(this).css("background-color", "#EDB059");
             },
             //activeClass: // muda quando estiver ativo
-            drop: function (event, ui) {
+            drop: function (event, ui) { //event: dados do elemento drop | ui: elemento largado de cima
+                //console.log(ui.droppable[0].id); pegar elemento
+                //console.log(ui.droppable[0].className);
                 $(this).css("background-color", "#ED7C12");
                 $(this).html("OK");
             }
