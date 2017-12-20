@@ -414,6 +414,167 @@ Lembrem-se, quanto mais praticarem, maior será a fixação sobre o conteúdo. M
 ---
 ## <a name="parte3">Sistema de grid</a>
 
+Começaremos a utilizar o sistema de grid, disponibilizado pelo Bootstrap. Com este sistema, conseguimos dividir a aplicação em blocos responsivos de tal maneira que eles se adaptam aos dispositivos.
+
+Após a tag header do HTML, criaremos a tag main, para separar o conteúdo principal da aplicação. Em seguida criaremos uma section e dentro da section criaremos o container. Já falamos sobre o container e podemos dizer que todo elemento criado, no Bootstrap, deverá estar dentro de um container. Em seguida, podemos escolher se o container é normal ou fluid.
+
+Próximo passo será criar um linha, que no Bootstrap adicionamos a classe row. O Bootstrap trabalha bastante com este conjunto de classes que são: container, row e grids. O tempo todo utilizamos estas classes para criarmos a estrutura da aplicação.
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Grid System</h1>
+            </div>
+        </div>
+    </section>
+</main>
+
+```
+
+Vejam a estrutura do primeiro bloco do projeto. Se forem até o navegador e atualizarem, verão que está funcionando, mas está por trás do menu que criamos. Isso acontece porque o menu está fixado no topo. Para resolvermos isso, criaremos uma folha de estilo para o projeto que estamos desenvolvendo e chamaremos, logo após o estilo do Bootstrap, para que ele sobrescreva qualquer CSS.
+
+
+```
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+```
+
+O arquivo de estilo que criamos se chama style.css e está dentro da mesma pasta do arquivo de CSS do Bootstrap. Vejam o conteúdo do arquivo style.css:
+
+```css
+main {
+    margin-top: 50px;
+}
+
+```
+Com esta alteração já temos o conteúdo principal da aplicação sendo mostrado por inteiro, porque criamos uma margem superior.
+
+### Primeira grid
+
+A principal informação que vocês precisam ter é que, cada linha ou row, é dividida em 12 colunas. Esta é uma definição do Bootstrap e cada coluna tem o seu tamanho próprio.
+
+```html
+<div class="row">
+    <h1>Teste</h1>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+</div>
+
+```
+
+Este é o número máximo de divisões que podemos ter em uma linha. Se acrescentarmos mais um coluna, a aplicação quebrará e pulará para a próxima linha. O importante é saber que a soma das colunas sempre deverá ser 12, passando desse valor, não caberá em uma mesma linha.
+
+Se não quiserem espaços nas laterais, basta alterarem a classe container para container-fluid. A divisão continuará sendo a mesma, cabendo apenas 12 colunas, porém, as colunas se tornam um pouco maiores e preenchem a tela toda.
+
+Vejam mais dois exemplos de linhas:
+
+```html
+<!-- A primeira coluna tem o espaço de 3 colunas e mais 9 colunas padrão, somando 12 -->
+<div class="row">
+    <div class="col-md-3">col-md-3</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+</div>
+
+```
+
+```html
+<!-- Duas colunas de 6 somando 12 colunas -->
+<div class="row">
+    <div class="col-md-6">col-md-6</div>
+    <div class="col-md-6">col-md-6</div>
+</div>
+```
+
+### Grid para 3 dispositivos - Desktop, tablet e mobiles
+
+http://getbootstrap.com/docs/3.3/css/#grid
+
+https://getbootstrap.com/docs/4.0/layout/grid/
+
+```html
+<div class="row">
+    <h1>Desktop, tablet, mobile</h1>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        col-md-3 col-sm-6 col-xs-12
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        col-md-3 col-sm-6 col-xs-12
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        col-md-3 col-sm-6 col-xs-12
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        col-md-3 col-sm-6 col-xs-12
+    </div>
+</div>
+
+```
+Notem que na mesma div podemos definir qual o comportamento que teremos em cada dispositivo.
+
+Classe | Dispositivo |	Comportamento
+--- | --- | ---
+col-md-3  |	 Desktop |	4 colunas - ( 3 + 3 + 3 + 3 ) = 12
+col-sm-6  |	Tablet  | 2 colunas - ( 6 + 6 ) = 12
+col-xs-12 |	Mobile  | 1 coluna - ( 12 ) = 12
+
+###Trabalhando com offset
+```html
+
+<div class="row">
+    <h1>Offset</h1>
+    <div class="col-md-3 col-md-offset-3">col-md-3</div>
+    <div class="col-md-3">col-md-3</div>
+    <div class="col-md-3">col-md-3</div>
+</div>
+
+```
+Quando precisamos ter algumas colunas em branco, podemos utilizar o offset. Significa que o Bootstrap pulará a quantidade do offset e começará a partir daquela coluna. Notem que continuamos com a soma de 12 colunas. É como se tivéssemos feito a reserva de 3 espaços, mas que são contabilizados. Vejam na imagem abaixo:
+
+![bootstrap_grid_offset](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/blob/master/07-Bootstrap/img-git/bootstrap_grid_offset.png?raw=true)
+
+###Ocultando elementos em diferentes dispositivos
+```html
+
+<div class="row">
+    <h1>Responsive utilities</h1>
+    <div class="visible-xs">Phones (<768px) visible-xs</div>
+    <div class="visible-sm">Tablets (≥768px) visible-sm</div>
+    <div class="visible-md">Desktops (≥992px) visible-md</div>
+    <div class="visible-lg">Desktops (≥1200px) visible-lg</div>
+</div>
+```
+
+Observem que, podemos mostrar elementos específicos em dispositivos específicos. Caso esteja em um dispositivo com o tamanho correto mostra, senão não mostra. Vejam que recurso maravilhoso podemos utilizar com o Bootstrap.
+
+Na tabela, abaixo, encontrarão a documentação:
+
+![bootstrap_grid_visible](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/blob/master/07-Bootstrap/img-git/bootstrap_grid_visible.png?raw=true)
+
+
+## V.4 - Passará para outro treinamento!
+
 [Voltar ao Índice](#indice)
 
 ---
