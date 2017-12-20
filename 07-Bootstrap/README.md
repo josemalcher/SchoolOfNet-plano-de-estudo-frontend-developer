@@ -747,6 +747,62 @@ Vocês podem ver que, trabalhar com botões é muito simples. Não deixem de olh
 
 ---
 ## <a name="parte6">Imagens</a>
+Para trabalharmos com imagens, criaremos um diretório chamado img, na pasta raiz do projeto, para que possamos chamar no HTML. Em seguida, utilizaremos as classes do Bootstrap. Vocês podem utilizar um link para exibir uma imagem online. Em nossos exemplos faremos com uma imagem local.
+
+Com apenas uma classe podemos fazer com que a imagem, que estivermos trabalhando, se adapte a qualquer dispositivo. Significa que se o usuário acessar de um desktop a imagem será de um tamanho, se ele acessar de um celular, por exemplo, a imagem será menor, porque ela se adaptou ao tamanho do dispositivo.
+
+### Imagem responsiva
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row text-center">
+                <h1>Image Responsive</h1>
+                <img src="img/image.jpg" alt="image" class="img-responsive center-block">
+            </div>
+        </div>
+    </section>
+</main>
+
+```
+Notem que utilizamos, apenas, a classe img-responsive para que a imagem se adapte aos diversos dispositivos existentes. Esta única classe é capaz de fazer isso para nós. Utilizamos, também, a classe center-block. Esta classe serve, apenas, para centralizar a imagem. Sempre que utilizarem a classe img-responsive, é interessante que utilizem a center-block, para centralizar.
+
+Se utilizarem uma imagem, sem utilizar a classe img-responsive, e quiserem centralizar a mesma, vocês podem usar a classe text-center junto com a classe row. Todo conteúdo da linha será centralizado.
+
+Para verificarem se realmente está funcionando, vocês devem diminuir o tamanho do navegador, até o menor tamanho possível e verificar se a imagem diminuiu, proporcionalmente, junto com o navegador. Se não diminuiu, pode ser algum erro no código.
+
+### Formatos de imagens
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row text-center">
+                <h1>Image shape</h1>
+                <img src="img/image.jpg" alt="image" class="img-rounded">
+                <img src="img/image.jpg" alt="image" class="img-circle">
+                <img src="img/image.jpg" alt="image" class="img-thumbnail">
+            </div>
+        </div>
+    </section>
+</main>
+
+```
+Classe |	Função
+--- | ---
+img-rounded |	Deixa os cantos da imagem, arredondados.
+img-circle |	Deixa a imagem com formato circular, como se tivesse uma máscara.
+img-thumbnail |	Insere um tipo de borda, na imagem, fazendo ter a aparência de um cartão.
+
+Todas estas classes podem ser relacionadas com a classe img-responsive. Desta forma você soma as características. Além de ter os formatos, elas ainda serão responsivas e se adaptarão aos dispositivos.
+
+Vocês podem, também, utilizar as classes, img-rounded e img-circle, em conjunto com a img-thumbnail. Assim, além de terem os formatos, terão a borda, para estilizarem. Vejam no exemplo abaixo:
+
+```html
+<img src="img/image.jpg" alt="image" class="img-circle img-thumbnail">
+```
+Neste exemplo, temos duas classes somadas e cada uma tem sua característica e função, mas trabalham juntas. Notem que se vocês utilizarem a classe img-thumbnail, a imagem já será responsiva, sem que precisem utilizar a classe img-responsive. Isso ocorre porque a classe img-thumbnail, também tem responsividade.
 
 [Voltar ao Índice](#indice)
 
