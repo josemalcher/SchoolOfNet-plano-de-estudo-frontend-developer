@@ -216,6 +216,45 @@ http://jqueryui.com/droppable/
 
 ## <a name="parte4">Capturar informações do Droppable e Accordion</a>
 
+http://jqueryui.com/accordion/
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="test_accordion">
+    <h3>Info 1</h3>
+    <div>
+        <p>Description 1 ...</p>
+    </div>
+    <h3>Info 2</h3>
+    <div>
+        <p>Description 2 ...</p>
+    </div>
+    <h3>Info 3</h3>
+    <div>
+        <p>Description 3 ...</p>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('#test_accordion').accordion();
+    });
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
