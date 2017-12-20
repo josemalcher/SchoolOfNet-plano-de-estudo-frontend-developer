@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Autocomplete</h1>
+<input type="text" id="autocomplete">
+<script>
+    $(function(){
+        var autocomplete = [
+            'Javascript',
+            'jQuery',
+            'CSS',
+            'HTML5'
+        ];
+        $('#autocomplete').autocomplete({
+            source: autocomplete
+        });
+    });
+</script>
+</body>
+</html>
