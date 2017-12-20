@@ -339,6 +339,40 @@ http://jqueryui.com/datepicker/
 
 ## <a name="parte7">Dialog</a>
 
+http://jqueryui.com/dialog/
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Dialog</h1>
+
+<button id="btn">Dialog</button>
+
+<div id="dialog" title="Teste Dialog" style="display: none;">
+    <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat porta porta. Proin scelerisque euismod sodales. Proin accumsan congue porta. Duis aliquet, purus sed euismod ultricies, mi purus ullamcorper quam, a rhoncus lorem orci nec tortor. Cras eu auctor ligula, nec pellentesque turpis.</p>
+</div>
+<script>
+    $(function(){
+        $('#btn').click(function(){
+            $('#dialog').dialog();
+        });
+    });
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
