@@ -380,6 +380,65 @@ http://jqueryui.com/dialog/
 
 ## <a name="parte8">Progressbar</a>
 
+http://jqueryui.com/progressbar/
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+        .ui-progressbar {
+            position: relative;
+        }
+        .progress-label {
+            position: absolute;
+            left: 50%;
+            top: 4px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+        }
+    </style>
+</head>
+<body>
+<h1>Progressbar</h1>
+
+<div id="progressbar">
+    <div class="progress-label">Loading...</div>
+</div>
+
+<script>
+    $(function () {
+        $('#progressbar').progressbar({
+            value: false,
+            change: function () {
+                $('.progress-label').text($('#progressbar').progressbar('value') + "%");
+            },
+            complete: function () {
+                $('.progress-label').text("100%");
+            }
+        });
+
+        function progress() {
+            var val = $('#progressbar').progressbar("value") || 0;
+            $('#progressbar').progressbar("value", val + 2);
+            if (val < 99) {
+                setTimeout(progress, 80); // 80 milessimo
+            }
+        }
+
+        setTimeout(progress, 2000); //2 segundos
+    });
+</script>
+</body>
+</html>
+```
+
 
 [Voltar ao Índice](#indice)
 
