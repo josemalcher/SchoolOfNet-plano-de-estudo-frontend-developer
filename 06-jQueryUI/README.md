@@ -304,6 +304,34 @@ http://jqueryui.com/autocomplete/
 
 ## <a name="parte6">Datepicker</a>
 
+http://jqueryui.com/datepicker/
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Datepicker</h1>
+    <input type="text" id="datepicker" placeholder="Date">
+<script>
+    $(function(){
+        $('#datepicker').datepicker(); //inicializando
+        $('#datepicker').datepicker('option','showAnim','slideDown'); //opções
+    });
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
