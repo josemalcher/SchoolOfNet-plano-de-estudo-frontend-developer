@@ -854,6 +854,77 @@ Vale lembrar que, utilizamos o atributo aria-hidden="true", porque estamos utili
 ---
 ## <a name="parte8">Dropdown</a>
 
+O Dropdown é um recurso muito utilizado em aplicação web. O Bootstrap, sempre querendo melhorar a vida do programador front-end, pensou neste recurso, também.
+
+O Bootstrap disponibiliza o recurso dropdown utilizando html e css, associados com o recurso javascript, através da biblioteca jQuery.
+
+Veremos o dropdown, que lista um menu de opções para baixo, como se fosse um botão, e também o recurso dropup, que lista o mesmo conteúdo, só que para cima.
+
+### Dropdown
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Dropdown</h1>
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+### Dropup
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Dropup</h1>
+                <div class="dropup">
+                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropup
+                        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Vejam que o primeiro passo a executar é criarmos uma div com a classe dropdown ou dropup. Isso fará com que o navegador já interprete que se trata de um elemento de listagem.
+
+Em seguida, criaremos um botão com as classes referentes a botões e adicionaremos a classe dropdown-toggle, que caracteriza o efeito de rolar as opções, quando o botão é acionado. Informamos, ainda, um id, um atributo data-toggle="dropdown", para o javascript e mais dois atributos para que a semântica do HTML seja respeitada: aria-haspopup="true" aria-expanded="false".
+
+Dentro do botão inserimos um ícone, para indicarmos o sentido do drop, ou qualquer outro ícone que quisermos utilizar na aplicação.
+
+Para definirmos a lista de opções, basta criarmos uma lista normal do HTML, utilizando uma classe chamada dropdown-menu. Para fazermos a ligação da lista com o botão, utilizamos um atributo chamado, aria-labelledby, onde deveremos passar o valor do id do botão.
+
+O restante é muito simples. Assim como nos menus, vocês podem criar os itens de li, podem utilizar separadores e também os headers, que são títulos de listagens, para diferenciarem dos itens.
+
+Observem que a única diferença entre dropdown e dropup é a classe principal. O restante é muito parecido. Em nosso exemplo alteramos o ícone, somente para vocês verem que é possível utilizar outro ícone. Se utilizarem o <span class="caret"></span>, a própria classe dropup se encarrega de inverter o sentido da seta, para cima.
+
 [Voltar ao Índice](#indice)
 
 ---
