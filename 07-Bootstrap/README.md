@@ -580,6 +580,80 @@ Na tabela, abaixo, encontrarão a documentação:
 ---
 ## <a name="parte4">Formulários</a>
 
+http://getbootstrap.com/docs/3.3/css/#forms
+
+Mostraremos como os formulários são criados com o Bootstrap. Apresentaremos um formulário bem básico, mas saibam que poderão criar formulários mais complexos, basta consultarem a documentação.
+
+### Estrutura básica
+```html
+
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Basic</h1>
+                <form>
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+```
+
+Notem que a estrutura do formulário é bem parecida com a convencional. A diferença, como tudo no Bootstrap, são as classes.
+
+Temos a classe form-group, que devemos colocar, englobando os campos. Em seguida, a classe form-control, inserida no campo, diretamente, para que eles ocupem o tamanho total da página, em qualquer que seja o dispositivo. Isso, para a maioria dos campos relacionados a texto.
+
+Observem que no campo de checkbox a estrutura é um pouco diferente, basta acrescentarmos a classe checkbox e depois inserir o campo dentro da label, isso fará com que o campo seja selecionado, quando clicar em cima do texto do checkbox. Se colocarmos o campo fora da label, o mesmo só será selecionado na box.
+
+Temos o botão que é bem simples, basta acrescentar as classes btn e btn-info. Temos tembém btn-default, btn-primary entre outros, que falaremos no próximo capítulo.
+
+### Estrutura em linha
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Inline</h1>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Name...">
+                    </div>
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" placeholder="Email...">
+                    </div>
+                    <button type="submit" class="btn btn-success">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+A única diferença dessa estrutura para a anterior, é a classe principal que adicionamos, diretamente, na tag form, que se chama form-inline. Só isso, já faz com que o formulário tenha esta característica. Tirando esta classe, veremos que o formulário volta a ser igual ao anterior.
+
+O Bootstrap oferece essa grande facilidade de criação de formulários. Isso agiliza a vida do programador, sem falar que os formulários são muito elegantes. Podemos estilizar um pouco mais, mas eles já estão, praticamente, perfeitos para o uso.
+
+Criem formulários de todos os tipos, consultem a documentação para verem todas as opções de formulários que o Bootstrap oferece. Aproveitem para fixarem este conteúdo, porque formulários são muito utilizados em qualquer aplicação, assim como os menus.
+
 [Voltar ao Índice](#indice)
 
 ---
