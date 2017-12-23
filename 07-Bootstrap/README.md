@@ -1053,6 +1053,109 @@ Realmente, o Bootstrap facilita a vida do programador, agilizando o processo de 
 ---
 ## <a name="parte10">Trabalhando com miniaturas </a>
 
+Falaremos de um recurso muito interessante que o Bootstrap oferece. Uma estrutura muito utilizada em listagens de imagens ou galerias. O Bootstrap disponibiliza toda esta estrutura, prontinha, para os desenvolvedores, tanto para sistemas, quanto para sites ou blogs.
+
+Falaremos, também, sobre os cards, que são os estilos cartões, do Bootstrap, que aceitam: títulos, legendas, botões, entre outros elementos.
+
+### Estrutura de miniaturas
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Thumbnail</h1>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/image.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/image.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/image.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/image.jpg" alt="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Trabalhar com thumbnails é realmente muito simples. O grande segredo está na montagem das grids, que já aprendemos.
+
+Observem, no código acima, que temos a estrutura de uma grid normal. Dentro de cada grid inserimos uma âncora, com uma classe thumbnail dentro de uma imagem. A classe thumbnail é responsável por dar o efeito da borda na imagem e a responsividade. As grids definem quantas thumbnails serão mostradas, a cada linha.
+
+Temos, no exemplo acima, quatro colunas por linha, em desktops. Nos celulares, serão duas colunas por linha. Basta diminuirmos o navegador, para acompanharmos as mudanças. A classe thumbnail faz com que a imagem preencha o conteúdo inteiro da grid, se a imagem for maior que a mesma. Caso a imagem seja menor do que a grid, ela não ampliará.
+
+### Estrutura de cards
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Cards</h1>
+                <div class="col-xs-12 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/image.jpg" alt="image">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Text thumbnail</p>
+                            <p>
+                                <button class="btn btn-default">Button</button>
+                                <button class="btn btn-info">Button</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/image.jpg" alt="image">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Text thumbnail</p>
+                            <p>
+                                <button class="btn btn-default">Button</button>
+                                <button class="btn btn-info">Button</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/image.jpg" alt="image">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Text thumbnail</p>
+                            <p>
+                                <button class="btn btn-default">Button</button>
+                                <button class="btn btn-info">Button</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Para cards, temos a mesma estrutura anterior, só que acrescentamos uma classe chamada caption, que trabalha como se fosse uma legenda da imagem. Podemos utilizar este recurso para adicionarmos título e descrição à imagem. Aproveitamos para adicionar botões, também, que podem ser links para acessarmos páginas específicas, por exemplo.
+
+Levaríamos um bom tempo para criarmos esta estrutura no CSS. Com o Bootstrap, apenas inserimos as classes, que já estão prontas. Esta é a vantagem de utilizar um framework.
+
+O ganho de tempo é imenso e, quanto mais vocês aprendem a utilizar os recursos do Bootstrap, mais tempo vocês ganham em seus projetos.
+
 [Voltar ao Índice](#indice)
 
 ---
