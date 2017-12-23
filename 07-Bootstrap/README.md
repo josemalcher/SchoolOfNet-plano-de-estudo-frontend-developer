@@ -1422,6 +1422,91 @@ Vale a pena observar que é possível fazer a alteração das cores principais d
 ---
 ## <a name="parte15">Tabs</a>
 
+Falaremos, novamente, sobre navegação. As tabs são uma espécie de navegação e vocês devem saber que o Bootstrap, também, disponibiliza este recurso.
+
+As tabs são muito utilizadas para manipulação de conteúdos, páginas e também é um facilitador no preenchimento de alguns formulários. Vocês podem separar conteúdos do mesmo assunto, por tabs, em vez de criarem uma página para cada. Assim, tudo é carregado de uma só vez e o usuário não precisará acessar, página por página.
+
+As tabs do Bootstrap são implementadas, automaticamente. Não é necessário utilizar javascript para fazer qualquer implementação.
+
+### Modelos e estrutura das Tabs
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Tabs</h1>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Images</a></li>
+                    <li role="presentation"><a href="#">Blog</a></li>
+                </ul>
+                <br/>
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Images</a></li>
+                    <li role="presentation"><a href="#">Blog</a></li>
+                </ul>
+                <br/>
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Images</a></li>
+                    <li role="presentation"><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Podemos ver 3 exemplos de tabs do Bootstrap. O framework, mais uma vez, nos presenteia com esta facilidade de implementação.
+
+Precisamos, apenas, criar uma listagem, adicionando as classes específicas e, como uma mágica, as tabs já estarão estilizadas e funcionando.
+
+No código acima, apenas mostramos os modelos existentes. Notem que a estrutura de todas, são iguais. Basta alterarem as classes principais da tag ul, para alterarem o modelo. Cada item li precisará de uma âncora e representará uma tab. Por sua vez, cada tab terá um correspondente de conteúdo, que mostraremos, abaixo. O atributo role é indicado para que a semântica seja atendida, da melhor forma possível.
+
+Classe	| Característica
+--- | ---
+nav-tabs |	São tabs sem preenchimento
+nav-pills |	São tabs com preenchimento, com aparência de botões
+nav-pills nav-stacked |	Somam as características da classe nav-pills, porém de forma vertical.
+
+Acessem o navegador para visualizar os modelos e entenderem melhor as diferenças.
+
+### Utilizando as Tabs
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Usage</h1>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" aria-controls="home" data-toggle="tab">Home</a></li>
+                    <li><a href="#images" aria-controls="images" data-toggle="tab" >Images</a></li>
+                    <li><a href="#blog" aria-controls="blog" data-toggle="tab" >Blog</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">Home</div>
+                    <div role="tabpanel" class="tab-pane" id="images">Images</div>
+                    <div role="tabpanel" class="tab-pane" id="blog">Blog</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Para criarmos os conteúdos de cada tab, devemos criar uma div, de preferência logo abaixo das tabs, com uma classe tab-content. Dentro desta div, criaremos uma div para cada tab. Estas divs internas terão a classe tab-pane.
+
+Utilizaremos a classe active para informar qual conteúdo estará ativo, inicialmente. Em nosso exemplo, a tab home se encontra com a classe active, portanto o conteúdo home, também, deverá conter a classe active. Vocês definem qual tab estará ativa, quando o navegador renderizar o código.
+
+Notem que a ligação entre tab e conteúdo é feita através dos ids e aria-controls. Isso significa que o id do conteúdo deve ser igual ao id e aria-controls da âncora, que se encontram nas tabs. É desta forma que o Bootstrap liga a tab ao seu conteúdo correspondente.
+
+O atributo role="tabpanel", também serve para atender a semântica do HTML, da mesma forma que nas tabs.
+
+Agora que já sabem utilizar tabs, vocês podem criar mais conteúdo e mais tabs, para praticarem. Criem uma grid dentro do conteúdo de cada tab. Isso fará com que vocês entendam, cada vez mais, as funcionalidades do Bootstrap.
+
 [Voltar ao Índice](#indice)
 
 ---
