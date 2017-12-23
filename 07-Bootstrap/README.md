@@ -1236,6 +1236,91 @@ Usem muitos painéis para organizarem os conteúdos da aplicação. Utilizem pai
 ---
 ## <a name="parte12">Listas</a>
 
+Agora que estamos dominando algumas estruturas do Bootstrap como: grids, painéis, paginação e outros recursos, falaremos sobre listas.
+
+Listas são muito utilizadas em qualquer tipo de aplicação, então vale a pena dar uma atenção especial a elas.
+
+### Estrutura de listas
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>List</h1>
+                <ul class="list-group">
+                    <li class="list-group-item">Text default ...</li>
+                    <li class="list-group-item">Text default ...</li>
+                    <li class="list-group-item">Text default ...</li>
+                    <li class="list-group-item">Text default ...</li>
+                    <li class="list-group-item">Text default ...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Vejam que estrutura simples e intuitiva. Precisamos da tag ul, que já é uma estrutura de lista do HTML, onde precisamos adicionar uma classe chamada list-group.
+
+Em seguida, podemos inserir quantos itens quisermos, basta que todos tenham a classe list-group-item, para que o Bootstrap consiga aplicar seu estilo.
+
+A lista já é responsiva, por padrão. Logo, a mesma lista irá servir para outros dispositivos, também.
+
+### Recursos de listagem
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">13</span>
+                        Text default ...
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">3</span>
+                        Text default ...
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">44</span>
+                        Text default ...
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Essa listagem é muito semelhante a anterior e a utilizamos quando queremos listas itens, que possam ser contabilizadas. Neste caso, adicionamos a tag span com a classe badge e informamos um valor. Este recurso é muito utilizado em blogs, onde possuem categorias e cada categoria informa quantos posts elas possuem. Em alguns casos é utilizada como contador de visualizações, também.
+
+### Listando links sem tag ul e li
+
+```
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Link text</a>
+                    <a href="#" class="list-group-item">Link text</a>
+                    <a href="#" class="list-group-item">Link text</a>
+                    <a href="#" class="list-group-item">Link text</a>
+                    <a href="#" class="list-group-item">Link text</a>
+                    <a href="#" class="list-group-item">Link text</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Notem que a listagem de links fica muito semelhante às tabs. Temos também a opção de utilizar a classe active, para mostrar qual item está ativo.
+
+Vocês podem utilizar todos os tipos de lista, apresentados aqui.
+
 [Voltar ao Índice](#indice)
 
 ---
