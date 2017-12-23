@@ -1161,6 +1161,76 @@ O ganho de tempo é imenso e, quanto mais vocês aprendem a utilizar os recursos
 ---
 ## <a name="parte11">Painel</a>
 
+Falaremos sobre a criação de painéis com o Bootstrap. Estes painéis são muito utilizados para criação de áreas administrativas de sistemas.
+
+Podemos definir heading, body e footer nestes painéis, ou seja, temos cabeçalho, corpo e rodapé.
+
+É um recurso maravilhoso para distribuir dados ou informações e, por isso, é muito utilizado.
+
+### Estrutura painel com heading e body
+
+```html
+
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Panel</h1>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel heading</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+``` 
+
+Observem que a estrutura é muito simples e intuitiva. Primeiro, criamos uma div com uma classe chamada panel. Em seguida, podemos adicionar cores a estes painéis, da mesma forma que configuramos os botões. Vejam as classes, abaixo:
+
+-PANEL-PRIMARY  
+-PANEL-INFO  
+-PANEL-DANGER  
+-PANEL-WARNING  
+-PANEL-SUCCESS  
+
+Temos outra div com uma classe chamada panel-heading, que é responsável por configurar o cabeçalho do painel. Nesta div colocaremos o título do painel e podemos utilizar outra classe chamada panel-title.
+
+Logo em seguida, temos outra div com a classe panel-body, onde colocaremos todo conteúdo do painel.
+
+Por último, podemos, ou não, ter outra div com a classe panel-footer, onde colocaremos informações de rodapé.
+
+Nós aconselhamos utilizarem heading ou footer, porque uma estrutura com heading, body e footer não fica muito bonita e não é muito utilizada.
+
+### Estrutura painel com body e footer
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        Panel content ...
+                    </div>
+                    <div class="panel-footer">
+                        Panel footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Vocês podem escolher qual a melhor estrutura para o projeto e utilizarem, tranquilamente. Esta estrutura também é responsiva.
+
+Usem muitos painéis para organizarem os conteúdos da aplicação. Utilizem painéis associados com grids e verão o poder que terão, visualmente.
+
 [Voltar ao Índice](#indice)
 
 ---
