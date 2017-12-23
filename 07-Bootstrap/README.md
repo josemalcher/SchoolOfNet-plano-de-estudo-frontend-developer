@@ -1653,6 +1653,34 @@ Usem e abusem desta funcionalidade do Bootstrap, é muito útil para deixarem a 
 ---
 ## <a name="parte18">Customizando</a>
 
+Estamos chegando ao final do conteúdo de Bootstrap. Conseguimos trabalhar com os principais recursos do framework, incluindo toda parte de grids e elementos responsivos.
+
+Aprendemos, também, a configurar vários elementos, como: ícones, formulários, thumbnails, dropdown, tabs, entre outros.
+
+Antes de finalizarmos, falaremos sobre customizações. No primeiro módulo, onde ensinamos a baixar o Bootstrap, ensinamos a baixar todos os arquivos. Podemos fazer um download, de forma customizada.
+
+Suponham que criaremos um aplicativo que só irá fazer uma listagem de dados. Não precisaremos baixar todos os recursos que o Bootstrap disponibiliza, nem todos os scripts do framework. Para a aplicação ficar mais leve, podemos baixar, somente, o necessário para ela. É sobre isso que falaremos.
+
+Para customizar o download, devemos acessar o menu superior, chamado Customize, no site do Bootstrap. Neste link teremos a opção de selecionarmos, somente, o que utilizaremos na aplicação. Podemos selecionar recursos relacionados a CSS, Components e JavaScript Components, além de ser possível customizar as cores principais da aplicação, montando uma instalação personalizada do framework.
+
+A personalização é muito extensa. Para fazermos uma boa personalização é interessante que o projeto seja bem arquitetado e bem claro.
+
+Depois de configurarem tudo, vocês poderão fazer o download dos arquivos, no final da página.
+
+### Conclusão
+
+Lembrem-se que o Bootstrap é um framework css e é muito extenso. Não daria para falar de todos os recursos, porque ficaria um conteúdo muito extenso e cansativo. Por isso, lembrem-se de consultar a documentação.
+
+Em todos os módulos da School Of Net, falamos sobre a importância da documentação de qualquer biblioteca ou framework que utilizamos. Por isso, leiam a documentação. Nela, vocês encontrarão várias outras funcionalidades que poderão ser úteis para seus projetos.
+
+Lembrando que passamos pelos mais importantes recursos. Vocês já estão aptos para criarem aplicações com Bootstrap.
+
+Agradecemos o interesse pelo conteúdo, esperamos que tenham gostado.
+
+Não deixem de estudar e evoluir. Não parem no tempo.
+
+Até o próximo conteúdo.
+
 [Voltar ao Índice](#indice)
 
 ---
