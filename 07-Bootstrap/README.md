@@ -1583,6 +1583,71 @@ Agora vocês podem utilizar o modal da maneira que quiserem. As informações ma
 ---
 ## <a name="parte17">Popover</a>
 
+O Popover é outro recurso, muito interssante, que o Bootstrap disponibiliza. Se vocês não conhecem ou nunca ouviram falar, apresentaremos agora.
+
+Popovers são caixas de mensagens que podemos adicionar em determinados ícones ou botões. Estas mensagens podem ser configuradas para aparecerem em qualquer posição, em relação ao botão. Podemos configurar para que apareça à esquerda, à direita, abaixo ou acima.
+
+Os popovers melhoram a comunicação dos usuários com os sistemas.
+
+### Estrutura
+```
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Popover</h1>
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on right
+                </button>
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on top
+                </button>
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on bottom
+                </button>
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on left
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Notem que são botões normais e se diferenciam com a adição de alguns atributos:
+
+Atributo |	Função
+--- | ---
+data-container |	Configura o posicionamento, em caso de redimensionamento de janela
+data-toggle |	Caracteriza um popover
+data-placement |	Define a posição da mensagem
+data-content |	Define conteúdo do popover
+
+Para utilizarmos os popovers, precisaremos usar javascript. O código acima, não produz efeito algum, sem um javascript aplicado. Vejam o javascript que precisaremos inserir ao código.
+
+```javascript
+$(function () {
+    $('[data-toggle="popover"]').popover();
+});
+```
+Não criamos este código, ele está na documentação do elemento. Nós o adicionamos logo abaixo do javascript Bootstrap, em nossa aplicação. Vejam abaixo:
+
+```html
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+```
+Notem que o nível de implementação é muito baixo e já temos o resultado que esperávamos. É só acessarem o navegador e clicarem nos botões.
+
+Usem e abusem desta funcionalidade do Bootstrap, é muito útil para deixarem a aplicação mais interativa.
+
 [Voltar ao Índice](#indice)
 
 ---
