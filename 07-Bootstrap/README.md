@@ -1298,7 +1298,7 @@ Essa listagem é muito semelhante a anterior e a utilizamos quando queremos list
 
 ### Listando links sem tag ul e li
 
-```
+```html
 <main>
     <section>
         <div class="container">
@@ -1325,6 +1325,55 @@ Vocês podem utilizar todos os tipos de lista, apresentados aqui.
 
 ---
 ## <a name="parte13">Media</a>
+Antes de começarmos a falar sobre media, vale lembrar que a documentação do Bootstrap é muito fácil, intuitiva e muito exemplificada. Isso quer dizer que tudo que estamos vendo, e outras coisas que, talvez não tenha neste conteúdo, vocês encontrarão na documentação, acessando o site do Bootstrap.
+
+No menu superior do site, tem a parte de CSS e Components. Nestes dois links estão, praticamente, todo conteúdo. Acessando qualquer um destes links vocês encontrarão uma listagem com todos os recursos, onde podem acessar, um a um, e verificarem como aplicá-los.
+
+Antes de utilizarem conteúdos, de qualquer blog ou fórum, consultem a documentação, que, provavelmente, irão encontrar a solução para suas dúvidas.
+
+### Estrutura de media objects
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Media</h1>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img src="img/image.jpg" alt="image" style="width: 64px;height: 64px;">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Middle aligned media</h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img src="img/image.jpg" alt="image" style="width: 64px;height: 64px;">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Middle aligned media</h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Devemos começar com uma div e uma classe chamada media. Em seguida, colocamos outra div para configurar a posição da imagem. Em nosso caso, colocamos a classe media-left e media-middle. Dessa forma, estamos centralizando a imagem, horizontalmente, e alinhando para esquerda.
+
+O próximo passo é definir o corpo da media, onde colocaremos o título e o conteúdo. Para isso, temos a classe media-body. Dentro desta classe podemos definir o título, utilizando a classe media-heading e depois, podemos inserir um texto ou um resumo.
+
+Vocês podem adicionar link no título e até botões com links, dentro do body. Isso, é uma decisão de vocês, de acordo com o projeto.
+
+Este recurso é muito utilizado para listar notícias, em portais.
 
 [Voltar ao Índice](#indice)
 
