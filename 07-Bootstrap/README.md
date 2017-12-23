@@ -1380,6 +1380,43 @@ Este recurso é muito utilizado para listar notícias, em portais.
 ---
 ## <a name="parte14">Alert</a>
 
+Em todo sistema ou website, vocês precisarão enviar algum tipo de mensagem ou aviso, ao usuário. Os exemplos mais comuns são: mensagens de erro ou mensagens de confirmação.
+
+Uma maneira muito prática e elegante de se fazer isso é utilizando os alerts do Bootstrap. São mensagens já estilizadas, à sua disposição.
+
+### Estrutura de alerts
+
+```html
+
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Alert</h1>
+                <div class="alert alert-success">Ok! Success.</div>
+                <div class="alert alert-info">Ok! Info.</div>
+                <div class="alert alert-warning">Ok! Warning.</div>
+                <div class="alert alert-danger">Ok! Danger.</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+```
+
+As mensagens de alerta trabalham de forma isolada. Basta criarmos a div e adicionarmos as classes relacionadas. Elas trabalham de forma muito parecida com os botões.
+
+Temos a classe principal alert e depois as classes que definem as cores das mensagens, que são:
+
+- ALERT-SUCCESS  
+- ALERT-INFO  
+- ALERT-WARNING  
+- ALERT-DANGER  
+
+Trabalhar com mensagens no Bootstrap é realmente muito fácil e muito prático.
+
+Vale a pena observar que é possível fazer a alteração das cores principais do Bootstrap. Falaremos sobre este assunto, em um próximo capítulo. Ensinaremos como baixar, apenas, os arquivos necessários para o tipo de projeto que estiverem trabalhando, para não precisarem baixar todas as funcionalidades do Bootstrap, sabendo que não usarão, nem metade delas.
+
 [Voltar ao Índice](#indice)
 
 ---
