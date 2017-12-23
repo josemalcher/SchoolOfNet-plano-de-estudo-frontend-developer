@@ -930,6 +930,124 @@ Observem que a única diferença entre dropdown e dropup é a classe principal. 
 ---
 ## <a name="parte9">Paginação</a>
 
+Quando falamos de sistemas que costumam gerar relatórios, ou listas, muito grandes, a paginação se torna algo muito importante. O Bootstrap disponibiliza uma paginação estilizada.
+
+### Estrutura paginação padrão
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Pagination</h1>
+                <nav>
+                    <ul class="pagination">
+                        <li class="disabled">
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+</main>
+```
+Primeiro, temos que abrir a tag nav. O Bootstrap sempre utiliza esta tag quando se trata de algum tipo de navegação, seja menu ou paginação.
+
+Em seguida, basta criar uma tag de listagem ul, com a classe pagination e os itens da navegação.
+
+No exemplo acima, criamos os itens, previous e next, como sendo o primeiro e o último elemento da paginação, como qualquer paginação padrão. No meio da navegação, temos os números de cada página sendo listados.
+
+Dentro da classe pagination, não precisamos utilizar classe nenhuma, que a estilização já será feita. Apenas utilizamos a classe active, para identificar a página atual e podemos adicionar a classe, disabled, em alguma li que quisermos desabilitar. Utilizando a classe disabled, o usuário não conseguirá clicar, o próprio Bootstrap fará isso para nós, basta acrescentarmos a classe.
+
+### Estrutura paginação grande
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Pagination Lg</h1>
+                <nav>
+                    <ul class="pagination pagination-lg">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+### Estrutura paginação pequena
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Pagination Sm</h1>
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+Por incrível que pareça, para alterar os tamanhos, não precisamos alterar nada na estrutura da paginação inicial. Notem que os códigos são exatamente iguais ao primeiro. Basta que acrescentemos um classe, para que o tamanho da paginação seja modificado.
+
+Temos as opções a seguir:
+
+Classes	| Tamanho
+ --- | ---
+pagination |	Padrão
+pagination pagination-lg |	Grande
+pagination pagination-sm |	Pequeno
+
+Realmente, o Bootstrap facilita a vida do programador, agilizando o processo de criação. Vejam como é fácil criar uma paginação. Basta que vocês utilizem uma linguagem de programação, para fazerem uma repetição e buscarem as informações de um banco de dados, por exemplo, mas a estrutura visual já está pronta para usar.
+
 [Voltar ao Índice](#indice)
 
 ---
