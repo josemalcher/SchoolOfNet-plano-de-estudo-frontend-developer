@@ -1512,6 +1512,72 @@ Agora que já sabem utilizar tabs, vocês podem criar mais conteúdo e mais tabs
 ---
 ## <a name="parte16">Modal</a>
 
+O javascript tem um recurso de alerta que se chama alert. Com certeza já devem ter visto e podem até achar legal, ou chato, quando aquela mensagem aparece no navegador.
+
+O Bootstrap tem uma forma muito mais elegante de mostrar estes tipos de mensagens ou avisos, ao usuário. Este recurso se chama modal.
+
+O modal pode ser executado durante o carregamento de uma página, para emitir um comunicado, ou pode ser mostrado ao clicar em algum botão, por exemplo.
+
+Este recurso é muito utilizado para fazer logins ou cadastros. Quando a pessoa clica em um link login o navegador abre um modal com um formulário para o preenchimento dos dados. Isso, realmente, é muito comum.
+
+Não precisaremos da utilização de javascript para implementar um modal, o Bootstrap já faz isso para nós, assim como nas tabs.
+
+### Estrutura básica
+
+```html
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Modal</h1>
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#mymodal">
+                    My Modal
+                </button>
+                <div id="mymodal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body&hellip;</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+```
+
+O primeiro passo é criar o botão, que acionará o modal. Um botão como qualquer outro, o que diferencia de outros botões são os atributos: data-toggle="modal" e data-target="#mymodal". O data-toggle é para caracterizar um modal e o data-target é para informar qual elemento deverá ser relacionado ao botão. Simplificando, podemos dizer que o data-target é um identificador, dizendo ao botão que terá que abrir o elemento que possuir o id="mymodal".
+
+Em seguida, criamos uma div com o id, informado no data-target, duas classes: modal e fade. Temos os atributos, tabindex e role, que são importantes para atender a semântica do HTML.
+
+Dentro desta div principal, temos outra div com a classe modal-dialog. Esta div faz parte da estrutura do modal. Logo depois, vem outra div muito importante que é responsável por definir todo conteúdo do modal, a div com a classe modal-content.
+
+Dentro desta última div informada, temos mais 3 divs que formam o modal completo.
+
+Classe |	Função
+--- | ---
+modal-header |	Configurar título do modal. Podemos criar botão de fechamento também.
+modal-body |	Configurar corpo do modal
+modal-footer |	Configurar rodapé do modal
+
+Vocês podem criar um modal utilizando, todos elementos ou apenas um deles. A escolha é de vocês, de acordo com o projeto.
+
+No código acima, existe um elemento para fechar o modal no header e outro no footer. O responsável pelo funcionamento do botão é o data-dismiss="modal". Se não tiver este atributo, o modal não será fechado.
+
+Vale lembrar que, quando formos criar um botão de fechamento no modal-header, é muito importante inserirmos a classe close, porque ela estiliza o botão de fechamento.
+
+Agora vocês podem utilizar o modal da maneira que quiserem. As informações mais importantes vocês já sabem e já conhecem a estrutura completa de um modal.
+
 [Voltar ao Índice](#indice)
 
 ---
