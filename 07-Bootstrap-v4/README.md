@@ -187,11 +187,17 @@ https://getbootstrap.com/docs/4.0/layout/media-object/
 
 ## <a name="parte7">Utilitátios de responsividade</a>
 
+https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints
+
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte8">Reboot de estilos de conteúdo</a>
+
+https://getbootstrap.com/docs/4.0/content/reboot/
+
+
 
 [Voltar ao Índice](#indice)
 
@@ -199,11 +205,23 @@ https://getbootstrap.com/docs/4.0/layout/media-object/
 
 ## <a name="parte9">Estilos de conteúdo</a>
 
+https://getbootstrap.com/docs/4.0/content/typography/
+
+https://getbootstrap.com/docs/4.0/content/code/
+
+https://getbootstrap.com/docs/4.0/content/images/
+
+https://getbootstrap.com/docs/4.0/content/tables/
+
+https://getbootstrap.com/docs/4.0/content/figures/
+
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte10">Formulários e components</a>
+
+https://getbootstrap.com/docs/4.0/components/forms/
 
 [Voltar ao Índice](#indice)
 
