@@ -135,6 +135,30 @@ https://getbootstrap.com/docs/4.0/layout/grid/#equal-width
 
 ## <a name="parte5">Empurrando e puxando coluna</a>
 
+https://getbootstrap.com/docs/4.0/layout/grid/#order-classes
+
+```html
+<div class="container">
+<!--    <div class="row">
+        <div class="col flex-unordered">1</div>
+        <div class="col flex-last">2</div>
+        <div class="col flex-first">3</div>
+    </div>-->
+    <br>
+    <div class="row">
+        <div class="col order-12">1</div>
+        <div class="col order-1">2</div>
+        <div class="col ">3</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-9 order-2">conteudo</div>
+        <div class="col-md-3 order-1">Menu</div>
+    </div>
+
+ </div>
+```
+
 [Voltar ao Índice](#indice)
 
 ---
