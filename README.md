@@ -10,7 +10,9 @@
 [4 -  jQuery - Iniciando](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/04-jQuery-Iniciando)     | :ok_hand:                  
 [5 -  jQuery com Ajax](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/05-jQueryComAjax)    | :ok_hand:                                    
 [6 -  jQuery UI](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/06-jQueryUI)       | :ok_hand:    
-[7 -  Bootstrap](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/07-Bootstrap)      | :eyes:     
+[7 -  Bootstrap v3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/07-Bootstrap)        | :ok_hand:     
+[7 -  Bootstrap v4](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/07-Bootstrap-v4)     | :eyes:     
+7 -  Bootstrap na Prática v4
 8 -  Less   
 9 -  Sass   
 10 - Compass  
