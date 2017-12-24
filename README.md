@@ -13,7 +13,7 @@
 [7 -  Bootstrap v3](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/07-Bootstrap)        | :ok_hand:     
 [7 -  Bootstrap v4](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/07-Bootstrap-v4)     | :ok_hand:          
 [7 -  Bootstrap na Prática v4](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/07-Bootstrap-v4-naPratica)   :zzz:   
-[8 -  Less]()        | :eyes:     
+[8 -  Less](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/08-Less)        | :eyes:     
 9 -  Sass   
 10 - Compass  
 11 - Grunt  
