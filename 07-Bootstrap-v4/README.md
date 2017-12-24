@@ -108,6 +108,27 @@ https://getbootstrap.com/docs/4.0/layout/grid/
 
 ## <a name="parte4">Colunas automáticas</a>
 
+https://getbootstrap.com/docs/4.0/layout/grid/#equal-width
+
+```html
+
+<div class="container">
+    <div class="row">
+        <div class="col">1 de 3</div>
+        <div class="col-auto">1 de 3 Ajusta ao conteudo</div>
+        <div class="col">1 de 3</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">1 de 3</div>
+        <div class="w-100">w-100</div>
+        <div class="col">1 de 3</div>
+    </div>
+</div>
+
+
+```
+
 [Voltar ao Índice](#indice)
 
 ---
