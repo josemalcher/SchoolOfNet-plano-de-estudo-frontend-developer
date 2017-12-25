@@ -21,6 +21,49 @@ https://www.schoolofnet.com/curso-less/
 
 ## <a name="parte1">Instalação e primeiros testes </a>
 
+http://lesscss.org/
+
+```
+$ npm install less -g
+
+$ lessc
+```
+### index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Less</title>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Course Less</h1>
+    </nav>
+</header>
+
+</body>
+</html>
+```
+
+### style.less
+```less
+h1{
+  font-size: 40px;
+  p{
+    color: blue;
+  }
+}
+```
+
+```
+$ lessc style.less
+
+$ lessc style.less > style.css
+```
 
 [Voltar ao Índice](#indice)
 
