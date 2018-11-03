@@ -23,6 +23,12 @@ https://www.schoolofnet.com/curso-less/
 
 http://lesscss.org/
 
+add patch(windows):
+
+C:\Users\Me\AppData\Roaming\npm
+
+- https://stackoverflow.com/a/21346115/3587379
+
 ```
 $ npm install less -g
 
