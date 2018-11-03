@@ -125,6 +125,21 @@ The compress option has been deprecated. We recommend you use a dedicated css mi
 
 ## <a name="parte3">Variáveis</a>
 
+```less
+@font_size_header: 20px;
+@color_text_header: #ff2718;
+@font_size_desc_header: 14px;
+
+.title-nav{
+  font-size: @font_size_header;
+  h1{
+    color: @color_text_header;
+  }
+  p{
+    font-size: @font_size_desc_header;
+  }
+}
+```
 
 [Voltar ao Índice](#indice)
 
