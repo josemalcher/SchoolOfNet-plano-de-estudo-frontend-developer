@@ -1,7 +1,10 @@
-h1 {
-  font-size: 50px;
+.title-nav {
+  font-size: 30px;
 }
-h1 p {
-  color: blue;
+.title-nav h1 {
+  color: #ff2718;
+}
+.title-nav p {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

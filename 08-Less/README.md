@@ -77,6 +77,47 @@ $ lessc style.less > style.css
 
 ## <a name="parte2">Comprimindo CSS e alinhamento no Less</a>
 
+Criar arquivo minificado:
+
+```
+lessc --clean-css style.less > style.min.css
+
+The compress option has been deprecated. We recommend you use a dedicated css minifier, for instance see less-plugin-clean-css.
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Less</title>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+</head>
+<body>
+<header>
+    <nav class="title-nav">
+        <h1>Course Less</h1>
+        <p>Description</p>
+    </nav>
+</header>
+
+</body>
+</html>
+```
+
+```less
+.title-nav{
+  font-size: 30px;
+  h1{
+    color: #ff2718;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+```
+
 
 [Voltar ao Índice](#indice)
 
