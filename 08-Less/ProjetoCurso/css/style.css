@@ -1,12 +1,16 @@
 .nav1 {
   width: 100%;
   height: 80px;
-  background-color: #3437ff;
+  background-color: #00029a;
+  /* + claridade */
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid #3437ff;
+  margin-bottom: 3px;
+  /* retorna somente o valor inteiro */
+  border: 1px solid #4446ab;
+  /* soma */
   color: #f3f3ff;
+  /* + escuro */
 }
 .nav1 h1 {
   position: relative;
@@ -24,11 +28,14 @@
 .nav2 {
   width: 100%;
   height: 80px;
-  background-color: #cb3bff;
+  background-color: #d96eff;
+  /* + claridade */
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid #cb3bff;
+  margin-bottom: 3px;
+  /* retorna somente o valor inteiro */
+  border: 1px solid #ff7fff;
+  /* soma */
   color: #fbffb4;
 }
 .nav2 h1 {

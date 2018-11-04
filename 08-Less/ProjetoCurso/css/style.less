@@ -15,11 +15,13 @@
 .nav-bar(@color_back:#4d3aff,@color_text:#fff,@size_title:30px,@size_desc:12px){
   width: 100%;
   height: 80px;
-  background-color: @color_back;
+  background-color: lighten(@color_back, 10%); /* + claridade */
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid @color_back;
+  //margin-bottom: round(19.6px / 4px); /* arrendodamento + operações */
+  //margin-bottom: ceil(3.1px); /* arrendodamento para cima */
+  margin-bottom: floor(3.1px); /* retorna somente o valor inteiro */
+  border: 1px solid @color_back + #444; /* soma */
   color: @color_text;
   h1{
     position: relative;
@@ -37,7 +39,7 @@
 }
 
 .nav1{
-  .nav-bar(#3437ff, #f3f3ff,30px,15px);
+  .nav-bar(darken(#3437ff, 40%), #f3f3ff,30px,15px); /* + escuro */
 }
 .nav2{
   .nav-bar(#cb3bff, #fbffb4,40px,16px);
