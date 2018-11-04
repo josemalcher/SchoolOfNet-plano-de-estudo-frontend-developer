@@ -30,3 +30,35 @@
 .nav2{
   .nav-bar(#cb3bff, #fbffb4,40px,16px);
 }
+
+#namespace{
+  .button(@back_color,@border_color,@text_color){
+    padding: 10px 16px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid @border_color;
+    border-radius: percentage(5/100);
+    color: @text_color;
+    background-color: @back_color;
+    &:hover{
+      background-color: darken(@back_color,20%);
+    }
+  }
+}
+
+.btn-default{
+  #namespace >.button(#fff,#ccc, #636363);
+}
+.btn-blue{
+  #namespace >.button(#295fff,#295fff, #fff);
+}
+.btn-red{
+  #namespace >.button(#ff2407,#ff2407, #fff);
+}
+.btn-orange{
+  #namespace >.button(#ff6d02,#ff6d02, #fff);
+}
+.btn-green{
+  #namespace >.button(#5ada38,#5ada38, #fff);
+}

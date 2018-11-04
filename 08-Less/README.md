@@ -273,6 +273,52 @@ The compress option has been deprecated. We recommend you use a dedicated css mi
 
 ## <a name="parte7">Namespace</a>
 
+```html
+<main>
+    <section>
+        <h1>Buttons</h1>
+        <p><button class="btn-default">Default</button></p>
+        <p><button class="btn-blue">Btn Blue</button></p>
+        <p><button class="btn-red">Btn Red</button></p>
+        <p><button class="btn-orange">Btn Orange</button></p>
+        <p><button class="btn-green">Btn Green</button></p>
+    </section>
+</main>
+```
+
+```less
+#namespace{
+  .button(@back_color,@border_color,@text_color){
+    padding: 10px 16px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid @border_color;
+    border-radius: percentage(5/100);
+    color: @text_color;
+    background-color: @back_color;
+    &:hover{
+      background-color: darken(@back_color,20%);
+    }
+  }
+}
+
+.btn-default{
+  #namespace >.button(#fff,#ccc, #636363);
+}
+.btn-blue{
+  #namespace >.button(#295fff,#295fff, #fff);
+}
+.btn-red{
+  #namespace >.button(#ff2407,#ff2407, #fff);
+}
+.btn-orange{
+  #namespace >.button(#ff6d02,#ff6d02, #fff);
+}
+.btn-green{
+  #namespace >.button(#5ada38,#5ada38, #fff);
+}
+```
 
 [Voltar ao Índice](#indice)
 
