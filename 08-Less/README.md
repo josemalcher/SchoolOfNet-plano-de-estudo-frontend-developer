@@ -326,6 +326,13 @@ The compress option has been deprecated. We recommend you use a dedicated css mi
 
 ## <a name="parte8">Organizando com importação</a>
 
+- 08-Less/ProjetoCurso/css/import/_navbar.less
+- 08-Less/ProjetoCurso/css/import/_button.less
+
+```less
+@import "import/_navbar";
+@import "import/_button";
+```
 
 [Voltar ao Índice](#indice)
 
@@ -333,6 +340,9 @@ The compress option has been deprecated. We recommend you use a dedicated css mi
 
 ## <a name="parte9">Finalizando e compilando o CSS</a>
 
+```html
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+```
 
 [Voltar ao Índice](#indice)
 

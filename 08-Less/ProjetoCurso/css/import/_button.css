@@ -1,0 +1,66 @@
+.btn-default {
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  color: #636363;
+  background-color: #fff;
+}
+.btn-default:hover {
+  background-color: #cccccc;
+}
+.btn-blue {
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #295fff;
+  border-radius: 5%;
+  color: #fff;
+  background-color: #295fff;
+}
+.btn-blue:hover {
+  background-color: #0031c2;
+}
+.btn-red {
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ff2407;
+  border-radius: 5%;
+  color: #fff;
+  background-color: #ff2407;
+}
+.btn-red:hover {
+  background-color: #a01300;
+}
+.btn-orange {
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ff6d02;
+  border-radius: 5%;
+  color: #fff;
+  background-color: #ff6d02;
+}
+.btn-orange:hover {
+  background-color: #9b4200;
+}
+.btn-green {
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #5ada38;
+  border-radius: 5%;
+  color: #fff;
+  background-color: #5ada38;
+}
+.btn-green:hover {
+  background-color: #34911b;
+}
+/*# sourceMappingURL=_button.css.map */
