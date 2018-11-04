@@ -25,30 +25,4 @@
   margin-left: 30px;
   font-size: 15px;
 }
-.nav2 {
-  width: 100%;
-  height: 80px;
-  background-color: #d96eff;
-  /* + claridade */
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 3px;
-  /* retorna somente o valor inteiro */
-  border: 1px solid #ff7fff;
-  /* soma */
-  color: #fbffb4;
-}
-.nav2 h1 {
-  position: relative;
-  margin-top: 14px;
-  margin-left: 20px;
-  margin-bottom: 0;
-  font-size: 40px;
-}
-.nav2 p {
-  position: relative;
-  margin-top: 0;
-  margin-left: 30px;
-  font-size: 16px;
-}
 /*# sourceMappingURL=style.css.map */

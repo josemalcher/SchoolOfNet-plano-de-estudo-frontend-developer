@@ -1,18 +1,4 @@
-@font_size_header: 20px;
-@color_text_header: #ff2718;
-@font_size_desc_header: 14px;
-
-//.title-nav{
-//  font-size: @font_size_header;
-//  h1{
-//    color: @color_text_header;
-//  }
-//  p{
-//    font-size: @font_size_desc_header;
-//  }
-//}
-
-.nav-bar(@color_back:#4d3aff,@color_text:#fff,@size_title:30px,@size_desc:12px){
+.nav-bar(@color_back:#ff5438,@color_text:#fff,@size_title:30px,@size_desc:12px)  when (@size_title >= 16px) and (@size_desc <= 15px) {
   width: 100%;
   height: 80px;
   background-color: lighten(@color_back, 10%); /* + claridade */

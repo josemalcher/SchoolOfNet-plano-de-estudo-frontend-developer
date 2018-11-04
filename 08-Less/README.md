@@ -232,6 +232,40 @@ The compress option has been deprecated. We recommend you use a dedicated css mi
 
 ## <a name="parte6">Trabalhando com Guards </a>
 
+```less
+.nav-bar(@color_back:#ff5438,@color_text:#fff,@size_title:30px,@size_desc:12px)  when (@size_title >= 16px) and (@size_desc <= 15px) {
+  width: 100%;
+  height: 80px;
+  background-color: lighten(@color_back, 10%); /* + claridade */
+  position: relative;
+  min-height: 50px;
+  //margin-bottom: round(19.6px / 4px); /* arrendodamento + operações */
+  //margin-bottom: ceil(3.1px); /* arrendodamento para cima */
+  margin-bottom: floor(3.1px); /* retorna somente o valor inteiro */
+  border: 1px solid @color_back + #444; /* soma */
+  color: @color_text;
+  h1{
+    position: relative;
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: @size_title;
+  }
+  p{
+    position: relative;
+    margin-top: 0;
+    margin-left: 30px;
+    font-size: @size_desc;
+  }
+}
+
+.nav1{
+  .nav-bar(darken(#3437ff, 40%), #f3f3ff,30px,15px); /* + escuro */
+}
+.nav2{
+  .nav-bar(#cb3bff, #fbffb4,40px,16px);
+}
+```
 
 [Voltar ao Índice](#indice)
 
