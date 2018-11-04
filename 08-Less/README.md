@@ -147,6 +147,39 @@ The compress option has been deprecated. We recommend you use a dedicated css mi
 
 ## <a name="parte4">Mixins</a>
 
+```less
+
+.nav-bar(@color_back:#4d3aff,@color_text:#fff,@size_title:30px,@size_desc:12px){
+  width: 100%;
+  height: 80px;
+  background-color: @color_back;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid @color_back;
+  color: @color_text;
+  h1{
+    position: relative;
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: @size_title;
+  }
+  p{
+    position: relative;
+    margin-top: 0;
+    margin-left: 30px;
+    font-size: @size_desc;
+  }
+}
+
+.nav1{
+  .nav-bar(#3437ff, #f3f3ff,30px,15px);
+}
+.nav2{
+  .nav-bar(#cb3bff, #fbffb4,40px,16px);
+}
+```
 
 [Voltar ao Índice](#indice)
 
