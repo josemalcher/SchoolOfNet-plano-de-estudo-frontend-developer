@@ -22,6 +22,9 @@ https://www.schoolofnet.com/curso/frontend/css/sass/
 
 ## <a name="parte1">Introdução e instalação</a>
 
+- https://sass-lang.com/install
+
+"npm install -g sass"
 
 [Voltar ao Índice](#indice)
 
@@ -29,6 +32,16 @@ https://www.schoolofnet.com/curso/frontend/css/sass/
 
 
 ## <a name="parte2">Compilando com Watch</a>
+
+```
+// arquivo específico
+sass --watch teste.scss:teste.css
+
+// para todos os arquivos
+sass --watch . 
+```
+
+
 
 
 [Voltar ao Índice](#indice)
