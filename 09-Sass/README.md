@@ -51,6 +51,60 @@ sass --watch .
 
 ## <a name="parte3">Entendendo o Nesting</a>
 
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title Page</title>
+</head>
+<body>
+
+<header>
+    <h1>Title Page</h1>
+    <p>Description page</p>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+</body>
+</html>
+
+```
+
+```sass
+header{
+  padding: 20px;
+  h1{
+    color: #00029a;
+  }
+  p{
+    font-size: 18px;
+    color: #2e6da4;
+  }
+  ul{
+    display: block;
+    line-height: 1.4;
+    li{
+      margin: 5px;
+      display: inline;
+      a{
+        text-decoration: none;
+        &:hover{
+          color: red;
+        }
+      }
+    }
+  }
+}
+```
 
 [Voltar ao Índice](#indice)
 

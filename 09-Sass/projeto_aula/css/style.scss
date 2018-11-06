@@ -1,3 +1,24 @@
-p{
-  color: red;
+header{
+  padding: 20px;
+  h1{
+    color: #00029a;
+  }
+  p{
+    font-size: 18px;
+    color: #2e6da4;
+  }
+  ul{
+    display: block;
+    line-height: 1.4;
+    li{
+      margin: 5px;
+      display: inline;
+      a{
+        text-decoration: none;
+        &:hover{
+          color: red;
+        }
+      }
+    }
+  }
 }
