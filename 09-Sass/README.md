@@ -246,6 +246,20 @@ $btn_color_red: #ff050c;
 
 ## <a name="parte8">Criar funções</a>
 
+```sass
+/* funções */
+@function btn_Color($cor){
+  @return darken($cor, 5%);
+}
+
+```
+
+```sass
+&:hover{
+    //opacity: 0.5;
+    background-color: btn_Color(gray);
+  }
+```
 
 [Voltar ao Índice](#indice)
 
