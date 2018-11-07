@@ -216,6 +216,28 @@ $btn_color_red: #ff050c;
 
 ## <a name="parte7">Funções</a>
 
+- https://sass-lang.com/documentation/file.SASS_REFERENCE.html#functions
+
+```sass
+
+.btn-default{
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+
+  border-radius: percentage(0.1);
+
+  color: #000;
+  background-color: $btn_color_default;
+  &:hover{
+    //opacity: 0.5;
+    background-color: darken(gray, 0.5);
+  }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
