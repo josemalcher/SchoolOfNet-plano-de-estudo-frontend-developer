@@ -113,6 +113,45 @@ header{
 
 ## <a name="parte4">Herança</a>
 
+```html
+<main>
+    <section>
+        <h1>Buttons</h1>
+        <p><button class="btn-default">default</button></p>
+        <p><button class="btn-blue">blue</button></p>
+        <p><button class="btn-red">RED</button></p>
+    </section>
+</main>
+```
+
+```sass
+.btn-default{
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000;
+  background-color: #fff;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+.btn-blue{
+  @extend .btn-default;
+  border: 1px solid #4c94cc;
+  color: #fff;
+  background-color: #2828ff;
+
+}
+.btn-red{
+  @extend .btn-default;
+  border: 1px solid #cc5a62;
+  color: #fff;
+  background-color: #ff1627;
+}
+```
 
 [Voltar ao Índice](#indice)
 

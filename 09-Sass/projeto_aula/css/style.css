@@ -23,4 +23,30 @@ header ul li a:hover {
   color: red;
 }
 
+.btn-default, .btn-red, .btn-blue {
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000;
+  background-color: #fff;
+}
+.btn-default:hover, .btn-red:hover, .btn-blue:hover {
+  opacity: 0.5;
+}
+
+.btn-blue {
+  border: 1px solid #4c94cc;
+  color: #fff;
+  background-color: #2828ff;
+}
+
+.btn-red {
+  border: 1px solid #cc5a62;
+  color: #fff;
+  background-color: #ff1627;
+}
+
 /*# sourceMappingURL=style.css.map */
