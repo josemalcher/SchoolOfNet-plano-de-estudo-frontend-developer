@@ -268,6 +268,8 @@ $btn_color_red: #ff050c;
 
 ## <a name="parte9">Minificar o CSS</a>
 
+\css> sass --watch style.scss:style.min.css --style compressed
+
 
 [Voltar ao Índice](#indice)
 
