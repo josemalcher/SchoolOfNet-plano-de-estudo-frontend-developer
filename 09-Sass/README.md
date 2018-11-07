@@ -173,6 +173,41 @@ header{
 
 ## <a name="parte6">Variáveis</a>
 
+```sass
+/* buttons main */
+
+$btn_color_default: #fff;
+//$btn_color_blue: #2828ff;
+$btn_color_red: #ff050c;
+
+.btn-default{
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000;
+  background-color: $btn_color_default;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+.btn-blue{
+  @extend .btn-default;
+  border: 1px solid #4c94cc;
+  color: #fff;
+  $btn_color_blue: blue !default;
+  background-color: $btn_color_blue;
+
+}
+.btn-red{
+  @extend .btn-default;
+  border: 1px solid #cc5a62;
+  color: #fff;
+  background-color: $btn_color_red;
+}
+```
 
 [Voltar ao Índice](#indice)
 
