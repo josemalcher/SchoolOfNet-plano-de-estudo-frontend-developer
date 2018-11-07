@@ -160,6 +160,11 @@ header{
 
 ## <a name="parte5">Trabalhando com importação</a>
 
+- 09-Sass/projeto_aula/css/style.scss
+```sass
+@import "import/main";
+@import "import/buttons";
+```
 
 [Voltar ao Índice](#indice)
 

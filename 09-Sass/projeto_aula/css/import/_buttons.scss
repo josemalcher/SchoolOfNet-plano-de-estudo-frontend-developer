@@ -1,0 +1,27 @@
+/* buttons main */
+.btn-default{
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000;
+  background-color: #fff;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+.btn-blue{
+  @extend .btn-default;
+  border: 1px solid #4c94cc;
+  color: #fff;
+  background-color: #2828ff;
+
+}
+.btn-red{
+  @extend .btn-default;
+  border: 1px solid #cc5a62;
+  color: #fff;
+  background-color: #ff1627;
+}
