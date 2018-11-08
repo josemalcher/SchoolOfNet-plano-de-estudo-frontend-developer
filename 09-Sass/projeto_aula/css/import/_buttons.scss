@@ -1,7 +1,7 @@
 /* buttons main */
 
 $btn_color_default: #fff;
-//$btn_color_blue: #2828ff;
+$btn_color_blue: #2828ff;
 $btn_color_red: #ff050c;
 
 /* funções */
@@ -9,8 +9,26 @@ $btn_color_red: #ff050c;
   @return darken($cor, 5%);
 }
 
-.btn-default{
+@mixin newButton($color){
   padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+
+  border-radius: percentage(0.1);
+
+  color: #000;
+  background-color: $color;
+  &:hover{
+    opacity: 0.5;
+    //background-color: btn_Color(gray);
+  }
+}
+
+.btn-default{
+  @include newButton($btn_color_default);
+  /*padding: 10px 16px;
   font-size: 16px;
   text-align: center;
   vertical-align: middle;
@@ -21,16 +39,17 @@ $btn_color_red: #ff050c;
   color: #000;
   background-color: $btn_color_default;
   &:hover{
-    //opacity: 0.5;
-    background-color: btn_Color(gray);
-  }
+     //opacity: 0.5;
+     background-color: btn_Color(gray);
+   }*/
 }
 .btn-blue{
-  @extend .btn-default;
+  @include newButton($btn_color_blue);
+  /*@extend .btn-default;
   border: 1px solid #4c94cc;
   color: #fff;
   $btn_color_blue: blue !default;
-  background-color: $btn_color_blue;
+  background-color: $btn_color_blue;*/
 
 }
 .btn-red{

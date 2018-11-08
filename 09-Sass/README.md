@@ -278,6 +278,49 @@ $btn_color_red: #ff050c;
 
 ## <a name="parte10">Mixin</a>
 
+```sass
+/* buttons main */
+
+$btn_color_default: #fff;
+$btn_color_blue: #2828ff;
+$btn_color_red: #ff050c;
+
+/* funções */
+@function btn_Color($cor){
+  @return darken($cor, 5%);
+}
+
+@mixin newButton($color){
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+
+  border-radius: percentage(0.1);
+
+  color: #000;
+  background-color: $color;
+  &:hover{
+    opacity: 0.5;
+    //background-color: btn_Color(gray);
+  }
+}
+
+.btn-default{
+  @include newButton($btn_color_default);
+}
+.btn-blue{
+  @include newButton($btn_color_blue);
+}
+.btn-red{
+  @extend .btn-default;
+  border: 1px solid #cc5a62;
+  color: #fff;
+  background-color: $btn_color_red;
+}
+
+```
 
 [Voltar ao Índice](#indice)
 

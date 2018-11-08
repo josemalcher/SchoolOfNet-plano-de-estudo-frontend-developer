@@ -27,7 +27,7 @@ header ul li a:hover {
 
 /* buttons main */
 /* funções */
-.btn-default, .btn-red, .btn-blue {
+.btn-default, .btn-red {
   padding: 10px 16px;
   font-size: 16px;
   text-align: center;
@@ -36,15 +36,42 @@ header ul li a:hover {
   border-radius: 10%;
   color: #000;
   background-color: #fff;
+  /*padding: 10px 16px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+  
+    border-radius: percentage(0.1);
+  
+    color: #000;
+    background-color: $btn_color_default;
+    &:hover{
+       //opacity: 0.5;
+       background-color: btn_Color(gray);
+     }*/
 }
-.btn-default:hover, .btn-red:hover, .btn-blue:hover {
-  background-color: #737373;
+.btn-default:hover, .btn-red:hover {
+  opacity: 0.5;
 }
 
 .btn-blue {
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  color: #000;
+  background-color: #2828ff;
+  /*@extend .btn-default;
   border: 1px solid #4c94cc;
   color: #fff;
-  background-color: blue;
+  $btn_color_blue: blue !default;
+  background-color: $btn_color_blue;*/
+}
+.btn-blue:hover {
+  opacity: 0.5;
 }
 
 .btn-red {
