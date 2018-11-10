@@ -15,14 +15,13 @@
 [7 -  Bootstrap na Prática v4](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/07-Bootstrap-v4-naPratica)   :zzz:   
 [8 -  Less](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-frontend-developer/tree/master/08-Less)      | :ok_hand:          
 [9 -  Sass](09-Sass/README.md)     | :ok_hand:           
-[10 - Compass](10-Compass/README.md)           | :eyes:       
-11 - Grunt  
-12 - Gulp  
-13 - ES6  
-14 - webpack      
-15 - Typescript  
-16 - Desenvolvimento de layouts com bootstrap    
+[10 - Compass](10-Compass/README.md)        | :ok_hand:     
+[11 - ES6](11-ES6/README.md)           | :eyes:    
 17 - Git e Github | :octocat: | :ok_hand:     
+12 - Gulp  
+11 - Grunt  
+16 - Desenvolvimento de layouts com bootstrap    
+14 - webpack      
 18 - Browserify   
 19 - Webpack 2  
 20 - Flexbox   
@@ -30,6 +29,7 @@
 22 - Materialize CSS    
 23 - Iniciando com Mootools    
 24 - Google material lite   
+15 - Typescript  
 
 ---
 
