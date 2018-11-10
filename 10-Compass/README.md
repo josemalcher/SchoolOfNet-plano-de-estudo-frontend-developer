@@ -125,7 +125,47 @@ compass watch
 
 ## <a name="parte3">Mixin Box Shadow e Text Shadow</a>
 
+```sass
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+//@import "compass/css3/text-shadow";
+
+
+@mixin mixin-nav-bar($backBolor, $colorText, $sizeTitle, $sizeDesc){
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  background-color: $backBolor;
+  margin-bottom: 25px;
+  border: 1px solid $backBolor;
+  color: $colorText;
+  @include box-shadow(#a39a9b 2px 2px 10px);
+  h1{
+    margin: 0;
+    font-size: $sizeTitle;
+  }
+  p{
+    margin: 0;
+    font-size: $sizeDesc;
+  }
+}
+
+.nav{
+  @include mixin-nav-bar(#3866cc, #fff, 50px, 15px);
+}
+
+#main_h1{
+  //@include single-text-shadow; // erro persistente... não encontrei solução!
+  font-size: 50px;
+  text-align: center;
+  color: #000;
+}
+```
 
 [Voltar ao Índice](#indice)
 
