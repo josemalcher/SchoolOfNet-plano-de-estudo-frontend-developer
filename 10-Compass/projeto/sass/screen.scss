@@ -5,7 +5,6 @@
 
 @import "compass/reset";
 @import "compass/css3/box-shadow";
-//@import "compass/css3/text-shadow";
 
 
 @mixin mixin-nav-bar($backBolor, $colorText, $sizeTitle, $sizeDesc){
@@ -36,4 +35,20 @@
   font-size: 50px;
   text-align: center;
   color: #000;
+}
+
+@mixin team($color){
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  background-color: $color;
+}
+.team-blue{
+  @include team(#1d28ff);
+}
+.team-green{
+  @include team(#03ff19);
+}
+.team-orange{
+  @include team(#ff751d);
 }

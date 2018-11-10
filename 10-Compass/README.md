@@ -1,4 +1,6 @@
-# Compass
+# Compass (FECHADO)
+
+- DEVIDO A VARIAS FALHAS NO PRÓPRIO SITE DO COMPASS, MUITOS EXEMPLOS COM ERROS, ETC...
 
 https://www.schoolofnet.com/curso/frontend/css/compass/
 
@@ -171,7 +173,10 @@ compass watch
 
 ---
 
+# CURSO FECHADO
 
+
+---
 
 ## <a name="parte4">Border radius</a>
 
