@@ -27,6 +27,8 @@ https://www.schoolofnet.com/curso/frontend/javascript/es6-rev2/
 
 ## <a name="parte1">Introdução</a>
 
+- https://www.ecma-international.org/publications/standards/Ecma-262.htm
+
 
 
 [Voltar ao Índice](#indice)
@@ -36,7 +38,10 @@ https://www.schoolofnet.com/curso/frontend/javascript/es6-rev2/
 
 ## <a name="parte2">ECMAScript</a>
 
+ECMA (acrônimo para European Computer Manufacturers Association) é uma associação fundada em 1961 dedicada à padronização de sistemas de informação. Desde 1994 passou a se denominar Ecma International para refletir suas atividades internacionais. A associação é aberta a companhias que produzem, comercializam ou desenvolvem sistemas de computação ou de comunicação na Europa.
 
+- https://pt.wikipedia.org/wiki/Ecma_International
+- https://pt.wikipedia.org/wiki/ECMAScript
 
 [Voltar ao Índice](#indice)
 
@@ -46,19 +51,54 @@ https://www.schoolofnet.com/curso/frontend/javascript/es6-rev2/
 
 ## <a name="parte3">Compatibilidade com browsers</a>
 
+- https://kangax.github.io/compat-table/es6/
+
+
 
 [Voltar ao Índice](#indice)
 
 ---
 
-# CURSO FECHADO
-
-
----
-
 ## <a name="parte4">var vs let vs const</a>
 
+```js
+// Aula 03 - let vs var vs const
 
+function teste() {
+    //var a = 'outro valor';
+    let a = "outro valor";
+
+    if(1 < 2){
+        let a = 'valor';
+    }
+
+    console.log(a);
+
+    for (let i; i< 10; i++){
+
+    }
+    for (let i; i< 10; i++){
+
+    }
+
+    const VARIAVEL = 10;
+    const EQUIPE = {'nome':'jose', 'idade': '34'};
+    console.log(VARIAVEL);
+    console.log(EQUIPE);
+
+    // VARIAVEL = 20; // erro
+    EQUIPE.nome = 'Jose Malcher Jr';
+
+    console.log(VARIAVEL);
+    console.log(EQUIPE);
+
+    // let - não é possíel redeclarar a mesma variável
+    // const(valores constatntes, objetos podem mudar seus atributos sem problemas)
+}
+
+teste();
+// note testes.js
+```
 
 [Voltar ao Índice](#indice)
 
