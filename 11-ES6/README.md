@@ -109,6 +109,19 @@ teste();
 ## <a name="parte5">Template string</a>
 
 
+```js
+var a = `
+<p>TEMPLATE STRING</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+`;
+
+console.log(a);
+```
 
 [Voltar ao Índice](#indice)
 
