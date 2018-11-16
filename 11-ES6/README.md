@@ -131,7 +131,32 @@ console.log(a);
 
 ## <a name="parte6">String interpolation</a>
 
+```js
+let num = 200;
+let b = "String qual quer";
 
+var a = ` ${b}
+<p>TEMPLATE STRING</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p> ${num}
+<p>Várias linhas</p>
+`;
+
+console.log(a);
+```
+
+```
+String qual quer
+<p>TEMPLATE STRING</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p>
+<p>Várias linhas</p> 200
+```
 
 [Voltar ao Índice](#indice)
 
