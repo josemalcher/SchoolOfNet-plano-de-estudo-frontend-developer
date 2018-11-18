@@ -384,7 +384,49 @@ R$2,000.12
 
 ## <a name="parte12">ES6 Modules</a>
 
+```js
+export class Pessoa {
+    constructor(nome, altura, sexo) {
+        this.nome = nome;
+        this._altura = altura;
+        this.sexo = sexo;
+    }
 
+    getAltura() {
+        return this._altura;
+    }
+    get altura() {
+        return this._altura;
+    }
+
+    set altura(value) {
+        this._altura = value;
+    }
+}
+
+export let dado = 'José Malcher Jr';
+
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="module">
+import {Pessoa, dado} from "./Pessoa.js";
+    console.log(Pessoa);
+    console.log(dado);
+</script>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 
